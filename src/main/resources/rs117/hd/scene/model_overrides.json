@@ -10703,5 +10703,15 @@
       26158
     ],
     "uvType": "BOX"
+  },
+  {
+    "description": "Abyss - Puddle",
+    "baseMaterial": "WATER_PUDDLE",
+    "objectIds": [
+      26174,
+      26176,
+      26177
+    ],
+    "uvType": "MODEL_XZ"
   }
 ]
