@@ -498,7 +498,7 @@ public enum Material {
 	ABYSSAL_N,
 	ABYSSAL(WHITE, p -> p
 		.setSpecular(1.7f, 70)
-		.setNormalMap(ABYSS_WALL_N)
+		.setNormalMap(ABYSSAL)
 	),
 
 
