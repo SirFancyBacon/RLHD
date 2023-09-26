@@ -495,6 +495,11 @@ public enum Material {
 	HD_TROPICAL_LEAF(TROPICAL_LEAF, p -> p
 		.replaceIf(HdPluginConfig::modelTextures, TROPICAL_LEAF)
 	),
+	ABYSSAL_N,
+	ABYSSAL(WHITE, p -> p
+		.setSpecular(1.7f, 70)
+		.setNormalMap(ABYSS_WALL_N)
+	),
 
 
 	// Seasonal
