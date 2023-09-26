@@ -495,10 +495,13 @@ public enum Material {
 	HD_TROPICAL_LEAF(TROPICAL_LEAF, p -> p
 		.replaceIf(HdPluginConfig::modelTextures, TROPICAL_LEAF)
 	),
+	ABYSSAL_D,
 	ABYSSAL_N,
 	ABYSSAL(WHITE, p -> p
-		.setSpecular(1.7f, 70)
+		.setSpecular(1.4f, 70)
 		.setNormalMap(ABYSSAL_N)
+		.setDisplacementMap(ABYSSAL_D)
+		.setDisplacementScale(.015f)
 	),
 
 
