@@ -30874,5 +30874,23 @@
     "objectIds": [
       11601
     ]
+  },
+  {
+    "description": "ABYSS_COSMIC_PORTAL",
+    "height": 160,
+    "alignment": "RIGHT",
+    "radius": 84,
+    "strength": 12.5,
+    "color": [
+      230,
+      255,
+      90
+    ],
+    "type": "PULSE",
+    "duration": 1676,
+    "range": 100,
+    "objectIds": [
+      24974
+    ]
   }
 ]
