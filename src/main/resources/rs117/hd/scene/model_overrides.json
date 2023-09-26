@@ -10661,7 +10661,7 @@
   },
   {
     "description": "Ore - Copper - Rock",
-    "baseMaterial": "ROCK_1",
+    "baseMaterial": "ROCK_2",
     "objectIds": [
       10943,
       11161
@@ -10682,7 +10682,7 @@
   },
   {
     "description": "Ore - Mithril - Rock",
-    "baseMaterial": "ROCK_2",
+    "baseMaterial": "ROCK_3_ORE",
     "objectIds": [
       11372,
       11373
@@ -10702,7 +10702,7 @@
   },
   {
     "description": "Ore - Runeite - Rock",
-    "baseMaterial": "ROCK_1",
+    "baseMaterial": "ROCK_3_ORE",
     "objectIds": [
       11376,
       11377
