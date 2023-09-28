@@ -30877,20 +30877,254 @@
   },
   {
     "description": "ABYSS_COSMIC_PORTAL",
-    "height": 160,
-    "alignment": "RIGHT",
+    "height": 110,
+    "alignment": "CENTER",
     "radius": 84,
-    "strength": 12.5,
+    "strength": 15,
     "color": [
-      230,
-      255,
-      90
+      224,
+      222,
+      26
     ],
     "type": "PULSE",
-    "duration": 1676,
+    "duration": 1689,
     "range": 100,
     "objectIds": [
       24974
+    ]
+  },
+  {
+    "description": "ABYSS_BLOOD_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 17,
+    "color": [
+      203,
+      34,
+      27
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      43848
+    ]
+  },
+  {
+    "description": "ABYSS_FIRE_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 18,
+    "color": [
+      168,
+      34,
+      21
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      24971
+    ]
+  },
+  {
+    "description": "ABYSS_EARTH_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 45,
+    "color": [
+      103,
+      79,
+      13
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      24972
+    ]
+  },
+  {
+    "description": "ABYSS_BODY_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 80,
+    "color": [
+      24,
+      32,
+      208
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      24973
+    ]
+  },
+  {
+    "description": "ABYSS_MIND_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 20,
+    "color": [
+      224,
+      136,
+      26
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25379
+    ]
+  },
+  {
+    "description": "ABYSS_AIR_PORTAL",
+    "height": 110,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 23,
+    "color": [
+      225,
+      224,
+      224
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25378
+    ]
+  },
+  {
+    "description": "ABYSS_SOUL_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 35,
+    "color": [
+      150,
+      151,
+      218
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25377
+    ]
+  },
+  {
+    "description": "ABYSS_WATER_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 80,
+    "color": [
+      21,
+      26,
+      168
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25376
+    ]
+  },
+  {
+    "description": "ABYSS_DEATH_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 18,
+    "color": [
+      228,
+      225,
+      225
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25035
+    ]
+  },
+  {
+    "description": "ABYSS_LAW_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 80,
+    "color": [
+      26,
+      34,
+      224
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      25034
+    ]
+  },
+  {
+    "description": "ABYSS_CHAOS_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 18,
+    "color": [
+      224,
+      168,
+      26
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      24976
+    ]
+  },
+  {
+    "description": "ABYSS_NATURE_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 84,
+    "strength": 65,
+    "color": [
+      17,
+      139,
+      21
+    ],
+    "type": "PULSE",
+    "duration": 1686,
+    "range": 100,
+    "objectIds": [
+      24975
+    ]
+  },
+  {
+    "description": "ABYSS_PORTAL",
+    "height": 160,
+    "alignment": "CENTER",
+    "radius": 300,
+    "strength": 65,
+    "color": [
+      90,
+      16,
+      115
+    ],
+    "type": "PULSE",
+    "duration": 2000,
+    "range": 100,
+    "objectIds": [
+      26149
     ]
   }
 ]
