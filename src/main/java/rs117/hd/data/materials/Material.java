@@ -464,7 +464,8 @@ public enum Material {
 	SLIME_GRUNGE(GRUNGE_1, p -> p
 		.setSpecular(4.1f, 60)),
 	WATER_PUDDLE(NONE, p -> p
-		.setSpecular(1.5f, 80)),
+		.setSpecular(1.5f, 80)
+	),
 	HD_WOOD_PLANKS_1_N,
 	HD_WOOD_PLANKS_1(p -> p
 		.setNormalMap(HD_WOOD_PLANKS_1_N)
@@ -498,11 +499,17 @@ public enum Material {
 	ABYSSAL_D,
 	ABYSSAL_N,
 	ABYSSAL(WHITE, p -> p
-		.setSpecular(1.4f, 70)
+		.setSpecular(1.4f, 60)
 		.setNormalMap(ABYSSAL_N)
 		.setDisplacementMap(ABYSSAL_D)
 		.setDisplacementScale(.015f)
+		.setBrightness(0.9f)
 	),
+	ABYSSAL_FLOOR(ABYSSAL, p -> p
+		.setDisplacementScale(.025f)
+		.setBrightness(0.9f)
+	),
+
 
 
 	// Seasonal

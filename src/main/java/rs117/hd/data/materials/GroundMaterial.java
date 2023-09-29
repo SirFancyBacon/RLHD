@@ -107,7 +107,7 @@ public enum GroundMaterial {
 	SANDY_STONE_FLOOR(Material.SAND_2, Material.STONE_NORMALED, Material.ROCK_2, Material.STONE_NORMALED),
 	PACKED_EARTH(Material.DIRT_1, Material.GRAVEL, Material.DIRT_1, Material.DIRT_1, Material.DIRT_2),
 	GRASSY_DIRT(Material.GRASS_1, Material.DIRT_1, Material.GRASS_2, Material.DIRT_2, Material.GRASS_3),
-	ABYSSAL(Material.ABYSSAL)
+	ABYSSAL_FLOOR(Material.ABYSSAL_FLOOR)
 	;
 
 	private final Material[] materials;

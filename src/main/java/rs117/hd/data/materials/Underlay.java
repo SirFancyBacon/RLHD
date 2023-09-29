@@ -282,7 +282,7 @@ public enum Underlay {
 	ABYSSAL_FLOOR(p -> p
 		.ids(121, 122)
 		.area(Area.ABYSS)
-		.groundMaterial(GroundMaterial.ABYSSAL)
+		.groundMaterial(GroundMaterial.ABYSSAL_FLOOR)
 	),
 
 	// Cutscenes
