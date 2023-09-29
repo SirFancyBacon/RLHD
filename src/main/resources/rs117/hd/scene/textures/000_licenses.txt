@@ -45,5 +45,5 @@ HD_WOOD_PLANKS_1 texture from AmbientCG. All textures on this site are licensed 
 BARK and BARK_N textures from AmbientCG. All textures on this site are licensed as CC0.
 -- https://ambientcg.com/view?id=Bark012
 
-ABYSS_WALL_N texture from AmbientCG. All textures on this site are licensed as CC0; Texture is heavily altered; Using Normal Map and Displacement Map
+ABYSSAL_N and ABYSSAL_D textures from AmbientCG. All textures on this site are licensed as CC0; Texture is heavily altered; Using Normal Map and Displacement Map
 -- https://ambientcg.com/view?id=Foil001
