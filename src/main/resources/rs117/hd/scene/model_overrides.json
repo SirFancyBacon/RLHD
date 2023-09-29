@@ -10702,7 +10702,8 @@
       26157,
       26158
     ],
-    "uvType": "BOX"
+    "uvType": "BOX",
+    "uvScale": 0.6
   },
   {
     "description": "Abyss - Puddle",
@@ -10713,5 +10714,86 @@
       26177
     ],
     "uvType": "MODEL_XZ"
+  },
+  {
+    "description": "Abyss - Gap",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26250
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 256
+  },
+  {
+    "description": "Abyss - Rocks",
+    "baseMaterial": "STONE_NORMALED",
+    "objectIds": [
+      26574
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Abyss - Tendrils - Large",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26253
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Abyss - Blister",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26252
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Abyss - Eyes",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26251
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Abyss - Object - Ground Sucker",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26159
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 256
+  },
+  {
+    "description": "Abyss - Object - Ground Tendrils - Small",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26169
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 256
+  },
+  {
+    "description": "Abyss - Object - Popped Pustules - Small",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26161,
+      26162,
+      26163,
+      26164,
+      26165,
+      26166
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientation": 256
   }
 ]
