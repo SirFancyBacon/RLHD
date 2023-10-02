@@ -10780,6 +10780,15 @@
     "uvScale": 0.5
   },
   {
+    "description": "Abyss - Blockage",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26187
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
     "description": "Abyss - Object - Ground Sucker",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
