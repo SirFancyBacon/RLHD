@@ -10822,5 +10822,15 @@
     "uvType": "BOX",
     "uvScale": 0.7,
     "uvOrientation": 256
+  },
+  {
+    "description": "Abyss - Decoration - Veins",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26170
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientation": 256
   }
 ]
