@@ -10688,5 +10688,12 @@
     ],
     "uvType": "BOX",
     "flatNormals": true
+  },
+  {
+    "description": "Walls - Bricks - Light Brick",
+    "objectIds": [
+      1902
+    ],
+    "flatNormals": true
   }
 ]
