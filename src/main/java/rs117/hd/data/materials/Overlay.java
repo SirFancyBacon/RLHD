@@ -326,6 +326,8 @@ public enum Overlay {
 		.lightness(32)
 		.blended(true)
 	),
+	// Abyss
+	ABYSSAL_FLOOR_OVERLAY(42, Area.ABYSS, GroundMaterial.ABYSSAL_FLOOR),
 
 	// Goblin Village
 	GOBLIN_VILLAGE_TILES_BLEND_FIX_OVERLAY(
