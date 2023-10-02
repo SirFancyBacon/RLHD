@@ -10719,6 +10719,8 @@
     "description": "Abyss - Gap",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
+      26192,
+      26208,
       26250
     ],
     "uvType": "BOX",
@@ -10729,6 +10731,7 @@
     "description": "Abyss - Rocks",
     "baseMaterial": "STONE_NORMALED",
     "objectIds": [
+      26188,
       26574
     ],
     "uvType": "BOX",
@@ -10738,7 +10741,10 @@
     "description": "Abyss - Tendrils - Large",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
-      26253
+      26167,
+      26168,
+      26169,
+      26189
     ],
     "uvType": "BOX",
     "uvScale": 0.5
@@ -10747,6 +10753,7 @@
     "description": "Abyss - Blister",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
+      26190,
       26252
     ],
     "uvType": "BOX",
@@ -10756,7 +10763,18 @@
     "description": "Abyss - Eyes",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
-      26251
+      26251,
+      26253,
+      26191
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Abyss - Boil",
+    "baseMaterial": "ABYSSAL",
+    "objectIds": [
+      26190
     ],
     "uvType": "BOX",
     "uvScale": 0.5
