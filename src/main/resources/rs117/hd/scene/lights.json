@@ -31128,7 +31128,7 @@
     ]
   },
   {
-    "description": "COSMIC_YELLOW_PORTAL",
+    "description": "RUNECRAFTING_YELLOW_PORTALS",
     "height": 30,
     "alignment": "CENTER",
     "radius": 500,
@@ -31142,7 +31142,8 @@
     "duration": 1550,
     "range": 50,
     "objectIds": [
-      34754
+      34754,
+      34756
     ]
   }
 ]
