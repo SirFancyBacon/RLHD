@@ -10789,7 +10789,7 @@
       26159
     ],
     "uvType": "BOX",
-    "uvScale": 0.6,
+    "uvScale": 0.4,
     "uvOrientation": 256
   },
   {
@@ -10814,7 +10814,7 @@
       26166
     ],
     "uvType": "BOX",
-    "uvScale": 0.7,
+    "uvScale": 0.52,
     "uvOrientation": 256
   },
   {
