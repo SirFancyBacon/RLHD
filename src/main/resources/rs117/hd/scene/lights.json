@@ -31122,7 +31122,7 @@
     ],
     "type": "PULSE",
     "duration": 2000,
-    "range": 100,
+    "range": 300,
     "objectIds": [
       26149
     ]
@@ -31164,5 +31164,69 @@
     "objectIds": [
       34794
     ]
+  },
+  {
+    "description": "Abyss - SW Light",
+    "worldX": 3027,
+    "worldY": 4820,
+    "plane": 0,
+    "height": 2048,
+    "alignment": "CENTER",
+    "radius": 5120,
+    "strength": 50,
+    "color": [
+      66.7,
+      68.6,
+      71.4
+    ],
+    "type": "STATIC"
+  },
+  {
+    "description": "Abyss - SE Light",
+    "worldX": 3050,
+    "worldY": 4820,
+    "plane": 0,
+    "height": 2048,
+    "alignment": "CENTER",
+    "radius": 5120,
+    "strength": 50,
+    "color": [
+      66.7,
+      68.6,
+      71.4
+    ],
+    "type": "STATIC"
+  },
+  {
+    "description": "Abyss - NW Light",
+    "worldX": 3027,
+    "worldY": 4846,
+    "plane": 0,
+    "height": 2048,
+    "alignment": "CENTER",
+    "radius": 5120,
+    "strength": 50,
+    "color": [
+      66.7,
+      68.6,
+      71.4
+    ],
+    "type": "STATIC"
+  },
+  {
+    "description": "Abyss - NE Light",
+    "worldX": 3050,
+    "worldY": 4846,
+    "plane": 0,
+    "height": 2048,
+    "alignment": "CENTER",
+    "radius": 5120,
+    "strength": 50,
+    "color": [
+      66.7,
+      68.6,
+      71.4
+    ],
+    "type": "STATIC"
   }
 ]
