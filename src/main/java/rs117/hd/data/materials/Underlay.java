@@ -284,6 +284,11 @@ public enum Underlay {
 		.area(Area.ABYSS)
 		.groundMaterial(GroundMaterial.ABYSSAL_FLOOR)
 	),
+	LAW_ALTAR_FLOOR(p -> p
+		.ids(56, 57, 95)
+		.area(Area.LAW_ALTAR)
+		.groundMaterial(GroundMaterial.ROCKY_CAVE_FLOOR)
+	),
 
 	// Cutscenes
 	CANOE_CUTSCENE_GRASS(Area.CANOE_CUTSCENE, GroundMaterial.GRASS_SCROLLING, p -> p.ids(48, 50, 63)),

@@ -10832,5 +10832,15 @@
     "uvType": "BOX",
     "uvScale": 0.7,
     "uvOrientation": 256
+  },
+  {
+    "description": "Walls - Law Altar",
+    "baseMaterial": "ROCK_2",
+    "objectIds": [
+      34806,
+      34807,
+      34808
+    ],
+    "uvType": "BOX"
   }
 ]
