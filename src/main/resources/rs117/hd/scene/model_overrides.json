@@ -3384,7 +3384,7 @@
   },
   {
     "description": "RELLEKKA_FENCES",
-    "baseMaterial": "DOCK_FENCE",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       4262,
       8969,
@@ -3392,6 +3392,9 @@
       8971,
       25261
     ],
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.7,
     "flatNormals": true
   },
   {
@@ -10780,6 +10783,84 @@
       591
     ],
     "uvType": "BOX",
+    "flatNormals": true
+  },
+  {
+    "description": "Picatoris - Objects - Dirt - Rabbit Hole",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      19337
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Picatoris - Objects - Dirt - Ferret Burrow",
+    "baseMaterial": "DIRT_2",
+    "objectIds": [
+      19438,
+      19439,
+      19440
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Picatoris - Walls - Colony Walls",
+    "baseMaterial": "GRUNGE_2",
+    "objectIds": [
+      13478,
+      13479,
+      13480,
+      13581,
+      13582
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Piscatoris - Falconry - Walls - Wooden - Planks",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "objectIds": [
+      4198,
+      4246
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 1536,
+    "uvScale": 0.66
+  },
+  {
+    "description": "Picatoris - Objects - Dirt - Entrance Hole",
+    "baseMaterial": "DIRT_2",
+    "objectIds": [
+      12656
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Picatoris - Walls - Wood - Plank Fence",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      12659,
+      12660,
+      12661,
+      12722
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "flatNormals": true
+  },
+  {
+    "description": "Piscatoris - Walls - Metallic - Doors",
+    "baseMaterial": "METALLIC_2_SEMIGLOSS",
+    "objectIds": [
+      12723,
+      12724,
+      12725,
+      13475
+    ],
+    "uvType": "BOX",
     "retainVanillaUvs": false,
     "uvScale": 0.65
   },
@@ -11229,5 +11310,69 @@
       34808
     ],
     "uvType": "BOX"
+  },
+  {
+    "description": "Piscatoris - Objects - Wooden - Crate Stack",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      13598,
+      13599
+    ],
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512
+  },
+  {
+    "description": "Piscatoris - Objects - Wooden - Plank Wall",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "objectIds": [
+      10108,
+      10109
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 1536,
+    "uvScale": 0.66
+  },
+  {
+    "description": "Piscatoris - Roof - Wooden - Planks",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "objectIds": [
+      10111,
+      10112,
+      10113
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.66,
+    "uvOrientation": 512
+  },
+  {
+    "description": "Piscatoris - Roof - Wooden - Plank Doors",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "objectIds": [
+      12657,
+      12658
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.66,
+    "uvOrientation": 512
+  },
+  {
+    "description": "Piscatoris - Roof Corners - Wooden - Planks",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "objectIds": [
+      4229,
+      4232,
+      4235,
+      4236,
+      4237,
+      4238,
+      4239,
+      4240
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.66,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512
   }
 ]
