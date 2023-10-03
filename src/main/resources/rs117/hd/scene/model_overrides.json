@@ -10879,5 +10879,16 @@
     ],
     "uvType": "BOX",
     "retainVanillaUvs": false
+  },
+  {
+    "description": "Walls - Bricks - Light Brick",
+    "objectIds": [
+      1902,
+      1904,
+      1907,
+      1920,
+      17088
+    ],
+    "flatNormals": true
   }
 ]
