@@ -495,6 +495,14 @@ public enum Material {
 	HD_TROPICAL_LEAF(TROPICAL_LEAF, p -> p
 		.replaceIf(HdPluginConfig::modelTextures, TROPICAL_LEAF)
 	),
+	HD_HAY_D,
+	HD_HAY_N,
+	HD_HAY(p -> p
+		.replaceIf(HdPluginConfig::modelTextures, HAY)
+		.setSpecular(0.3f, 20)
+		.setDisplacementMap(HD_HAY_D)
+		.setNormalMap(HD_HAY_N)
+	),
 
 
 	// Seasonal
