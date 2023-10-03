@@ -1564,7 +1564,9 @@
       1651,
       1911,
       1912,
-      1913
+      1913,
+      1943,
+      1944
     ],
     "flatNormals": true
   },
@@ -2178,7 +2180,8 @@
   },
   {
     "description": "STONE_WALL_FENCES",
-    "baseMaterial": "STONE",
+    "baseMaterial": "STONE_NORMALED",
+    "textureMaterial": "HD_CONCRETE",
     "objectIds": [
       979,
       5566,
@@ -2196,7 +2199,10 @@
       23892,
       5569
     ],
-    "flatNormals": true
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "flatNormals": true,
+    "uvScale": 0.8
   },
   {
     "description": "STATUE_OF_A_WARRIOR_1",
@@ -5429,14 +5435,13 @@
   {
     "description": "Objects - Mossy Rock - Medium",
     "baseMaterial": "ROCK_1",
+    "textureMaterial": "HD_CONCRETE",
     "objectIds": [
       3894,
       3895,
       3896,
       3897,
       5847,
-      11182,
-      11183,
       11425,
       27899,
       29856,
@@ -5457,8 +5462,9 @@
       40556,
       40557
     ],
+    "retainVanillaUvs": false,
     "uvType": "BOX",
-    "uvScale": 0.5
+    "uvScale": 0.65
   },
   {
     "description": "Objects - Mossy Rock - Rectangle",
@@ -7376,7 +7382,8 @@
       406,
       1992
     ],
-    "uvType": "VANILLA",
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
     "flatNormals": true
   },
   {
@@ -10688,5 +10695,189 @@
     ],
     "uvType": "BOX",
     "flatNormals": true
+  },
+  {
+    "description": "Objects - Concrete - Runecrafting Alters",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      34760,
+      34761,
+      34732,
+      34763,
+      34764,
+      34765,
+      34766,
+      34767,
+      34768,
+      34769,
+      34770,
+      34771
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false
+  },
+  {
+    "description": "Objects - Concrete - Runecrafting Alter Pillars",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      34780,
+      34781,
+      34782,
+      34783,
+      34784,
+      34785
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.7,
+    "uvOrientation": 256
+  },
+  {
+    "description": "Objects - Concrete - Runecrafting Alter Lights",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      34786,
+      34787
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      590,
+      591
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Bank Booth",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      10355,
+      10527
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Gravestone",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      404,
+      405
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Salve Tunnel Entrance",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      3456,
+      3482,
+      3483,
+      3484
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Deposit Box",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      10529
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Textured Rocks - Rocks with Vines",
+    "baseMaterial": "PLANT_GRUNGE_1",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      10786,
+      10787,
+      10788
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Textured Rocks - Small",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      10793,
+      12570
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Textured Rocks - Medium",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      10790,
+      10791
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Textured Rock - Mossy Rock - Medium",
+    "baseMaterial": "GRASS_3",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      11182,
+      11183
+    ],
+    "retainVanillaUvs": false,
+    "uvType": "BOX",
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Textured Rock - Nightmare Zone Rocks - Small",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      26275,
+      26291,
+      26292
+    ],
+    "retainVanillaUvs": false,
+    "uvType": "BOX",
+    "uvScale": 0.65
+  },
+  {
+    "description": "Objects - Concrete - Nature Alter Pillars",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      407,
+      408,
+      409
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false
+  },
+  {
+    "description": "Objects - Concrete - Nature Alter ",
+    "baseMaterial": "ROCK_1",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      410
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false
   }
 ]
