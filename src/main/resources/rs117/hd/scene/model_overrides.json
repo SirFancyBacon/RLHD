@@ -4004,19 +4004,22 @@
   },
   {
     "description": "Stalagmite - Tan",
-    "baseMaterial": "STONE",
+    "baseMaterial": "STONE_NORMALED",
     "objectIds": [
       5047,
       12219,
       12575,
       12576,
+      12577,
       11184,
       11185,
       11186,
       18479,
       37816,
       37817
-    ]
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 256
   },
   {
     "description": "Wooden Wall Supports - Mines",
@@ -4028,7 +4031,7 @@
   },
   {
     "description": "Textured Ladder",
-    "baseMaterial": "DOCK_FENCE",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       11,
       2147,
@@ -4043,15 +4046,20 @@
       17385,
       17387,
       30367
-    ]
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
   },
   {
     "description": "Textured - Crate 1",
-    "baseMaterial": "DOCK_FENCE",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       354,
       357
-    ]
+    ],
+    "uvType": "BOX",
+    "uvOrientationY": 256,
+    "uvOrientationZ": 800
   },
   {
     "description": "Falador - Marble - Saradomin Statue",
@@ -4507,6 +4515,9 @@
       1572,
       1573,
       1574,
+      1570,
+      1727,
+      1728,
       3506,
       3507,
       11721,
@@ -4521,7 +4532,7 @@
       44598,
       44599
     ],
-    "uvType": "MODEL_XY"
+    "uvType": "BOX"
   },
   {
     "description": "Metal Fence",
@@ -4600,7 +4611,8 @@
       23270,
       23271
     ],
-    "uvType": "WORLD_XZ"
+    "uvType": "BOX",
+    "uvScale": 0.8
   },
   {
     "description": "Wilderness Ditch Dirt clumps",
@@ -6392,7 +6404,8 @@
     "objectIds": [
       1171
     ],
-    "uvType": "MODEL_XZ"
+    "uvType": "BOX",
+    "uvScale": 0.8
   },
   {
     "description": "Objects - Huge Mushroom - Medium",
@@ -6751,6 +6764,8 @@
       1102,
       7167,
       7168,
+      10780,
+      10642,
       11603,
       12407,
       14872,
@@ -6834,11 +6849,13 @@
   },
   {
     "description": "Objects - Standing Torch -  Wood",
-    "baseMaterial": "WOOD_GRAIN",
+    "baseMaterial": "WOOD_GRAIN_2",
     "objectIds": [
       724
     ],
-    "uvType": "GEOMETRY"
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.4
   },
   {
     "description": "Objects - Stone - Stalagmites - Limestone",
@@ -11029,5 +11046,40 @@
     "uvType": "BOX",
     "uvScale": 0.33,
     "uvOrientation": 256
+  },
+  {
+    "description": "Objects - Wood - Ladder - In Ground - Untextured",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      16680
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8
+  },
+  {
+    "description": "Objects - Wood - Ladder - Edgeville Dungeon Ladder",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      1581
+    ],
+    "uvType": "BOX"
+  },
+  {
+    "description": "Objects - Wood - Trap Door",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      1579
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
+  },
+  {
+    "description": "Objects - Wood - Danger Sign",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      1032
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
   }
 ]
