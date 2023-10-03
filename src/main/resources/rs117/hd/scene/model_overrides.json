@@ -10688,5 +10688,38 @@
     ],
     "uvType": "BOX",
     "flatNormals": true
+  },
+  {
+    "description": "Picatoris - Objects - Dirt - Rabbit Hole",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      19337
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Picatoris - Objects - Dirt - Ferret Burrow",
+    "baseMaterial": "DIRT_2",
+    "objectIds": [
+      19438,
+      19439,
+      19440
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
+  },
+  {
+    "description": "Picatoris - Walls - Colony Walls",
+    "baseMaterial": "GRUNGE_2",
+    "objectIds": [
+      13478,
+      13479,
+      13480,
+      13581,
+      13582
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6
   }
 ]
