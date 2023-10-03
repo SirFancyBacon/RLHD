@@ -68,3 +68,6 @@ ROCK_4, ROCK_4_N, ROCK_4_D textures from AmbientCG. All textures on this site ar
 
 ROCK_5, ROCK_5_N, ROCK_5_D textures from AmbientCG. All textures on this site are licensed as CC0.
 -- https://ambientcg.com/view?id=ROCK037
+
+ABYSSAL_N and ABYSSAL_D textures from AmbientCG. All textures on this site are licensed as CC0; Texture is heavily altered; Using Normal Map and Displacement Map
+-- https://ambientcg.com/view?id=Foil001
