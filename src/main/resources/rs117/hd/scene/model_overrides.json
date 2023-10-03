@@ -10753,16 +10753,6 @@
     "uvScale": 0.5
   },
   {
-    "description": "Abyss - Blister",
-    "baseMaterial": "ABYSSAL",
-    "objectIds": [
-      26190,
-      26252
-    ],
-    "uvType": "BOX",
-    "uvScale": 0.5
-  },
-  {
     "description": "Abyss - Eyes",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
@@ -10777,7 +10767,8 @@
     "description": "Abyss - Boil",
     "baseMaterial": "ABYSSAL",
     "objectIds": [
-      26190
+      26190,
+      26252
     ],
     "uvType": "BOX",
     "uvScale": 0.5

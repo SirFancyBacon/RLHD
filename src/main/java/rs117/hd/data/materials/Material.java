@@ -510,7 +510,7 @@ public enum Material {
 		.setNormalMap(ABYSSAL_N)
 		.setDisplacementMap(ABYSSAL_D)
 		.setDisplacementScale(.060f)
-		.setBrightness(0.9f)
+		.setBrightness(0.7f)
 	),
 
 
