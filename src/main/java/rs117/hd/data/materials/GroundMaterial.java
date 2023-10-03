@@ -39,7 +39,7 @@ public enum GroundMaterial {
 	DIRT(Material.DIRT_1, Material.DIRT_2),
 	SNOW_1(Material.SNOW_1, Material.SNOW_1, Material.SNOW_2, Material.SNOW_3, Material.SNOW_3, Material.SNOW_4),
 	SNOW_2(Material.SNOW_2, Material.SNOW_4),
-	GRAVEL(Material.GRAVEL),
+	GRAVEL(Material.GRAVEL_2, Material.GRAVEL_1, Material.GRAVEL_2, Material.GRAVEL_2, Material.GRAVEL_1),
 	FALADOR_PATHS(Material.FALADOR_PATH_BRICK),
 	VARROCK_PATHS(Material.JAGGED_STONE_TILE),
 	VARIED_DIRT(Material.GRAVEL, Material.DIRT_1, Material.DIRT_2),
