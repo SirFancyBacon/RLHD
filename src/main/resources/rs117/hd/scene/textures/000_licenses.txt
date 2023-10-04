@@ -71,3 +71,12 @@ ROCK_5, ROCK_5_N, ROCK_5_D textures from AmbientCG. All textures on this site ar
 
 ABYSSAL_N and ABYSSAL_D textures from AmbientCG. All textures on this site are licensed as CC0; Texture is heavily altered; Using Normal Map and Displacement Map
 -- https://ambientcg.com/view?id=Foil001
+
+GRAVEL_1, GRAVEL_1_N and GRAVEL_1_D textures from AmbientCG. All textures on this site are licensed as CC0.
+-- https://ambientcg.com/view?id=Rocks021
+
+GRAVEL_2, GRAVEL_2_N and GRAVEL_2_D textures from AmbientCG. All textures on this site are licensed as CC0.
+-- https://ambientcg.com/view?id=Rocks020
+
+GRAVEL_3, GRAVEL_3_N and GRAVEL_3_D textures from AmbientCG. All textures on this site are licensed as CC0.
+-- https://ambientcg.com/view?id=Rocks013
