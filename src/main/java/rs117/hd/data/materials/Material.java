@@ -234,17 +234,13 @@ public enum Material {
 	DIRT_2(p -> p
 		.setNormalMap(DIRT_2_N)
 		.setSpecular(0.4f, 30)),
-	GRAVEL_N,
-	GRAVEL(p -> p
-		.setNormalMap(GRAVEL_N)
-		.setSpecular(0.4f, 130)),
 	GRAVEL_1_D,
 	GRAVEL_1_N,
 	GRAVEL_1(p -> p
 		.setNormalMap(GRAVEL_1_N)
 		.setDisplacementMap(GRAVEL_1_D)
 		.setSpecular(0.4f, 130)
-		.setBrightness(1.35f)
+		.setBrightness(1.45f)
 	),
 	GRAVEL_2_D,
 	GRAVEL_2_N,
@@ -252,13 +248,21 @@ public enum Material {
 		.setNormalMap(GRAVEL_2_N)
 		.setDisplacementMap(GRAVEL_2_D)
 		.setSpecular(0.4f, 130)
-		.setBrightness(1.35f)
+		.setBrightness(1.5f)
+	),
+	GRAVEL_3_D,
+	GRAVEL_3_N,
+	GRAVEL_3(p -> p
+		.setNormalMap(GRAVEL_3_N)
+		.setDisplacementMap(GRAVEL_3_D)
+		.setSpecular(0.4f, 130)
+		.setBrightness(1.45f)
 	),
 	DIRT_1_SHINY(DIRT_1, p -> p
 		.setSpecular(1.1f, 380)),
 	DIRT_2_SHINY(DIRT_2, p -> p
 		.setSpecular(1.1f, 380)),
-	GRAVEL_SHINY(GRAVEL, p -> p
+	GRAVEL_SHINY(GRAVEL_2, p -> p
 		.setSpecular(1.1f, 380)),
 	SAND_1_N,
 	SAND_1(p -> p

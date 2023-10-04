@@ -39,10 +39,10 @@ public enum GroundMaterial {
 	DIRT(Material.DIRT_1, Material.DIRT_2),
 	SNOW_1(Material.SNOW_1, Material.SNOW_1, Material.SNOW_2, Material.SNOW_3, Material.SNOW_3, Material.SNOW_4),
 	SNOW_2(Material.SNOW_2, Material.SNOW_4),
-	GRAVEL(Material.GRAVEL_2, Material.GRAVEL_1, Material.GRAVEL_2, Material.GRAVEL_2, Material.GRAVEL_1),
+	GRAVEL(Material.GRAVEL_2, Material.GRAVEL_1, Material.GRAVEL_2, Material.GRAVEL_3),
 	FALADOR_PATHS(Material.FALADOR_PATH_BRICK),
 	VARROCK_PATHS(Material.JAGGED_STONE_TILE),
-	VARIED_DIRT(Material.GRAVEL, Material.DIRT_1, Material.DIRT_2),
+	VARIED_DIRT(Material.GRAVEL_1, Material.DIRT_1, Material.DIRT_2),
 	VARIED_DIRT_SHINY(Material.GRAVEL_SHINY, Material.DIRT_1_SHINY, Material.DIRT_2_SHINY),
 	TILE_SMALL(Material.TILE_SMALL_1),
 	CARPET(Material.CARPET),
@@ -101,11 +101,11 @@ public enum GroundMaterial {
 	WINTER_JAGGED_STONE_TILE(Material.WINTER_JAGGED_STONE_TILE),
 	WINTER_JAGGED_STONE_TILE_LIGHT(Material.WINTER_JAGGED_STONE_TILE_LIGHT),
 	WINTER_JAGGED_STONE_TILE_LIGHT_2(Material.WINTER_JAGGED_STONE_TILE_LIGHTER),
-	ROCKY_CAVE_FLOOR(Material.GRUNGE_2, Material.ROCK_2, Material.ROCK_2, Material.ROCK_1, Material.GRAVEL),
+	ROCKY_CAVE_FLOOR(Material.GRUNGE_2, Material.ROCK_2, Material.ROCK_2, Material.ROCK_1, Material.GRAVEL_2),
 	EARTHEN_CAVE_FLOOR(Material.GRUNGE_1, Material.DIRT_2, Material.DIRT_2, Material.ROCK_1, Material.DIRT_2),
 	STONE_CAVE_FLOOR(Material.STONE, Material.ROCK_1, Material.ROCK_2),
 	SANDY_STONE_FLOOR(Material.SAND_2, Material.STONE_NORMALED, Material.ROCK_2, Material.STONE_NORMALED),
-	PACKED_EARTH(Material.DIRT_1, Material.GRAVEL, Material.DIRT_1, Material.DIRT_1, Material.DIRT_2),
+	PACKED_EARTH(Material.DIRT_1, Material.GRAVEL_1, Material.DIRT_1, Material.DIRT_1, Material.DIRT_2),
 	GRASSY_DIRT(Material.GRASS_1, Material.DIRT_1, Material.GRASS_2, Material.DIRT_2, Material.GRASS_3)
 	;
 
