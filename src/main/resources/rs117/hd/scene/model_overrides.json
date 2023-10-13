@@ -1477,6 +1477,7 @@
   },
   {
     "description": "Short grass that shouldn't cast shadows",
+    "baseMaterial": "GRAY_65",
     "objectIds": [
       1257,
       1258,

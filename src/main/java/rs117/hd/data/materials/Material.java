@@ -299,14 +299,30 @@ public enum Material {
 	GRASS_3,
 	GRASS_SCROLLING(GRASS_1, p -> p
 		.setScroll(0, 1 / 0.7f)),
+	DIRT_1_D,
 	DIRT_1_N,
 	DIRT_1(p -> p
+		.setDisplacementMap(DIRT_1_D)
+		.setDisplacementScale(0.12f)
 		.setNormalMap(DIRT_1_N)
-		.setSpecular(0.5f, 35)),
+		.setSpecular(0.3f, 30)
+	),
+	DIRT_2_D,
 	DIRT_2_N,
 	DIRT_2(p -> p
+		.setDisplacementMap(DIRT_2_D)
+		.setDisplacementScale(0.12f)
 		.setNormalMap(DIRT_2_N)
-		.setSpecular(0.4f, 30)),
+		.setSpecular(0.3f, 30)
+	),
+	DIRT_3_D,
+	DIRT_3_N,
+	DIRT_3(p -> p
+		.setDisplacementMap(DIRT_2_D)
+		.setDisplacementScale(0.12f)
+		.setNormalMap(DIRT_2_N)
+		.setSpecular(0.3f, 30)
+	),
 	GRAVEL_N,
 	GRAVEL(p -> p
 		.setNormalMap(GRAVEL_N)
