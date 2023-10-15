@@ -1477,6 +1477,7 @@
   },
   {
     "description": "Short grass that shouldn't cast shadows",
+    "baseMaterial": "GRAY_75",
     "objectIds": [
       1257,
       1258,
@@ -1585,10 +1586,12 @@
   },
   {
     "description": "VARROCK_FOUNTAIN_STATUE",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "GRUNGE_2",
     "objectIds": [
       7144
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
   },
   {
     "description": "VARROCK_KNIGHT_STATUE",
@@ -1669,7 +1672,7 @@
   },
   {
     "description": "GRAND_EXCHANGE_STONE_DECORATION",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "GRUNGE_2",
     "objectIds": [
       10063,
       10643,
@@ -1710,6 +1713,8 @@
       10687,
       10688
     ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
     "flatNormals": true
   },
   {
@@ -2013,6 +2018,9 @@
       23993,
       24222
     ],
+    "uvType": "BOX",
+    "uvScale": 0.56,
+    "uvOrientation": 512,
     "flatNormals": true
   },
   {
@@ -2041,6 +2049,8 @@
       10730,
       10731
     ],
+    "uvType": "BOX",
+    "uvScale": 0.72,
     "flatNormals": true
   },
   {
@@ -2083,11 +2093,15 @@
       39739,
       39740
     ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512,
     "flatNormals": true
   },
   {
     "description": "SEERS_COURTHOUSE_WALLS",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "WATTLE_1",
     "objectIds": [
       25966,
       25967,
@@ -2102,6 +2116,9 @@
       25979,
       26010
     ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "uvOrientation": 512,
     "flatNormals": true
   },
   {
@@ -2140,6 +2157,8 @@
       26114,
       26115
     ],
+    "uvType": "BOX",
+    "uvScale": 0.44,
     "flatNormals": true
   },
   {
@@ -2172,6 +2191,8 @@
       26069,
       26070
     ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
     "flatNormals": true
   },
   {
@@ -2221,6 +2242,7 @@
     "baseMaterial": "GRUNGE_1",
     "objectIds": [
       1428,
+      20878,
       21719,
       21729,
       21730,
@@ -2228,7 +2250,9 @@
       21737,
       21725,
       21726
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
   },
   {
     "description": "TZHAAR_ROCK_GRADIENT",
@@ -2329,7 +2353,9 @@
     "objectIds": [
       30599,
       30600
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.72
   },
   {
     "description": "KOUREND_WALLS",
@@ -2337,6 +2363,8 @@
     "objectIds": [
       23800
     ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
     "flatNormals": true
   },
   {
@@ -2388,9 +2416,11 @@
     "flatNormals": true
   },
   {
-    "description": "SHAYZIEN_WALLS_ROCK",
+    "description": "Shayzien and Black Knight Fortress - Walls - Rock",
     "baseMaterial": "ROCK_1",
     "objectIds": [
+      2341,
+      14543,
       14544,
       14545,
       14546,
@@ -2404,11 +2434,13 @@
       42111,
       42116
     ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
     "flatNormals": true
   },
   {
     "description": "SHAYZIEN_WALLS_WOOD",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       42107,
       42108,
@@ -2416,6 +2448,19 @@
       42112,
       42113
     ],
+    "uvType": "BOX",
+    "flatNormals": true
+  },
+  {
+    "description": "Shayzien - walls - Wood - Fence",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      42112,
+      42113
+    ],
+    "uvType": "BOX",
+    "uvOrientationY": 384,
+    "uvOrientationZ": 512,
     "flatNormals": true
   },
   {
@@ -2482,7 +2527,7 @@
   },
   {
     "description": "MORYTANIA_SLAYER_TOWER_WALLS",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "STONE_NORMALED",
     "objectIds": [
       2160,
       2161,
@@ -2500,6 +2545,8 @@
       2171,
       2114
     ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
     "flatNormals": true
   },
   {
@@ -2994,7 +3041,8 @@
     "hideInAreas": [
       [ 3469, 9845 ]
     ],
-    "uvType": "BOX"
+    "uvType": "BOX",
+    "uvScale": 0.6
   },
   {
     "description": "ROUNDED_CAVE_WALLS",
@@ -3010,14 +3058,17 @@
       9740,
       16543
     ],
-    "uvType": "BOX"
+    "uvType": "BOX",
+    "uvScale": 0.8
   },
   {
     "description": "ROUNDED_CAVE_WALLS_TOP",
     "baseMaterial": "GRUNGE_1",
     "objectIds": [
       1434
-    ]
+    ],
+    "uvType": "MODEL_XZ",
+    "uvScale": 0.8
   },
   {
     "description": "TROLL_STRONGHOLD_HIDDEN_DOOR",
@@ -4445,7 +4496,10 @@
       16664,
       16665,
       35791
-    ]
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 256,
+    "uvScale": 0.5
   },
   {
     "description": "METALLIC_PAINTINGS",
@@ -4715,14 +4769,6 @@
     "baseMaterial": "METALLIC_2_SEMIGLOSS",
     "objectIds": [
       5098
-    ]
-  },
-  {
-    "description": "Black Knight Fortress Walls",
-    "baseMaterial": "ROCK_2",
-    "objectIds": [
-      2341,
-      14543
     ]
   },
   {
@@ -5888,12 +5934,14 @@
   },
   {
     "description": "PHASMATYS - Stone - Walls",
-    "baseMaterial": "STONE",
+    "baseMaterial": "STONE_NORMALED",
     "objectIds": [
       5452,
       5361,
       5362
     ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
     "flatNormals": true
   },
   {
@@ -5930,19 +5978,24 @@
   },
   {
     "description": "Stone - Steps",
-    "baseMaterial": "STONE",
+    "baseMaterial": "STONE_NORMALED",
     "objectIds": [
       5307,
       5460
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
   },
   {
     "description": "Stone - Stairs - Stone Brick",
     "baseMaterial": "STONE_NORMALED",
     "objectIds": [
-      16646
+      16646,
+      16647
     ],
-    "uvType": "VANILLA"
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "uvOrientation": 256
   },
   {
     "description": "Phasmatys - Slime",
@@ -6408,12 +6461,15 @@
   },
   {
     "description": "Objects - Fungus - Medium",
-    "baseMaterial": "GRUNGE_2",
+    "baseMaterial": "PLANT_GRUNGE_2",
     "objectIds": [
-      1171
+      1171,
+      21741,
+      21742,
+      21743
     ],
     "uvType": "BOX",
-    "uvScale": 0.8
+    "uvScale": 0.7
   },
   {
     "description": "Objects - Huge Mushroom - Medium",
@@ -6423,7 +6479,8 @@
       4056,
       4057
     ],
-    "uvType": "MODEL_XZ"
+    "uvType": "BOX",
+    "uvScale": 0.8
   },
   {
     "description": "Mortton - Objects - Shade Chests - Medium - Bronze",
@@ -6435,7 +6492,7 @@
       4114,
       4115
     ],
-    "uvType": "MODEL_XZ",
+    "uvType": "BOX",
     "uvScale": 0.88
   },
   {
@@ -6448,7 +6505,7 @@
       4119,
       4120
     ],
-    "uvType": "MODEL_XZ",
+    "uvType": "BOX",
     "uvScale": 0.88
   },
   {
@@ -6461,7 +6518,7 @@
       4124,
       4125
     ],
-    "uvType": "MODEL_XZ",
+    "uvType": "BOX",
     "uvScale": 0.88
   },
   {
@@ -6474,7 +6531,7 @@
       4129,
       4130
     ],
-    "uvType": "MODEL_XZ",
+    "uvType": "BOX",
     "uvScale": 0.88
   },
   {
@@ -7232,10 +7289,13 @@
   {
     "description": "ROUNDED_CAVE_WALLS_WITH_PIPE",
     "baseMaterial": "GRUNGE_1",
+    "textureMaterial": "HD_CONCRETE",
     "objectIds": [
       16509
     ],
-    "uvType": "BOX"
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "retainVanillaUvs": false
   },
   {
     "description": "Objects - Rock Stairs - Large",
@@ -7549,10 +7609,12 @@
   },
   {
     "description": "Gnome - Objects - Wooden - Bench - Textured",
-    "baseMaterial": "GRUNGE_2",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       1104
-    ]
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
   },
   {
     "description": "Gnome - Objects - Wooden - Staircase Rails - Textured",
@@ -7924,7 +7986,7 @@
   },
   {
     "description": "Zanaris - Walls - Grass",
-    "baseMaterial": "GRUNGE_1",
+    "baseMaterial": "GRASS_1",
     "objectIds": [
       12007,
       12009,
@@ -7941,7 +8003,10 @@
       12029,
       17001,
       17002
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 256
   },
   {
     "description": "Zanaris - Walls - Dirt",
@@ -10262,10 +10327,11 @@
     "baseMaterial": "STONE_NORMALED",
     "objectIds": [
       1862,
-      2159,
       5189,
       47421
-    ]
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8
   },
   {
     "description": "Objects - Metallic - Vat",
@@ -10921,11 +10987,12 @@
     "uvOrientation": 256
   },
   {
-    "description": "Objects - Concrete - Runecrafting Altar Lights",
+    "description": "Objects - Concrete - Small Pillars",
     "textureMaterial": "HD_CONCRETE",
     "objectIds": [
       34786,
       34787,
+      34811,
       43520
     ],
     "uvType": "BOX",
@@ -11329,5 +11396,37 @@
     "uvScale": 0.9,
     "uvOrientation": 648,
     "flatNormals": true
+  },
+  {
+    "description": "Objects - Concrete - Shanty Pass",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      4031
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvOrientation": 256,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Walls - Concrete - Shanty Pass",
+    "textureMaterial": "HD_CONCRETE",
+    "objectIds": [
+      1689,
+      1690
+    ],
+    "uvType": "BOX",
+    "retainVanillaUvs": false,
+    "uvOrientation": 256,
+    "uvScale": 0.65
+  },
+  {
+    "description": "Slayer Tower - Ground Object - Rock - Stairs",
+    "baseMaterial": "STONE_NORMALED",
+    "objectIds": [
+      2159
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8
   }
 ]
