@@ -333,13 +333,19 @@ public enum Material {
 		.setNormalMap(SAND_3_N)
 		.setSpecular(0.2f, 10)
 	),
+	GRUNGE_1_D,
 	GRUNGE_1_N,
 	GRUNGE_1(p -> p
+		.setDisplacementMap(GRUNGE_1_D)
+		.setDisplacementScale(0.15f)
 		.setNormalMap(GRUNGE_1_N)
 		.setSpecular(0.3f, 20)
 	),
+	GRUNGE_2_D,
 	GRUNGE_2_N,
 	GRUNGE_2(p -> p
+		.setDisplacementMap(GRUNGE_2_D)
+		.setDisplacementScale(0.15f)
 		.setNormalMap(GRUNGE_2_N)
 		.setSpecular(0.3f, 20)
 	),
