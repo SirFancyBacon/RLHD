@@ -1641,7 +1641,7 @@
       16155
     ],
     "flatNormals": true,
-    "uvType": "MODEL_XZ"
+    "uvType": "BOX"
   },
   {
     "description": "GRAND_EXCHANGE_WALLS",
@@ -1654,6 +1654,8 @@
       23779,
       23795
     ],
+    "uvType": "BOX",
+    "uvScale": 0.4,
     "flatNormals": true
   },
   {
@@ -1899,10 +1901,11 @@
       23908,
       23909,
       23910,
-      40285,
-      24428
+      40285
     ],
-    "flatNormals": true
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvScale": 0.6
   },
   {
     "description": "FALADOR_WALLS",
@@ -11314,6 +11317,17 @@
   {
     "description": "Crafting Guild Blacksmith's tools",
     "objectIds": [ 2098 ],
+    "flatNormals": true
+  },
+  {
+    "description": "Varrock Museum - Stone Staircase",
+    "baseMaterial": "STONE",
+    "objectIds": [
+      24428
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.9,
+    "uvOrientation": 648,
     "flatNormals": true
   }
 ]
