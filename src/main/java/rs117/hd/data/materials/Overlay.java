@@ -815,8 +815,8 @@ public enum Overlay {
 		.blended(false)
 		.lightness(58)
 	),
-	TEMPLE_OF_THE_EYE_SAND_202(202, Area.TEMPLE_OF_THE_EYE, GroundMaterial.SAND, p -> p.shiftLightness(-4).blendedAsOpposite(true)),
-	TEMPLE_OF_THE_EYE_SAND_203(203, Area.TEMPLE_OF_THE_EYE, GroundMaterial.SAND, p -> p.lightness(64)),
+	TEMPLE_OF_THE_EYE_SAND_202(202, Area.TEMPLE_OF_THE_EYE, GroundMaterial.SANDY_EARTH, p -> p.shiftLightness(-4).blendedAsOpposite(true)),
+	TEMPLE_OF_THE_EYE_SAND_203(203, Area.TEMPLE_OF_THE_EYE, GroundMaterial.SANDY_EARTH, p -> p.lightness(64)),
 	TEMPLE_OF_THE_EYE_ROCK(p -> p
 		.ids(181, 201)
 		.area(Area.TEMPLE_OF_THE_EYE)

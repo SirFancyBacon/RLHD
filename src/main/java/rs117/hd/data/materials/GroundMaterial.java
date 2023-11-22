@@ -114,7 +114,8 @@ public enum GroundMaterial {
 		Material.GRAVEL_LIGHT,
 		Material.GRUNGE_2,
 		Material.GRAVEL_LIGHT
-	)
+	),
+	SANDY_EARTH(Material.DIRT_1, Material.SAND_3, Material.DIRT_2, Material.GRAVEL);
 	;
 
 	private final Material[] materials;
