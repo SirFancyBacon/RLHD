@@ -434,6 +434,15 @@ public enum Material {
 	ROCK_5_ORE(ROCK_5, p -> p
 		.setSpecular(1, 20)
 	),
+	ROCK_6_D,
+	ROCK_6_N,
+	ROCK_6(p -> p
+		.setNormalMap(ROCK_6_N)
+		.setDisplacementMap(ROCK_6_D)
+		.setDisplacementScale(.11f)
+		.setSpecular(0.35f, 20)
+		.setBrightness(1.3f)
+	),
 	CARPET,
 	FINE_CARPET(CARPET, p -> p
 		.setBrightness(1.4f)

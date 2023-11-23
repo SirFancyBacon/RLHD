@@ -79,3 +79,6 @@ SNOW_3 and SNOW_3_N textures from AmbientCG. All textures on this site are licen
 
 SNOW_4 and SNOW_4_N textures from AmbientCG. All textures on this site are licensed as CC0.
 -- https://ambientCG.com/a/Snow004
+
+ROCK_6, ROCK_6_N, ROCK_6_D textures from AmbientCG. All textures on this site are licensed as CC0.
+-- https://ambientCG.com/a/Rock_002
