@@ -2786,6 +2786,18 @@
     "uvType": "WORLD_XZ"
   },
   {
+    "description": "Ground Decoration - dirt clump uncolored",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      43279,
+      43280,
+      43281,
+      43282
+    ],
+    "uvType": "WORLD_XZ",
+    "uvScale": 0.8
+  },
+  {
     "description": "GROUND_DECORATION_SAND",
     "baseMaterial": "SAND_1",
     "objectIds": [
@@ -12692,5 +12704,110 @@
     "uvOrientationY": 512,
     "uvOrientationX": 512,
     "uvOrientationZ": 512
+  },
+  {
+    "description": "Goblin Cave Mud Pile",
+    "baseMaterial": "DIRT_2",
+    "objectIds": [
+      13
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Goblin Temple - Objects - Wooden - Crate",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      43086
+    ],
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512
+  },
+  {
+    "description": "Goblin Temple - Stone Pew",
+    "baseMaterial": "ROCK_3",
+    "objectIds": [
+      43412
+    ],
+    "uvType": "BOX",
+    "uvOrientationZ": 256
+  },
+  {
+    "description": "Goblin Temple - Stone Brick Walls",
+    "baseMaterial": "ROCK_6",
+    "objectIds": [
+      43087, 43289, 43290, 43291,
+      43292, 43293, 43294, 43295,
+      43296, 43297, 43298, 43299,
+      43300, 43317, 43318, 43319,
+      43320, 43321, 43322, 43323,
+      43324, 43325, 43326, 43327,
+      43328, 44329, 43331, 43332,
+      43333, 43334, 43335, 43336,
+      43337, 43338, 43339, 43340,
+      43341, 43342, 43343, 43344,
+      43345, 43346, 43347, 43348,
+      43349, 43350, 43351, 43352,
+      43353, 43354, 43355, 43356,
+      43357, 43358, 43359, 43360,
+      43361, 43362, 43363, 43364,
+      43365, 43366, 43367, 43368,
+      43369, 43370, 43371, 43372,
+      43373, 43374, 43375, 43376,
+      43377, 43378, 43379, 43380,
+      43381, 43382, 43383, 43384,
+      43385, 43386, 43387, 43388,
+      43389, 43390, 43391, 43392,
+      43393, 43394, 43395, 43396,
+      43397, 43398, 43400, 43403,
+      43404, 43407, 43408, 43409,
+      43410, 43413, 43414, 43433,
+      43435, 43436, 43437, 43438,
+      43439, 43442, 43443, 43445,
+      43446, 43405, 43406, 43407,
+      43447, 43448, 43449, 43450,
+      43451, 43452, 43454, 43456
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "flatNormals": true
+  },
+  {
+    "description": "Goblin Temple - Stone Doors",
+    "baseMaterial": "ROCK_6",
+    "objectIds": [
+      43088
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.8
+  },
+  {
+    "description": "Goblin Temple - Dirt Top",
+    "baseMaterial": "ROCK_6",
+    "objectIds": [
+      43301, 43302, 43303, 43304,
+      43305, 43306, 43307, 43308,
+      43309, 43310, 43311, 43312,
+      43313, 43314, 43315, 43316,
+      43399, 43401, 43411, 43434,
+      43440, 43441, 43444, 43453,
+      43455
+    ],
+    "uvType": "MODEL_XZ"
+  },
+  {
+    "description": "Goblin Temple - Stone Skull Decoration",
+    "baseMaterial": "ROCK_3",
+    "objectIds": [
+      43428,
+      43429,
+      43430
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.8
   }
 ]
