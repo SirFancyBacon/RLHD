@@ -4628,6 +4628,7 @@
       26131,
       26132,
       26133,
+      27122,
       39685,
       39686,
       44598,
@@ -12813,5 +12814,19 @@
     "uvType": "BOX",
     "uvOrientation": 512,
     "uvScale": 0.8
+  },
+  {
+    "description": "Goblin Temple Crypt - Stone Brick Walls",
+    "baseMaterial": "ROCK_6",
+    "objectIds": [
+      43122, 43123, 43124, 43125,
+      43126, 43127, 43262, 43263,
+      43264, 43265, 43266, 43267,
+      43268, 43269, 43274, 43275,
+      43276
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "flatNormals": true
   }
 ]
