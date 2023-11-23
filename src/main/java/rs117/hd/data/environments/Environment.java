@@ -1211,6 +1211,25 @@ public enum Environment
 		.setLightDirection(230, -45)
 		.setWaterColor(43, 43, 64)
 	),
+	YU_BIUSK(Area.YU_BIUSK, new Properties()
+		.setFogColor("#000000")
+		.setFogDepth(40)
+		.setAmbientColor("#AAAFB6")
+		.setAmbientStrength(1.5f)
+		.setDirectionalColor("#FFFFFF")
+		.setDirectionalStrength(1.0f)
+		.setLightDirection(260f, 10f)
+		.setWaterColor(51, 9, 4)
+	),
+	YU_BIUSK_PRESENT(Area.YU_BIUSK_PRESENT, new Properties()
+		.setFogColor("#61991c")
+		.setFogDepth(25)
+		.setAmbientColor("#AAAFB6")
+		.setAmbientStrength(1.5f)
+		.setDirectionalColor("#FFFFFF")
+		.setDirectionalStrength(1.0f)
+		.setLightDirection(260f, 10f)
+	),
 
 	// overrides 'ALL' to provide default daylight conditions for the overworld area
 	OVERWORLD(Area.OVERWORLD, new Properties()),
