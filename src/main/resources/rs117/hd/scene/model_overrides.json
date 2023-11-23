@@ -4267,7 +4267,6 @@
     "baseMaterial": "WOOD_GRAIN_2",
     "objectIds": [
       10490,
-      12450,
       12962,
       14762,
       14851,
@@ -4290,6 +4289,7 @@
     "baseMaterial": "WOOD_GRAIN_2",
     "objectIds": [
       7175,
+      12450,
       23177,
       39716
     ],
@@ -5707,6 +5707,7 @@
       2634,
       5511,
       5512,
+      5824,
       10785,
       11604,
       11605,
@@ -6860,6 +6861,7 @@
       10642,
       11603,
       12407,
+      12440,
       14872,
       15679,
       17306,
@@ -12625,5 +12627,70 @@
     "uvType": "BOX",
     "uvScale": 0.7,
     "uvOrientation": 512
+  },
+  {
+    "description": "Goblin Cave Walls",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      18891,
+      18908,
+      21800,
+      21801
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Goblin Cave -  Stairs",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      43261
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Goblin Cave - Trapped person",
+    "baseMaterial": "DIRT_2",
+    "objectIds": [
+      5808
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.4,
+    "uvOrientation": 256
+  },
+  {
+    "description": "Goblin Cave Tops",
+    "baseMaterial": "DIRT_1",
+    "objectIds": [
+      18471
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.5
+  },
+  {
+    "description": "Goblin Cave - Objects - Wooden Crates Stacked",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      15598,
+      15600
+    ],
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvOrientationY": 600,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512
+  },
+  {
+    "description": "Goblin Cave - Objects - Wooden - Crate",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      15599
+    ],
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvOrientationY": 512,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512
   }
 ]
