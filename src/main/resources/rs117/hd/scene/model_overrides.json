@@ -5607,6 +5607,8 @@
     "description": "Ground Decoration - Ash Pile - Small",
     "baseMaterial": "GRUNGE_2",
     "objectIds": [
+      7389,
+      14456,
       14457,
       14460
     ],
@@ -12827,6 +12829,17 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.5,
+    "flatNormals": true
+  },
+  {
+    "description": "Yu-Biusk - Stone Ground",
+    "baseMaterial": "ROCK_2",
+    "objectIds": [
+      43200,
+      43208
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
     "flatNormals": true
   }
 ]
