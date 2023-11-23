@@ -462,6 +462,8 @@ public enum Underlay {
 		.groundMaterial(GroundMaterial.LASSAR_UNDERCITY_TILES)
 		.blended(true)),
 
+	YU_BIUSK_GROUND(p -> p.ids(146).groundMaterial(GroundMaterial.ROCKY_CAVE_FLOOR)),
+
 	// Cutscenes
 	CANOE_CUTSCENE_GRASS(Area.CANOE_CUTSCENE, GroundMaterial.GRASS_SCROLLING, p -> p.ids(48, 50, 63)),
 	// Items that cannot properly be fixed unless we can first detect the hue of the tile to set a texture.

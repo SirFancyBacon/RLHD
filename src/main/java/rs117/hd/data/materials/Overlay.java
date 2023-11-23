@@ -955,6 +955,7 @@ public enum Overlay {
 		.area(Area.WIZARD_TOWER_ROOF)
 		.seasonalReplacement(SeasonalTheme.WINTER, SNOW_2)
 	),
+	YU_BIUSK_GROUND(p -> p.ids(53).groundMaterial(GroundMaterial.ROCKY_CAVE_FLOOR)),
 	OVERLAY_SWAMP_WATER(WaterType.SWAMP_WATER, p -> p.ids(-100, 7)),
 	OVERLAY_WOOD_PLANKS(GroundMaterial.WOOD_PLANKS_1, p -> p.ids(5, 35)),
 	OVERLAY_CLEAN_WOOD_PLANKS(GroundMaterial.CLEAN_WOOD_FLOOR, p -> p.ids(52).shiftLightness(-4)),
