@@ -1222,7 +1222,7 @@ public enum Environment
 		.setWaterColor(51, 9, 4)
 	),
 	YU_BIUSK_PRESENT(Area.YU_BIUSK_PRESENT, new Properties()
-		.setFogColor("#61991c")
+		.setFogColor("#65863d")
 		.setFogDepth(25)
 		.setAmbientColor("#AAAFB6")
 		.setAmbientStrength(1.5f)
