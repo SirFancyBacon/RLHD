@@ -440,6 +440,7 @@ public enum Underlay {
 		.ids(17, 95)
 		.seasonalReplacement(SeasonalTheme.WINTER, WINTER_GRASS)
 	),
+	KARUULM_SLAYER_DUNGEON_GROUND(p -> p.ids(7, 29).area(Area.KARUULM_SLAYER_DUNGEON).groundMaterial(GroundMaterial.EARTHEN_CAVE_FLOOR)),
 
 	// Secrets of the North dungeon
 	ICY_UNDERGROUND_SNOW(p -> p.area(Area.ICY_UNDERGROUND_DARK).ids(159).groundMaterial(GroundMaterial.SNOW_1)),

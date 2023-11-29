@@ -422,6 +422,7 @@ public enum Material {
 	ROCK_4_ORE(ROCK_4, p -> p
 		.setSpecular(1, 20)
 	),
+	ROCK_4_BRIGHT(ROCK_4, p -> p.setBrightness(1.6f)),
 	ROCK_5_D,
 	ROCK_5_N,
 	ROCK_5(p -> p

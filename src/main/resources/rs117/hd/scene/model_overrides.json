@@ -12703,5 +12703,26 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.8
+  },
+  {
+    "description": "Karuulm Slayer Dungeon - Rocky Walls",
+    "baseMaterial": "ROCK_4_BRIGHT",
+    "objectIds": [
+      34535,
+      34536,
+      34537,
+      34538,
+      34539,
+      34540
+    ],
+    "uvType": "BOX"
+  },
+  {
+    "description": "Karuulm Slayer Dungeon - Stone Staircase",
+    "baseMaterial": "GRUNGE_2",
+    "objectIds": [
+      34527
+    ],
+    "uvType": "BOX"
   }
 ]
