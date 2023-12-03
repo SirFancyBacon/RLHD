@@ -12706,5 +12706,15 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.8
+  },
+  {
+    "description": "Sand piles in wood frame",
+    "baseMaterial": "SAND_1",
+    "objectIds": [
+      4373
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 128
   }
 ]
