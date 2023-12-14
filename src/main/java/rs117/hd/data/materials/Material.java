@@ -655,17 +655,22 @@ public enum Material {
 		.setSpecular(0.3f, 40)
 		.setBrightness(1.2f)),
 	HD_ROOF_BRICK_TILE_N,
-	HD_ROOF_BRICK_TILE(ROOF_BRICK_TILE, p -> p
+	HD_ROOF_BRICK_TILE_D,
+	HD_ROOF_BRICK_TILE(p -> p
 		.replaceIf(plugin -> plugin.configModelTextures, ROOF_BRICK_TILE)
 		.setSpecular(0.3f, 30)
 		.setNormalMap(HD_ROOF_BRICK_TILE_N)
+		.setDisplacementMap(HD_ROOF_BRICK_TILE_D)
+		.setDisplacementScale(0.15f)
 	),
-	HD_ROOF_BRICK_TILE_GREEN(ROOF_BRICK_TILE_GREEN, p -> p
+	HD_ROOF_BRICK_TILE_GREEN(p -> p
 		.replaceIf(plugin -> plugin.configModelTextures, ROOF_BRICK_TILE_GREEN)
 		.setSpecular(0.3f, 30)
 		.setNormalMap(HD_ROOF_BRICK_TILE_N)
+		.setDisplacementMap(HD_ROOF_BRICK_TILE_D)
+		.setDisplacementScale(0.15f)
 	),
-	HD_ROOF_BRICK_TILE_DARK(ROOF_BRICK_TILE_DARK, p -> p
+	HD_ROOF_BRICK_TILE_DARK(p -> p
 		.replaceIf(plugin -> plugin.configModelTextures, ROOF_BRICK_TILE_DARK)
 		.setSpecular(0.3f, 30)
 		.setNormalMap(HD_ROOF_BRICK_TILE_N)
@@ -782,10 +787,13 @@ public enum Material {
 		.replaceIf(SeasonalTheme.WINTER, HD_ROOF_SHINGLES_2)
 		.setSpecular(0.3f, 30)
 		.setNormalMap(HD_ROOF_SHINGLES_N)),
-	WINTER_HD_ROOF_BRICK_TILES(p -> p
+	WINTER_HD_ROOF_BRICK_TILES(SNOW_3, p -> p
 		.setSpecular(0.3f, 30)
 		.setNormalMap(HD_ROOF_BRICK_TILE_N)
+		.setDisplacementMap(HD_ROOF_BRICK_TILE_D)
+		.setDisplacementScale(0.15f)
 		.replaceIf(SeasonalTheme.WINTER, HD_ROOF_BRICK_TILE, HD_ROOF_BRICK_TILE_GREEN, HD_ROOF_BRICK_TILE_DARK)
+		.setBrightness(0.40f)
 	),
 	WINTER_HD_ROOF_SLATE(p -> p
 		.setSpecular(0.5f, 30)

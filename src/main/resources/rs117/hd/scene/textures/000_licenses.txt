@@ -79,3 +79,6 @@ SNOW_3 and SNOW_3_N textures from AmbientCG. All textures on this site are licen
 
 SNOW_4 and SNOW_4_N textures from AmbientCG. All textures on this site are licensed as CC0.
 -- https://ambientCG.com/a/Snow004
+
+HD_ROOF_BRICK plus its variants and maps are heavily modified sources from ShareTextures. All textures on this site are licensed as CC0.
+-- https://www.sharetextures.com/textures/roof/roof-tiles-1
