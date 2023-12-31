@@ -3070,7 +3070,8 @@
       29634
     ],
     "flatNormals": true,
-    "uvType": "BOX"
+    "uvType": "BOX",
+    "uvScale": 0.6
   },
   {
     "description": "CAVE_WALL_ABOVE_FLOOR_TILE",
@@ -13063,5 +13064,17 @@
     "baseMaterial": "DIRT_2",
     "objectIds": [ 12204, 12205, 12208, 12210, 12211 ],
     "uvType": "BOX"
+  },
+  {
+    "description": "Slayer Stronghold - Rock Entrance",
+    "baseMaterial": "ROCK_2",
+    "objectIds": [
+      27257,
+      27258
+    ],
+    "flatNormals": true,
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 128
   }
 ]
