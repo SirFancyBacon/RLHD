@@ -3075,7 +3075,7 @@
   },
   {
     "description": "CAVE_WALL_ABOVE_FLOOR_TILE",
-    "baseMaterial": "ROCK_2",
+    "baseMaterial": "STONE_NORMALED_DARK",
     "objectIds": [
       17224,
       25057,
