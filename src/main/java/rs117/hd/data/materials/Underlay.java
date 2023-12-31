@@ -468,6 +468,8 @@ public enum Underlay {
 			}
 		)
 	),
+	// Tree Gnome Stronghold
+	STRONGHOLD_SLAYER_DUNGEON_DIRT(p -> p.ids(63, 64, 65).area(Area.STRONGHOLD_SLAYER_DUNGEON).groundMaterial(GroundMaterial.PACKED_EARTH)),
 	// Castle Wars
 	CENTER_SARADOMIN_SIDE_DIRT_1(98, Area.CASTLE_WARS_ARENA_SARADOMIN_SIDE, GroundMaterial.DIRT, p -> p
 		.hue(7)
