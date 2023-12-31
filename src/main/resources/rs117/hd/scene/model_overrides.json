@@ -5678,9 +5678,7 @@
   {
     "description": "Ground Decoration - Dirt Clump - Tiny - Uncolored",
     "baseMaterial": "DIRT_2",
-    "objectIds": [
-      4343
-    ],
+    "objectIds": [ 4343, 17227 ],
     "uvType": "WORLD_XZ",
     "uvScale": 0.65,
     "hideInAreas": [
@@ -5719,6 +5717,8 @@
       11094,
       11095,
       11098,
+      17226,
+      17228,
       18474,
       18478,
       22350
