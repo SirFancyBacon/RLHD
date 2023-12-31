@@ -31702,7 +31702,7 @@
     ]
   },
   {
-    "description": "Weiss Saltmine Entrance",
+    "description": "Stronghold Slayer Dungeon Entrance Light",
     "plane": 0,
     "height": 128,
     "alignment": "CENTER",
@@ -31716,6 +31716,6 @@
     "type": "STATIC",
     "duration": 7000,
     "range": 10,
-    "objectIds": [ 27257, 27258 ]
+    "objectIds": [ 17222, 17223, 27257, 27258 ]
   }
 ]
