@@ -31700,5 +31700,22 @@
     "objectIds": [
       10185
     ]
+  },
+  {
+    "description": "Weiss Saltmine Entrance",
+    "plane": 0,
+    "height": 128,
+    "alignment": "CENTER",
+    "radius": 400,
+    "strength": 4.5,
+    "color": [
+      252,
+      252,
+      252
+    ],
+    "type": "STATIC",
+    "duration": 7000,
+    "range": 10,
+    "objectIds": [ 27257, 27258 ]
   }
 ]
