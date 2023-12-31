@@ -13069,8 +13069,8 @@
     "description": "Slayer Stronghold - Rock Entrance",
     "baseMaterial": "ROCK_2",
     "objectIds": [
-      27257,
-      27258
+      17222, 17223, 27257, 27258,
+      30174, 30175
     ],
     "flatNormals": true,
     "uvType": "BOX",
