@@ -695,6 +695,12 @@ public enum Material {
 	OOZE(GRAY_65, p -> p
 		.setSpecular(1.5f, 600)
 	),
+	ASH_1_N,
+	ASH_1_D,
+	ASH_1(p -> p.setNormalMap(ASH_1_N).setDisplacementMap(ASH_1_D).setSpecular(0.2f, 20)),
+	ASH_2_N,
+	ASH_2_D,
+	ASH_2(p -> p.setNormalMap(ASH_2_N).setDisplacementMap(ASH_2_D).setSpecular(0.2f, 20)),
 
 	// Aliases for separately replacing textures of different trees
 	LEAVES_YELLOW_SIDE(LEAVES_SIDE),

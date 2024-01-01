@@ -65,6 +65,7 @@ public enum Underlay {
 	DEFAULT_SNOW_1(p -> p.ids().groundMaterial(GroundMaterial.SNOW_1)),
 	DEFAULT_GRUNGE(p -> p.ids().groundMaterial(GroundMaterial.GRUNGE)),
 	DEFAULT_ROCKY_GROUND(p -> p.ids().groundMaterial(GroundMaterial.ROCKY_CAVE_FLOOR)),
+	DEFAULT_ASHY_GROUND(p -> p.ids().groundMaterial(GroundMaterial.ASHY_EARTH)),
 	// Lumbridge
 	LUMBRIDGE_CASTLE_TILE(56, Area.LUMBRIDGE_CASTLE_BASEMENT, GroundMaterial.MARBLE_2_SEMIGLOSS, p -> p.blended(false)),
 
@@ -653,6 +654,48 @@ public enum Underlay {
 	// Mage Arena
 	MAGE_ARENA_BANK_FLOOR(p -> p.ids(55, 56, 57).area(Area.MAGE_ARENA_BANK).groundMaterial(GroundMaterial.STONE_CAVE_FLOOR)),
 	MAGE_ARENA_STATUE_ROOM_FLOOR(p -> p.ids(55, 56, 57).area(Area.MAGE_ARENA_GOD_STATUES).groundMaterial(GroundMaterial.STONE_CAVE_FLOOR)),
+	WILDERNESS_DIRT(p -> p
+		.ids(56, 57, 70, 72, 145, 146, 147, 148, 149, 150)
+		.area(Area.WILDERNESS)
+		.replacementResolver((plugin, scene, tile, override) -> {
+			int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+			if (hsl == null)
+				return DEFAULT_ASHY_GROUND;
+
+			if (hsl[1] == 0) {
+				switch (plugin.configSeasonalTheme) {
+					case SUMMER:
+					case AUTUMN:
+						return DEFAULT_ASHY_GROUND;
+					case WINTER:
+						return WINTER_GRUNGE;
+				}
+			}
+
+			if (hsl[1] >= 1) {
+				switch (plugin.configSeasonalTheme) {
+					case SUMMER:
+					case AUTUMN:
+						return DEFAULT_DIRT;
+					case WINTER:
+						return WINTER_DIRT;
+				}
+			}
+
+			if (hsl[0] >= 10 &&hsl[1] >= 2) {
+				switch (plugin.configSeasonalTheme) {
+					case SUMMER:
+					case AUTUMN:
+						return DEFAULT_GRASS;
+					case WINTER:
+						return WINTER_GRASS;
+				}
+			}
+
+			return DEFAULT_SNOW_1;
+			}
+		)
+	),
 
 	// Mind Altar
 	MIND_ALTAR_TILE(55, Area.MIND_ALTAR, GroundMaterial.MARBLE_1_SEMIGLOSS, p -> p.blended(false)),
