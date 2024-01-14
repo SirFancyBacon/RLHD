@@ -239,6 +239,30 @@ public enum Underlay {
 	SMOKE_DUNGEON(Area.SMOKE_DUNGEON, GroundMaterial.ROCKY_CAVE_FLOOR, p -> p.ids(56)),
 	SCARAB_LAIR_TILE_FLOOR(p -> p.ids(61, 64).area(Area.SCARAB_LAIR_TEMPLE).groundMaterial(GroundMaterial.FALADOR_PATHS).hue(7).saturation(3).shiftLightness(5)),
 	SCARAB_LAIR_ROCKY_FLOOR(p -> p.ids(141).area(Area.SCARAB_LAIR_BOTTOM).groundMaterial(GroundMaterial.STONE_CAVE_FLOOR).shiftLightness(4)),
+	KELPHITE_SLAYER_CAVE_FLOOR(p -> p
+		.ids(63, 68, 129)
+		.area(Area.KELPHITE_SLAYER_CAVE)
+		.groundMaterial(GroundMaterial.SANDY_EARTH_GROUND)
+		.replacementResolver(
+			(plugin, scene, tile, override) -> {
+				int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+				if (hsl == null)
+					return override;
+
+				// Sand
+				if (hsl[0] >= 8) {
+					return DEFAULT_SAND;
+				}
+
+				// Dirt
+				if (hsl[0] <= 7) {
+					return DEFAULT_DIRT;
+				}
+				return DEFAULT_DIRT;
+			}
+		)
+
+	),
 
 
 	// Burthorpe games room
