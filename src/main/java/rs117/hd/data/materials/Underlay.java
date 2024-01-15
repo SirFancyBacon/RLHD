@@ -615,7 +615,7 @@ public enum Underlay {
 	STRANGLEWOOD_SNOW_DARK(p -> p.area(Area.THE_STRANGLEWOOD_EXTENDED).ids(174).groundMaterial(GroundMaterial.SNOW_1)),
 	JUDGE_OF_YAMA_BOSS_WATER(p -> p.ids(72, 76).area(Area.JUDGE_OF_YAMA_BOSS).waterType(WaterType.WATER)),
 	JUDGE_OF_YAMA_BOSS_BLACK_TILES(p -> p.ids(150).area(Area.JUDGE_OF_YAMA_BOSS).groundMaterial(GroundMaterial.TRANSPARENT)),
-	KARUULM_SLAYER_DUNGEON(p -> p.ids(27, 29, 72).area(Area.KARUULM_SLAYER_DUNGEON).groundMaterial(GroundMaterial.KARUULM_CAVE_FLOOR).shiftLightness(5)),
+	KARUULM_SLAYER_DUNGEON(p -> p.ids(27, 29, 72).area(Area.KARUULM_SLAYER_DUNGEON).groundMaterial(GroundMaterial.KARUULM_CAVE_FLOOR).shiftLightness(3)),
 
 	// Zanaris
 	ZANARIS_GRASS(Area.ZANARIS, GroundMaterial.GRASS_1, p -> p.ids(143, 144)),
