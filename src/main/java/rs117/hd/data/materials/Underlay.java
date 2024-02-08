@@ -388,7 +388,7 @@ public enum Underlay {
 		.area(Area.MOS_LE_HARMLESS_ALL)
 		.replacementResolver(
 			(plugin, scene, tile, override) -> {
-				int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+				int[] hsl = getSouthWesternMostTileColor(tile);
 				if (hsl == null)
 					return override;
 
@@ -530,7 +530,7 @@ public enum Underlay {
 		.ids(48, 49, 50, 51, 52, 53, 56, 61, 62, 63, 64, 65, 67, 68, 69, 70, 97, 98, 99, 100)
 		.replacementResolver(
 			(plugin, scene, tile, override) -> {
-				int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+				int[] hsl = getSouthWesternMostTileColor(tile);
 				if (hsl == null)
 					return override;
 
@@ -633,7 +633,7 @@ public enum Underlay {
 		.area(Area.APE_ATOLL)
 		.replacementResolver(
 			(plugin, scene, tile, override) -> {
-				int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+				int[] hsl = getSouthWesternMostTileColor(tile);
 				if (hsl == null)
 					return override;
 
@@ -685,7 +685,7 @@ public enum Underlay {
 		.groundMaterial(GroundMaterial.OVERWORLD_GRASS_1)
 		.replacementResolver(
 			(plugin, scene, tile, override) -> {
-				int[] hsl = HDUtils.getSouthWesternMostTileColor(tile);
+				int[] hsl = getSouthWesternMostTileColor(tile);
 				if (hsl == null)
 					return override;
 
@@ -837,6 +837,12 @@ public enum Underlay {
 	TOA_CRONDIS_WATER_BLUE(p -> p.area(Area.TOA_CRONDIS_WATER).waterType(WaterType.WATER).blended(false)),
 
 	// Wilderness
+	WILDERNESS_EARTHY_GROUND(p -> p
+		.ids(145, 146, 147, 148)
+		.area(Area.WILDERNESS)
+		.groundMaterial(GroundMaterial.PACKED_EARTH)
+		.seasonalReplacement(SeasonalTheme.WINTER, WINTER_DIRT)
+	),
 	// Mage Arena
 	MAGE_ARENA_BANK_FLOOR(p -> p.ids(55, 56, 57).area(Area.MAGE_ARENA_BANK).groundMaterial(GroundMaterial.STONE_CAVE_FLOOR)),
 	MAGE_ARENA_STATUE_ROOM_FLOOR(p -> p.ids(55, 56, 57).area(Area.MAGE_ARENA_GOD_STATUES).groundMaterial(GroundMaterial.STONE_CAVE_FLOOR)),
