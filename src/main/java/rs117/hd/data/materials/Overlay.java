@@ -146,7 +146,16 @@ public enum Overlay {
 	),
 	LUMBRIDGE_VARROCK_PATH_FIX_1(3, Area.LUMBRIDGE_VARROCK_PATH_FIX, GroundMaterial.GRAVEL, p -> p.shiftLightness(12).hue(7).saturation(1)),
 	LUMBRIDGE_VARROCK_PATH_FIX_2(8, Area.LUMBRIDGE_VARROCK_PATH_FIX, GroundMaterial.GRAVEL, p -> p.shiftLightness(12).hue(7).saturation(1)),
-	LUMBRIDGE_PATHS(10, Area.LUMBRIDGE, GroundMaterial.GRAVEL, p -> p.shiftLightness(12).hue(7).saturation(1)),
+	LUMBRIDGE_PATHS(p -> p
+		.ids(10)
+		.area(Area.LUMBRIDGE)
+		.groundMaterial(GroundMaterial.GRAVEL)
+		.shiftLightness(12)
+		.hue(7)
+		.saturation(1)
+		.uvScale(1.4f)
+		.uvOrientation(47)
+	),
 	LUMBRIDGE_CASTLE_ENTRYWAY_1(2, Area.LUMBRIDGE_CASTLE_ENTRYWAY, GroundMaterial.MARBLE_1_GLOSS, p -> p.blended(false)),
 	LUMBRIDGE_CASTLE_ENTRYWAY_2(3, Area.LUMBRIDGE_CASTLE_ENTRYWAY, GroundMaterial.MARBLE_2_GLOSS, p -> p.blended(false)),
 	LUMBRIDGE_CAVES_FLOOR(49, Area.LUMBRIDGE_SWAMP_CAVES, GroundMaterial.ROCKY_CAVE_FLOOR),
@@ -810,7 +819,7 @@ public enum Overlay {
 
 	MORYTANIA_SLAYER_TOWER(102, Area.MORYTANIA_SLAYER_TOWER, GroundMaterial.VARROCK_PATHS),
 	MORYTANIA_FENKENSTRAINS_CASTLE(102, Area.FENKENSTRAINS_CASTLE, GroundMaterial.VARROCK_PATHS),
-	SLEPE_PATHS(p -> p.ids(11).area(Area.SLEPE).groundMaterial(GroundMaterial.GRAVEL)),
+	SLEPE_PATHS(p -> p.ids(11).area(Area.SLEPE).groundMaterial(GroundMaterial.GRAVEL).uvScale(1.4f).uvOrientation(47)),
 	ABANDONED_MINE_ROCK(11, Area.MORYTANIA, GroundMaterial.DIRT),
 	TRUE_BLOOD_ALTAR_BLOOD(72, Area.TRUE_BLOOD_ALTAR, WaterType.BLOOD),
 	BARROWS_PATH(GroundMaterial.DIRT, p -> p
@@ -1091,7 +1100,7 @@ public enum Overlay {
 		GroundMaterial.DIRT,
 		p -> p.ids(-124, -84, -83, 14, 15, 16, 21, 22, 23, 60, 77, 81, 82, 88, 89, 101, 102, 107, 108, 110, 115, 123, 227)
 	),
-	OVERLAY_GRAVEL(GroundMaterial.GRAVEL, p -> p.ids(-76, 2, 3, 4, 8, 9, 10, 119, 127).uvScale(1.5f)),
+	OVERLAY_GRAVEL(GroundMaterial.GRAVEL, p -> p.ids(-76, 2, 3, 4, 8, 9, 119, 127)),
 	OVERLAY_SWAMP_WATER(WaterType.SWAMP_WATER, p -> p.ids(-100, 7, 128)),
 	OVERLAY_WOOD_PLANKS(GroundMaterial.WOOD_PLANKS_1, p -> p.ids(5, 35)),
 	OVERLAY_CLEAN_WOOD_PLANKS(GroundMaterial.CLEAN_WOOD_FLOOR, p -> p.ids(52).shiftLightness(-4)),
@@ -1114,6 +1123,7 @@ public enum Overlay {
 	OVERLAY_90(90, GroundMaterial.DIRT), // Known locations: 90 = Dark Wizards Tower; Random shading in the overworld
 	OVERLAY_DIRT_PATH(GroundMaterial.VARIED_DIRT, p -> p
 		.ids(36, 80, 85, 131)), // 36 = Corsair Cove, 80 = Mythics Guild, 85 = Slayer Tower, 131 = Burgh de Rott
+	OVERLAY_GRAVEL_PATH(GroundMaterial.GRAVEL, p -> p.ids(10).groundMaterial(GroundMaterial.GRAVEL).uvScale(1.4f).uvOrientation(47)),
 	OVERWORLD_GRUNGE(GroundMaterial.GRUNGE, p -> p.ids(48, 185)),
 	OVERLAY_120(GroundMaterial.GRUNGE, p -> p.ids(120)),
 	OVERLAY_SKULLS(261, GroundMaterial.SKULL_OBELISK),
