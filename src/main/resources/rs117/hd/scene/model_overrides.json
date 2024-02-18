@@ -13565,12 +13565,13 @@
     "uvOrientation": 512
   },
   {
-    "description": "Fossil Island - Wyvern Task Area - Walls - Stone",
+    "description": "Fossil Island Wyvern Task Area and Ancient Caverns - Walls - Stone",
     "baseMaterial": "ROCK_3",
     "objectIds": [
-      25296, 25297, 25311, 25312,
+      25296, 25297, 25299, 25300,
+      25304, 25306, 25311, 25312,
       25313, 25314, 25315, 25316,
-      25317, 25318
+      25317, 25318, 25319
     ],
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -13585,9 +13586,9 @@
     "uvOrientation": 256
   },
   {
-    "description": "Fossil Island - Wyvern Task Area - Wall Lip",
+    "description": "Fossil Island Wyvern Task Area and Ancient Caverns - Wall Lip",
     "baseMaterial": "ROCK_4",
-    "objectIds": [ 25321, 25323 ],
+    "objectIds": [ 25321, 25323, 25324 ],
     "uvType": "BOX",
     "uvScale": 0.6,
     "uvOrientation": 256
@@ -13934,5 +13935,13 @@
     "uvType": "BOX",
     "uvScale": 0.6,
     "uvOrientation": 342
+  },
+  {
+    "description": "Ancient Caverns - Objects - Stone Stairs",
+    "baseMaterial": "ROCK_3",
+    "objectIds": [ 25336, 25338 ],
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 256
   }
 ]
