@@ -13569,9 +13569,10 @@
     "baseMaterial": "ROCK_3",
     "objectIds": [
       25296, 25297, 25299, 25300,
-      25304, 25306, 25311, 25312,
-      25313, 25314, 25315, 25316,
-      25317, 25318, 25319
+      25301, 25303, 25304, 25305,
+      25306, 25311, 25312, 25313,
+      25314, 25315, 25316, 25317,
+      25318, 25319
     ],
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -13588,7 +13589,7 @@
   {
     "description": "Fossil Island Wyvern Task Area and Ancient Caverns - Wall Lip",
     "baseMaterial": "ROCK_4",
-    "objectIds": [ 25321, 25323, 25324 ],
+    "objectIds": [ 25321, 25323, 25324, 25325 ],
     "uvType": "BOX",
     "uvScale": 0.6,
     "uvOrientation": 256
