@@ -1008,6 +1008,11 @@ public enum Underlay {
 		.hue(1) // fixes baked in lighting effects
 		//.lightness(22) // removes baked in shading
 	),
+	BODY_ALTAR_FLOOR(p -> p
+		.ids(74)
+		.area(Area.BODY_ALTAR)
+		.groundMaterial(GroundMaterial.ABYSSAL_FLOOR)
+	),
 	LAW_ALTAR_FLOOR(p -> p
 		.ids(56, 57, 95)
 		.area(Area.LAW_ALTAR)

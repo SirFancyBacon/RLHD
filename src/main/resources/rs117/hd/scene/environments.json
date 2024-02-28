@@ -1377,6 +1377,58 @@
     "sunAngles": [ 80, 190 ]
   },
   {
+    "area": "MIND_ALTAR",
+    "ambientColor": "#aaafb6",
+    "ambientStrength": 1.5,
+    "directionalColor": "#878474",
+    "directionalStrength": 3.5,
+    "sunAngles": [
+      76,
+      270
+    ],
+    "fogColor": "#060505",
+    "fogDepth": 50
+  },
+  {
+    "area": "BODY_ALTAR",
+    "ambientColor": "#aaafb6",
+    "ambientStrength": 1.5,
+    "directionalColor": "#878474",
+    "directionalStrength": 3.5,
+    "sunAngles": [
+      70,
+      244
+    ],
+    "fogColor": "#060505",
+    "fogDepth": 50
+  },
+  {
+    "area": "CHAOS_ALTAR",
+    "ambientColor": "#aaafb6",
+    "ambientStrength": 1.5,
+    "directionalColor": "#878474",
+    "directionalStrength": 3.5,
+    "sunAngles": [
+      76,
+      270
+    ],
+    "fogColor": "#060505",
+    "fogDepth": 50
+  },
+  {
+    "area": "LAW_ALTAR",
+    "ambientColor": "#aaafb6",
+    "ambientStrength": 1.5,
+    "directionalColor": "#878474",
+    "directionalStrength": 3.5,
+    "sunAngles": [
+      60,
+      230
+    ],
+    "fogColor": "#060505",
+    "fogDepth": 50
+  },
+  {
     "key": "OVERWORLD",
     "area": "OVERWORLD",
     "ambientColor": "#97baff",
