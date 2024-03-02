@@ -5339,7 +5339,7 @@
   },
   {
     "description": "Wooden Door - Plank",
-    "baseMaterial": "WOOD_GRAIN_2",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       1749,
       2398,
@@ -5353,8 +5353,7 @@
       44784,
       44785
     ],
-    "uvOrientation": 512,
-    "uvScale": 0.4,
+    "uvScale": 1.1,
     "uvType": "BOX"
   },
   {
