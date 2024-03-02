@@ -668,6 +668,7 @@
       173
     ],
     "groundMaterial": "DIRT",
+    "uvScale": 0.6666667,
     "blended": false
   },
   {
