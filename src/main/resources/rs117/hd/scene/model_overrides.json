@@ -4261,8 +4261,6 @@
       8746,
       10493,
       10494,
-      11794,
-      11795,
       12779,
       14745,
       14746,
@@ -5349,9 +5347,12 @@
       11778,
       11779,
       11780,
+      11782,
+      11783,
       15056,
       44784,
-      44785
+      44785,
+      50050
     ],
     "uvScale": 1.1,
     "uvType": "BOX"
@@ -7949,6 +7950,15 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       10724
+    ],
+    "uvType": "BOX",
+    "flatNormals": true
+  },
+  {
+    "description": "Objects - Wooden - Chair 4 - Combined Back model",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      14853
     ],
     "uvType": "BOX",
     "flatNormals": true
@@ -14708,5 +14718,18 @@
     "objectIds": [
       50152
     ]
+  },
+  {
+    "description": "Object - Wooden - Narrow Ladder",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      11794,
+      11795,
+      11801,
+      11802,
+      50072
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8
   }
 ]
