@@ -8002,6 +8002,17 @@
     "uvScale": 0.8
   },
   {
+    "description": "Objects - Wooden - Chair - Dark High Back",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      27512,
+      27513
+    ],
+    "uvType": "BOX",
+    "uvOrientationY": 512,
+    "uvScale": 0.6
+  },
+  {
     "description": "Objects - Wooden - Tables - Round",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
@@ -15095,7 +15106,8 @@
     "description": "Objects - Wooden - Brown Drawers with metallic handles",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
-      350
+      350,
+      40143
     ],
     "uvType": "BOX",
     "uvScale": 0.8,
@@ -15115,10 +15127,88 @@
     "description": "Objects - Metallic - Mahogany Homes Range",
     "baseMaterial": "METALLIC_2_SEMIGLOSS",
     "objectIds": [
+      40148,
       40149
     ],
     "uvType": "BOX",
     "uvOrientation": 128,
     "uvScale": 0.6
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Drawers",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40146,
+      40190
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Table Long",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40020
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientation": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Table Long - Rotated",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40105
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40034
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "uvOrientation": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Cupboard",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40040
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Sturdy Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40017
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Plank Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40031
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Plank Table - Long",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40102
+    ],
+    "uvType": "BOX",
+    "uvOrientationX": 512
   }
 ]
