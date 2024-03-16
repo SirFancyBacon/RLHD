@@ -15110,5 +15110,15 @@
     "uvType": "BOX",
     "uvScale": 0.8,
     "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Metallic - Mahogany Homes Range",
+    "baseMaterial": "METALLIC_2_SEMIGLOSS",
+    "objectIds": [
+      40149
+    ],
+    "uvType": "BOX",
+    "uvOrientation": 128,
+    "uvScale": 0.6
   }
 ]
