@@ -15090,5 +15090,25 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.86
+  },
+  {
+    "description": "Objects - Wooden - Brown Drawers with metallic handles",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      350
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Brown Drawers with golden handles",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      352
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512
   }
 ]
