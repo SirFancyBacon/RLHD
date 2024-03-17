@@ -8018,6 +8018,17 @@
     "uvScale": 0.6
   },
   {
+    "description": "Objects - Wooden - Chair - Oak Chair with combined back",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      7433
+    ],
+    "uvType": "BOX",
+    "uvOrientationY": 512,
+    "uvOrientationZ": 512,
+    "uvScale": 0.6
+  },
+  {
     "description": "Objects - Wooden - Tables - Round",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
@@ -15180,6 +15191,7 @@
     "description": "Objects - Wooden - Mahogany Home Teak Table Long - Rotated",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
+      39964,
       40105,
       40111
     ],
