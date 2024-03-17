@@ -4285,6 +4285,7 @@
       20673,
       24082,
       24084,
+      24085,
       25606,
       25663,
       25844,
@@ -4315,7 +4316,9 @@
       30367
     ],
     "uvType": "BOX",
-    "uvOrientation": 512
+    "uvOrientation": 512,
+    "uvScale": 0.45,
+    "retainVanillaUvs": false
   },
   {
     "description": "Textured - Crate 1",
@@ -5389,11 +5392,12 @@
   },
   {
     "description": "Varrock Castle and Museum Staircase",
-    "baseMaterial": "DOCK_FENCE",
+    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       11797,
       11807
     ],
+    "uvType": "BOX",
     "flatNormals": true
   },
   {
@@ -9809,7 +9813,7 @@
   {
     "description": "Object - Sack with Hey or Grain",
     "baseMaterial": "FINE_CARPET",
-    "objectIds": [ 16878 ],
+    "objectIds": [ 5574, 16878 ],
     "uvType": "BOX",
     "uvScale": 0.85,
     "retainVanillaUvs": false
@@ -15107,7 +15111,9 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       350,
-      40143
+      40143,
+      40181,
+      40187
     ],
     "uvType": "BOX",
     "uvScale": 0.8,
@@ -15118,6 +15124,18 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       352
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Wooden Drawers",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      39923,
+      39926,
+      40151
     ],
     "uvType": "BOX",
     "uvScale": 0.8,
@@ -15139,6 +15157,8 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       40146,
+      40154,
+      40184,
       40190
     ],
     "uvType": "BOX",
@@ -15159,7 +15179,8 @@
     "description": "Objects - Wooden - Mahogany Home Teak Table Long - Rotated",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
-      40105
+      40105,
+      40111
     ],
     "uvType": "BOX",
     "uvScale": 0.7,
@@ -15169,6 +15190,8 @@
     "description": "Objects - Wooden - Mahogany Home Teak Table",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
+      39892,
+      39895,
       40034
     ],
     "uvType": "BOX",
@@ -15179,7 +15202,8 @@
     "description": "Objects - Wooden - Mahogany Home Teak Cupboard",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
-      40040
+      40040,
+      40118
     ],
     "uvType": "BOX",
     "uvScale": 0.7
@@ -15206,9 +15230,19 @@
     "description": "Objects - Wooden - Mahogany Home Plank Table - Long",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
-      40102
+      40102,
+      40108
     ],
     "uvType": "BOX",
     "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Teak Wardrobe",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      39920
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
   }
 ]
