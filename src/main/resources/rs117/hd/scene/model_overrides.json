@@ -4113,6 +4113,15 @@
     ]
   },
   {
+    "description": "Wooden coat rack",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      15463
+    ],
+    "uvType": "BOX",
+    "uvOrientationY": 256
+  },
+  {
     "description": "Dirt Cave Entrance",
     "baseMaterial": "DIRT_2",
     "objectIds": [
@@ -4269,6 +4278,7 @@
       10494,
       11794,
       11795,
+      11802,
       12779,
       14745,
       14746,
@@ -4462,6 +4472,7 @@
       14762,
       14851,
       14852,
+      15680,
       15684,
       17145,
       25603,
@@ -8011,7 +8022,8 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       27512,
-      27513
+      27513,
+      40062
     ],
     "uvType": "BOX",
     "uvOrientationY": 512,
@@ -8021,11 +8033,22 @@
     "description": "Objects - Wooden - Chair - Oak Chair with combined back",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
-      7433
+      7433,
+      39957,
+      40064
     ],
     "uvType": "BOX",
     "uvOrientationY": 512,
     "uvOrientationZ": 512,
+    "uvScale": 0.6
+  },
+  {
+    "description": "Objects - Wooden - Chair - teak Chair with combined back",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40065
+    ],
+    "uvType": "BOX",
     "uvScale": 0.6
   },
   {
@@ -15123,9 +15146,11 @@
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       350,
+      40056,
       40143,
       40181,
-      40187
+      40187,
+      40282
     ],
     "uvType": "BOX",
     "uvScale": 0.8,
@@ -15145,6 +15170,7 @@
     "description": "Objects - Wooden - Wooden Drawers",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
+      7194,
       39923,
       39926,
       40151
@@ -15165,9 +15191,21 @@
     "uvScale": 0.6
   },
   {
+    "description": "Objects - Wooden - Mahogany Home Oak Drawers",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40153,
+      40189
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512
+  },
+  {
     "description": "Objects - Wooden - Mahogany Home Teak Drawers",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
+      40059,
       40146,
       40154,
       40184,
@@ -15176,6 +15214,35 @@
     "uvType": "BOX",
     "uvScale": 0.8,
     "uvOrientationX": 512
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Wood Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      39961
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Oak Plank Table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40033
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
+  },
+  {
+    "description": "Objects - Wooden - Mahogany Home Oak Plank Table - Long",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40019,
+      40104,
+      40110
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
   },
   {
     "description": "Objects - Wooden - Mahogany Home Teak Table Long",
@@ -15212,6 +15279,16 @@
     "uvOrientation": 512
   },
   {
+    "description": "Objects - Wooden - Mahogany Home Oak Cupboard",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      40039,
+      40117
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.7
+  },
+  {
     "description": "Objects - Wooden - Mahogany Home Teak Cupboard",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
@@ -15243,6 +15320,8 @@
     "description": "Objects - Wooden - Mahogany Home Plank Table - Long",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
+      27514,
+      27515,
       40102,
       40108
     ],
