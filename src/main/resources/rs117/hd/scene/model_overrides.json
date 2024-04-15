@@ -17202,5 +17202,17 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.6
+  },
+  {
+    "description": "Asgarnia Ice Dungeon walls",
+    "baseMaterial": "SNOW_1",
+    "objectIds": [ 10588 ],
+    "uvType": "BOX"
+  },
+  {
+    "description": "Asgarnia Ice Dungeon wall topper",
+    "baseMaterial": "SNOW_1",
+    "objectIds": [ 10597 ],
+    "uvType": "BOX"
   }
 ]
