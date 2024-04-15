@@ -1727,6 +1727,14 @@
     "groundMaterial": "PACKED_EARTH"
   },
   {
+    "name": "Asgarnia Ice Dungeon",
+    "area": "ASGARNIA_ICE_DUNGEON",
+    "underlayIds": [
+      58
+    ],
+    "groundMaterial": "SNOW_2"
+  },
+  {
     "name": "SEERS_ELEMENTAL_WORKSHOP_HOUSE_171_BLENDED",
     "area": "ELEMENTAL_WORKSHOP_HOUSE_ENTRANCE",
     "overlayIds": [
