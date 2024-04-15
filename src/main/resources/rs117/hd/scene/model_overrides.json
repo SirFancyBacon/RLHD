@@ -12275,6 +12275,14 @@
     "uvOrientation": 256
   },
   {
+    "description": "Ore - Blurite - Rock",
+    "baseMaterial": "ROCK_4_ORE",
+    "objectIds": [
+      11378
+    ],
+    "uvType": "BOX"
+  },
+  {
     "description": "Objects - Concrete - Runecrafting Altars",
     "textureMaterial": "HD_CONCRETE",
     "objectIds": [
