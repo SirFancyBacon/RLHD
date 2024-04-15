@@ -8855,8 +8855,8 @@
       26399,
       27925
     ],
-    "uvType": "WORLD_XZ",
-    "uvScale": 0.6
+    "uvType": "BOX",
+    "uvScale": 0.9
   },
   {
     "description": "Objects - Ice - Giant",
