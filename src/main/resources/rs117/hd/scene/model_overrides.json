@@ -12278,7 +12278,8 @@
     "description": "Ore - Blurite - Rock",
     "baseMaterial": "ROCK_4_ORE",
     "objectIds": [
-      11378
+      11378,
+      11379
     ],
     "uvType": "BOX"
   },
