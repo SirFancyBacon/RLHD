@@ -17214,13 +17214,19 @@
   {
     "description": "Asgarnia Ice Dungeon walls",
     "baseMaterial": "SNOW_1",
-    "objectIds": [ 10588 ],
+    "objectIds": [ 10588, 10589 ],
+    "uvType": "BOX"
+  },
+  {
+    "description": "Asgarnia Ice Dungeon cave entrance - Snowy",
+    "baseMaterial": "SNOW_1",
+    "objectIds": [ 10595, 10596 ],
     "uvType": "BOX"
   },
   {
     "description": "Asgarnia Ice Dungeon wall topper",
     "baseMaterial": "SNOW_1",
-    "objectIds": [ 10597 ],
+    "objectIds": [ 10597, 10600 ],
     "uvType": "BOX"
   }
 ]
