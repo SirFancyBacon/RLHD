@@ -17219,6 +17219,12 @@
     "uvType": "BOX"
   },
   {
+    "description": "Asgarnia Ice Dungeon walls - Agility shortcut",
+    "baseMaterial": "SNOW_3",
+    "objectIds": [ 8728, 8729 ],
+    "uvType": "BOX"
+  },
+  {
     "description": "Asgarnia Ice Dungeon cave entrance - Snowy",
     "baseMaterial": "SNOW_1",
     "objectIds": [ 10595, 10596 ],
