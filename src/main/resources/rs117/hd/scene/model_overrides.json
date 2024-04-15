@@ -8888,8 +8888,7 @@
       21238,
       21334
     ],
-    "uvType": "WORLD_XY",
-    "uvScale": 0.25
+    "uvType": "BOX"
   },
   {
     "description": "Firm Snowy Patch",
