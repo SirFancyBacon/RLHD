@@ -322,9 +322,18 @@ public enum Material {
 	SNOW_4_N,
 	SNOW_4(p -> p.setNormalMap(SNOW_4_N).setSpecular(0.4f, 20)),
 
-	GRASS_1,
-	GRASS_2,
-	GRASS_3,
+	GRASS_1_N,
+	GRASS_1(p -> p
+		.setNormalMap(GRASS_1_N)
+		.setSpecular(00.15f, 10)),
+	GRASS_2_N,
+	GRASS_2(p -> p
+		.setNormalMap(GRASS_2_N)
+		.setSpecular(0.15f, 10)),
+	GRASS_3_N,
+	GRASS_3(p -> p
+		.setNormalMap(GRASS_3_N)
+		.setSpecular(0.15f, 10)),
 	GRASS_SCROLLING(GRASS_1, p -> p
 		.setScroll(0, 1 / 0.7f)),
 	DIRT_1_N,
