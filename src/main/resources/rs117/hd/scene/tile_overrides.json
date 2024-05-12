@@ -1,7 +1,9 @@
 [
   {
     "name": "DEFAULT_GRASS",
-    "groundMaterial": "OVERWORLD_GRASS_1"
+    "groundMaterial": "OVERWORLD_GRASS_1",
+    "uvScale": 1.17,
+    "uvOrientation": 117
   },
   {
     "name": "DEFAULT_DIRT",
@@ -6221,7 +6223,9 @@
     "groundMaterial": "OVERWORLD_GRASS_1",
     "replacements": {
       "WINTER_GRASS": "season == WINTER"
-    }
+    },
+    "uvOrientation": 63,
+    "uvScale": 1.17
   },
   {
     "name": "OVERWORLD_DIRT",
