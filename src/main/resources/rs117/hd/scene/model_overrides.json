@@ -1341,23 +1341,66 @@
     "uvScale": 0.8
   },
   {
-    "description": "TREE_STUMP",
+    "description": "TREE_STUMP - Textured Rings",
     "baseMaterial": "BARK",
     "objectIds": [
       1341,
-      1342,
+      1342
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8
+  },
+  {
+    "description": "TREE_STUMP - Light",
+    "baseMaterial": "BARK",
+    "objectIds": [
+      1356,
+      4328,
+      9661,
+      9712,
+      50089
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "colorOverrides": [
+      {
+        "colors": [ 5533, 5534, 5535, 5536, 5778, 5779, 5780, 6024, 6028, 6030, 6034 ],
+        "baseMaterial": "WOOD_GRAIN_2",
+        "uvType": "MODEL_XZ"
+      }
+    ]
+  },
+  {
+    "description": "TREE_STUMP - Willow",
+    "baseMaterial": "BARK",
+    "objectIds": [
+      9471,
+      9711
+    ],
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "colorOverrides": [
+      {
+        "colors": [ 5535, 10510, 10512, 10513, 10515, 10882, 10885, 10886, 10887 ],
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvScale": 0.6,
+        "uvType": "MODEL_XZ"
+      }
+    ]
+  },
+  {
+    "description": "TREE_STUMP - Dark",
+    "baseMaterial": "BARK",
+    "objectIds": [
       1353,
       4328,
       6212,
-      9661,
-      9712,
       10057,
       14516,
       14517,
       14567,
       14596,
-      14638,
-      50089
+      14638
     ],
     "uvType": "BOX",
     "uvScale": 0.8
@@ -1413,7 +1456,6 @@
     "description": "Objects - Tree - Willow",
     "baseMaterial": "BARK",
     "objectIds": [
-      9471,
       10819,
       10829,
       10831,
