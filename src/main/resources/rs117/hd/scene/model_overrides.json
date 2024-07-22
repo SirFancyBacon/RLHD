@@ -1361,14 +1361,7 @@
       50089
     ],
     "uvType": "BOX",
-    "uvScale": 0.8,
-    "colorOverrides": [
-      {
-        "colors": [ 5533, 5534, 5535, 5536, 5778, 5779, 5780, 6024, 6028, 6030, 6034 ],
-        "baseMaterial": "WOOD_GRAIN_2",
-        "uvType": "MODEL_XZ"
-      }
-    ]
+    "uvScale": 0.8
   },
   {
     "description": "TREE_STUMP - Willow",
@@ -1378,15 +1371,7 @@
       9711
     ],
     "uvType": "BOX",
-    "uvScale": 0.8,
-    "colorOverrides": [
-      {
-        "colors": [ 5535, 10510, 10512, 10513, 10515, 10882, 10885, 10886, 10887 ],
-        "baseMaterial": "WOOD_GRAIN_3",
-        "uvScale": 0.6,
-        "uvType": "MODEL_XZ"
-      }
-    ]
+    "uvScale": 0.8
   },
   {
     "description": "TREE_STUMP - Dark",
