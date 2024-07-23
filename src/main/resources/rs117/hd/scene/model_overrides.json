@@ -21303,5 +21303,111 @@
       33978,
       41426
     ]
+  },
+  {
+    "description": "Non interactable Tree - High Poly Mesh with grass",
+    "objectIds": [ 34489 ],
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Tree Bark",
+        "colors": "h == 4",
+        "baseMaterial": "BARK",
+        "uvType": "BOX",
+        "uvScale": 0.8
+      }
+    ]
+  },
+  {
+    "description": "Non interactable Tree - High Poly Mesh short and narrow",
+    "objectIds": [ 34486, 34487 ],
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Tree Bark",
+        "colors": "h == 8",
+        "baseMaterial": "BARK",
+        "uvType": "BOX",
+        "uvScale": 0.4
+      }
+    ]
+  },
+  {
+    "description": "Forest model",
+    "objectIds": [
+      40508,
+      40509,
+      40510,
+      40511,
+      40526,
+      40527,
+      40528,
+      40530,
+      40531,
+      40535,
+      40536,
+      40537,
+      40538,
+      40539,
+      40540
+    ],
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Tree Bark",
+        "colors": "h == 6",
+        "baseMaterial": "BARK",
+        "uvType": "BOX",
+        "uvScale": 0.6
+      }
+    ]
+  },
+  {
+    "description": "Forest model tops",
+    "objectIds": [
+      40514,
+      40515,
+      40516,
+      40523,
+      40524,
+      40525,
+      40532,
+      40533,
+      40534,
+      40541,
+      40542,
+      40543
+    ],
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 256
+  },
+  {
+    "description": "Tree - High Poly Mesh",
+    "objectIds": [
+      40433,
+      40715,
+      40716,
+      40750,
+      40752
+    ],
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Tree Bark",
+        "colors": "h == 6",
+        "baseMaterial": "BARK",
+        "uvType": "BOX",
+        "uvScale": 0.6
+      }
+    ]
   }
 ]
