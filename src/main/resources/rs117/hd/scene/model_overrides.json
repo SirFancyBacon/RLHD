@@ -22091,5 +22091,60 @@
       28494,
       28495
     ]
+  },
+  {
+    "description": "Pew bench with red cushion",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "objectIds": [
+      5788
+    ],
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 4",
+        "baseMaterial": "FINE_CARPET",
+        "uvType": "MODEL_XZ",
+        "uvScale": 0.5
+      }
+    ]
+  },
+  {
+    "description": "Dark wooden stool with red cushion",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "objectIds": [
+      24322,
+      24323
+    ],
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s > 3",
+        "baseMaterial": "FINE_CARPET",
+        "uvType": "BOX",
+        "uvScale": 0.5
+      }
+    ]
+  },
+  {
+    "description": "Light wooden stool with blue cushion",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      2311,
+      2312,
+      39138
+    ],
+    "colorOverrides": [
+      {
+        "colors": "h > 30",
+        "baseMaterial": "FINE_CARPET",
+        "uvType": "BOX",
+        "uvScale": 0.5
+      }
+    ]
   }
 ]
