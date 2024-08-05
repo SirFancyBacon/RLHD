@@ -823,6 +823,12 @@
     ]
   },
   {
+    "name": "FALADOR_FARM_PIG_PEN_MUD",
+    "aabbs": [
+      [ 3015, 3306, 3019, 3309 ]
+    ]
+  },
+  {
     "name": "DWARVEN_MINES",
     "regions": [ 12185 ],
     "aabbs": [

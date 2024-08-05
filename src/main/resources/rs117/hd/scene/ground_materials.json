@@ -296,6 +296,7 @@
   },
   {
     "name": "STONE_PATTERN",
+    "name": "STONE_PATTERN",
     "materials": [
       "STONE_PATTERN"
     ]

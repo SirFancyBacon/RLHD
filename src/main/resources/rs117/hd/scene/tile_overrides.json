@@ -117,6 +117,12 @@
     "maxLightness": 70
   },
   {
+    "name": "FALADOR_FARM_PIG_PEN_MUD",
+    "area": "FALADOR_FARM_PIG_PEN_MUD",
+    "overlayIds": [ 22 ],
+    "groundMaterial": "VARIED_DIRT_SHINY"
+  },
+  {
     "name": "SNOW_2",
     "groundMaterial": "SNOW_2"
   },
