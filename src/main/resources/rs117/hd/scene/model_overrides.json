@@ -1313,7 +1313,6 @@
       1383,
       4051,
       4052,
-      4053,
       4054,
       5902,
       5903,
@@ -2398,7 +2397,6 @@
       23740,
       23741,
       23742,
-      23745,
       23757,
       23758,
       23759,
@@ -8860,16 +8858,6 @@
     "uvType": "VANILLA"
   },
   {
-    "description": "Lunar Isle - Objects - Ice - Ice Chunks - Large",
-    "baseMaterial": "ICE_1_HIGHGLOSS",
-    "objectIds": [
-      6472,
-      6473
-    ],
-    "uvType": "MODEL_XZ",
-    "uvScale": 0.6
-  },
-  {
     "description": "Lunar Isle - Objects - Ice - Ice Chunks - Small",
     "baseMaterial": "ICE_1_HIGHGLOSS",
     "objectIds": [
@@ -8878,15 +8866,6 @@
     ],
     "uvType": "MODEL_XZ",
     "uvScale": 0.8
-  },
-  {
-    "description": "Lunar Isle - Objects - Ice - Ice Chunks - Medium",
-    "baseMaterial": "ICE_1_HIGHGLOSS",
-    "objectIds": [
-      6474
-    ],
-    "uvType": "MODEL_XZ",
-    "uvScale": 0.55
   },
   {
     "description": "Lunar Island - Walls - Wooden - Plank - Ruined",
@@ -14581,7 +14560,6 @@
   {
     "description": "Walls - Bricks - Light Brick",
     "objectIds": [
-      1902,
       1904,
       1907,
       1920,
@@ -21549,6 +21527,7 @@
     "objectIds": [
       6460,
       6472,
+      6473,
       6474,
       13704
     ]
@@ -24799,28 +24778,6 @@
     "objectIds": [
       13005,
       13010
-    ]
-  },
-  {
-    "description": "PoH - Whitewashed Walls with woodgrain sides and shutters",
-    "baseMaterial": "WOOD_GRAIN_3",
-    "flatNormals": true,
-    "uvType": "BOX",
-    "uvScale": 0.75,
-    "colorOverrides": [
-      {
-        "colors": "h == 10",
-        "baseMaterial": "WATTLE_1",
-        "uvType": "BOX"
-      },
-      {
-        "colors": "h == 0",
-        "baseMaterial": "STONE_NORMALED",
-        "uvType": "BOX"
-      }
-    ],
-    "objectIds": [
-      13235
     ]
   },
   {
