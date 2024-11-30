@@ -23592,5 +23592,65 @@
     "objectIds": [
       2783
     ]
+  },
+  {
+    "description": "Tree stumps - High Poly",
+    "baseMaterial": "BARK",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "objectIds": [
+      40740,
+      40751
+    ]
+  },
+  {
+    "description": "Maple Trees - High Poly",
+    "baseMaterial": "BARK",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "colorOverrides": [
+      {
+        "description": "Leaves - if GRUNGE_2 ever gets a normal this will break",
+        "colors": "h < 5",
+        "baseMaterial": "GRUNGE_2"
+      }
+    ],
+    "objectIds": [
+      40755
+    ]
+  },
+  {
+    "description": "Trees - High Poly",
+    "baseMaterial": "BARK",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "colorOverrides": [
+      {
+        "description": "Leaves - if GRUNGE_2 ever gets a normal this will break",
+        "colors": "h > 10",
+        "baseMaterial": "GRUNGE_2"
+      }
+    ],
+    "objectIds": [
+      40433,
+      40715,
+      40750
+    ]
+  },
+  {
+    "description": "Maple Trees - High Poly",
+    "baseMaterial": "BARK",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "colorOverrides": [
+      {
+        "description": "Leaves - if GRUNGE_2 ever gets a normal this will break",
+        "colors": "h < 5",
+        "baseMaterial": "GRUNGE_2"
+      }
+    ],
+    "objectIds": [
+      40754
+    ]
   }
 ]
