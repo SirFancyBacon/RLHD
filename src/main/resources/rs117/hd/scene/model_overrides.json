@@ -23623,7 +23623,8 @@
     "description": "Trees - High Poly",
     "baseMaterial": "BARK",
     "uvType": "BOX",
-    "uvScale": 0.5,
+    "uvScale": 0.6,
+    "uvOrientation": 42,
     "colorOverrides": [
       {
         "description": "Leaves - if GRUNGE_2 ever gets a normal this will break",
@@ -23641,7 +23642,8 @@
     "description": "Maple Trees - High Poly",
     "baseMaterial": "BARK",
     "uvType": "BOX",
-    "uvScale": 0.5,
+    "uvScale": 0.6,
+    "uvOrientation": 42,
     "colorOverrides": [
       {
         "description": "Leaves - if GRUNGE_2 ever gets a normal this will break",
