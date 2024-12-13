@@ -1425,7 +1425,7 @@
     "description": "Objects - Tree - Mahogany",
     "baseMaterial": "BARK_STONEPINE",
     "uvType": "BOX",
-    "uvScale": 0.33,
+    "uvScale": 0.2,
     "retainVanillaUvs": true,
     "objectIds": [
       9034,
@@ -1436,7 +1436,7 @@
     "description": "Tree - Mahogany - Player grown - Dynamic",
     "baseMaterial": "BARK_STONEPINE",
     "uvType": "BOX",
-    "uvScale": 0.33,
+    "uvScale": 0.2,
     "retainVanillaUvs": true,
     "objectIds": [
       30407,
@@ -1463,7 +1463,7 @@
         "description": "Leaves",
         "colors": "h > 12",
         "baseMaterial": "LEAF_VEINS",
-        "uvScale": 0.4,
+        "uvScale": 0.2,
         "uvOrientation": 42,
         "uvType": "MODEL_XZ"
       }
