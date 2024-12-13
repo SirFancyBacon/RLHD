@@ -20283,7 +20283,7 @@
   },
   {
     "description": "Varlamore Tent Walls",
-    "baseMaterial": "FINE_CARPET",
+    "baseMaterial": "CARPET",
     "objectIds": [
       44853
     ],
