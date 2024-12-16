@@ -9171,19 +9171,32 @@
   },
   {
     "description": "Mortton - Objects - Stone - Temple Walls",
-    "baseMaterial": "STONE",
+    "baseMaterial": "STONE_NORMALED",
+    "uvType": "BOX",
     "objectIds": [
+      4068,
+      4069,
+      4070,
+      4071,
+      4072,
+      4073,
+      4074,
+      4075,
+      4076,
+      4077,
+      4078,
+      4079,
+      4080,
+      4081,
+      4082,
+      4083,
+      4084,
+      4085,
+      4086,
+      4087,
+      4088,
       4089
-    ],
-    "uvType": "MODEL_XY"
-  },
-  {
-    "description": "Mortton - Objects - Stone - Temple Walls - Mirrored",
-    "baseMaterial": "STONE",
-    "objectIds": [
-      4078
-    ],
-    "uvType": "MODEL_XY_MIRROR_B"
+    ]
   },
   {
     "description": "Mortton Shade Catacombs - Walls - Stone",
