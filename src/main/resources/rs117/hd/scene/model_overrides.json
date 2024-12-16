@@ -9199,6 +9199,32 @@
     ]
   },
   {
+    "description": "Shades of Mortton temple torch",
+    "baseMaterial": "METALLIC_1_LIGHT_GLOSS",
+    "uvType": "BOX",
+    "uvOrientation": 84,
+    "objectIds": [
+      4091,
+      4092
+    ]
+  },
+  {
+    "description": "Shades of Mortton temple torch - Lit",
+    "baseMaterial": "METALLIC_1_GLOSS",
+    "uvType": "BOX",
+    "uvOrientation": 84,
+    "colorOverrides": [
+      {
+        "description": "Flame",
+        "colors": "h > 1",
+        "baseMaterial": "NONE"
+      }
+    ],
+    "objectIds": [
+      4090
+    ]
+  },
+  {
     "description": "Mortton Shade Catacombs - Walls - Stone",
     "baseMaterial": "STONE_NORMALED",
     "objectIds": [
