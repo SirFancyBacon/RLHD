@@ -1636,8 +1636,12 @@
   {
     "key": "OVERWORLD",
     "area": "OVERWORLD",
-    "ambientColor": "#97baff",
-    "directionalStrength": 4,
+    "ambientColor": [
+      253,
+      253,
+      255
+    ],
+    "directionalStrength": 1.7,
     "sunAngles": [ 52, 235 ],
     "fogDepth": 6.5
   },
@@ -1664,9 +1668,13 @@
   },
   {
     "key": "WINTER",
-    "ambientColor": "#8fcaff",
-    "ambientStrength": 3.5,
-    "directionalStrength": 1.5,
+    "ambientColor": [
+      170,
+      216,
+      255
+    ],
+    "ambientStrength": 1.7,
+    "directionalStrength": 1.7,
     "sunAngles": [ 52, 235 ],
     "fogColor": "#b8c5db",
     "fogDepth": 35
