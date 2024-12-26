@@ -5366,7 +5366,7 @@
     "area": "KHARID_DESERT_REGION",
     "groundMaterial": "SAND",
     "maxLightness": 60,
-    "shiftHue": -2,
+    "shiftHue": -1,
     "underlayIds": [
       45,
       49,
