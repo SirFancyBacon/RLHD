@@ -24967,6 +24967,29 @@
     "uvScale": 0.86
   },
   {
+    "description": "Mastering Mixology Walls with brick walls infront of them",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.86,
+    "objectIds": [
+      "WALLKIT_ALCHEMIST01_ENTRANCE01",
+      "WALLKIT_ALCHEMIST01_DEFAULT01",
+      "WALLKIT_ALCHEMIST01_DEFAULT02",
+      "WALLKIT_ALCHEMIST01_JOIN01",
+      "WALLKIT_ALCHEMIST01_JOIN02"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Stone Bricks",
+        "colors": "h == 5",
+        "baseMaterial": "ROCK_3_SMOOTH",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 128
+      }
+    ]
+  },
+  {
     "description": "Hunter Guild Entrance Bone Arches, Colossal Wyrm Ribs",
     "baseMaterial": "BONE",
     "objectIds": [
@@ -40867,5 +40890,279 @@
     "uvType": "BOX",
     "uvScale": 0.62,
     "uvOrientationY": 512
+  },
+  {
+    "description": "Aldarin - Mixology - Plant -  Mixology basement ferns  - Short",
+    "baseMaterial": "LEAF_VEINS",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "uvOrientation": 42,
+    "objectIds": [
+      "PLANT_FERN01_SHORT01",
+      "PLANT_FERN01_SHORT02",
+      "PLANT_FERN01_SHORT03"
+    ]
+  },
+  {
+    "description": "Aldarin - Mixology - Plant -  Mixology basement Digweed",
+    "baseMaterial": "LEAF_VEINS",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 89,
+    "objectIds": [
+      "MM_HERB_DEAD"
+    ]
+  },
+  {
+    "description": "Aldarin - Mixology - Plant -  Mixology basement ferns - Tall",
+    "baseMaterial": "LEAF_VEINS",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "uvOrientation": 172,
+    "objectIds": [
+      "PLANT_FERN01_TALL01",
+      "PLANT_FERN01_TALL02",
+      "PLANT_FERN01_TALL03"
+
+    ]
+  },
+  {
+    "description": "Aldarin - Mixology - Stone -  Mastering Mixology Staircase",
+    "baseMaterial": "ROCK_3_SMOOTH",
+    "uvType": "BOX",
+    "uvOrientation": 343,
+    "objectIds": [
+      "MM_LAB_STAIRS",
+      "MM_LAB_STAIRS_ENTRY"
+    ]
+  },
+  {
+    "description": "Aldarin - Mixology - Stone -  Mastering Mixology decorative pillars",
+    "baseMaterial": "STONE_NORMALED",
+    "uvType": "BOX",
+    "uvScale": 0.75,
+    "uvOrientation": 343,
+    "objectIds": [
+      "PILLAR_ALCHEMIST01_DEFAULT01"
+    ]
+  },
+  {
+    "description": "Varlamore - Stone - Rock and Dirt - Tiny",
+    "baseMaterial": "DIRT_1",
+    "uvType": "BOX",
+    "uvScale": 0.4,
+    "upwardsNormals": true,
+    "castShadows": false,
+    "objectIds": [
+      "CIVITAS_DUGUPSOIL02"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Rocks",
+        "colors": "s == 1",
+        "baseMaterial": "ROCK_1_LIGHT",
+        "uvType": "BOX",
+        "uvScale": 0.4,
+        "uvOrientation": 89
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Stone - Rock and Dirt - Small",
+    "baseMaterial": "DIRT_1",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 168,
+    "upwardsNormals": true,
+    "castShadows": false,
+    "objectIds": [
+      "CIVITAS_DUGUPSOIL01",
+      "CIVITAS_DUGUPSOIL03"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Rocks",
+        "colors": "s == 1",
+        "baseMaterial": "ROCK_1_LIGHT",
+        "uvType": "BOX",
+        "uvScale": 0.6
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Wooden - Glass - Plant - Stone - Mixology Shelfs",
+    "baseMaterial": "GRUNGE_2",
+    "uvScale": 0.5,
+    "uvType": "BOX",
+    "objectIds": [
+      "MM_LAB_SHELF03_EQUIPMENT01",
+      "MM_LAB_SHELF03_EQUIPMENT01_M",
+      "MM_LAB_SHELF03_EQUIPMENT02",
+      "MM_LAB_SHELF03_EQUIPMENT02_M"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Shelf",
+        "colors": "h == 5 && s >= 4 && s <= 5",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvScale": 0.6
+      },
+      {
+        "description": "Glass",
+        "colors": "a < 255",
+        "baseMaterial": "BLANK_GLOSS",
+        "uvType": "BOX"
+      },
+      {
+        "description": "Plants",
+        "colors": "h > 13 && h < 30",
+        "baseMaterial": "PLANT_GRUNGE_1",
+        "uvType": "BOX",
+        "uvScale": 0.5
+      },
+      {
+        "description": "Pestle and Morter",
+        "colors": "h == 7 && s == 1",
+        "baseMaterial": "STONE_NORMALED",
+        "uvType": "BOX",
+        "uvScale": 0.5
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Pottery",
+    "baseMaterial": "GRUNGE_1",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 168,
+    "objectIds": [
+      "MM_LAB_BARREL_CLAY_WINE01"
+    ],
+    "colorOverrides": [
+      {
+        "description": "ROPE",
+        "colors": "h == 5 && s >= 3",
+        "baseMaterial": "ROPE",
+        "uvType": "BOX",
+        "uvScale": 0.6,
+        "uvOrientation": 89
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Woven Food Pot",
+    "baseMaterial": "BURLAP",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "uvOrientation": 168,
+    "objectIds": [
+      "MM_LAB_BARREL_WOVEN01_FOOD01"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Rope",
+        "colors": "h == 5 && s >= 3",
+        "baseMaterial": "ROPE",
+        "uvType": "BOX",
+        "uvScale": 0.6,
+        "uvOrientation": 89
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Clay pottery with grain",
+    "baseMaterial": "GRUNGE_1",
+    "uvType": "BOX",
+    "uvScale": 0.4,
+    "uvOrientation": 192,
+    "objectIds": [
+      "MM_LAB_BARREL_CLAY01_FOOD01"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Grain",
+        "colors": "h == 5 && s == 2",
+        "baseMaterial": "DIRT_1",
+        "uvType": "BOX",
+        "uvScale": 0.3,
+        "uvOrientation": 89
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Wooden - Metallic - Bank Chest",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "objectIds": [
+      "CHEST_ALCHEMIST01_OPEN01"
+    ],
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "METALLIC_1_LIGHT_SEMIGLOSS",
+        "uvType": "BOX",
+        "uvScale": 0.6,
+        "uvOrientation": 89
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Mastering Mixology - Metallic - Wall Bars",
+    "baseMaterial": "METALLIC_1_LIGHT_SEMIGLOSS",
+    "uvType": "BOX",
+    "uvOrientation": 404,
+    "objectIds": [
+      "WALLKIT_ALCHEMIST01_BARS01",
+      "WALLKIT_ALCHEMIST01_BARS01_M"
+    ]
+  },
+  {
+    "description": "Mastering Mixology - Wooden - bookcase with Multicolored books",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "objectIds": [
+      "MM_LAB_NOTES_BOOKSHELF_NO_OP",
+      "MM_LAB_NOTES_BOOKSHELF"
+    ],
+    "uvType": "BOX",
+    "colorOverrides": [
+      {
+        "description": "Paper",
+        "colors": "h == 10 && s == 0",
+        "baseMaterial": "GRAY_65",
+        "uvType": "BOX",
+        "uvScale": 0.4
+      },
+      {
+        "description": "Green and blue books",
+        "colors": "h > 12",
+        "baseMaterial": "GRUNGE_3",
+        "uvType": "BOX",
+        "uvScale": 0.4
+      },
+      {
+        "description": "Red books",
+        "colors": "h == 1 && s == 5",
+        "baseMaterial": "GRUNGE_3",
+        "uvType": "BOX"
+      }
+    ]
+  },
+  {
+    "description": "Varlamore - Aldarin - Wooden - metallic Barrel with Metal Band",
+    "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+    "objectIds": [
+      "BARREL_WOODEN01_ALDARIN01"
+    ],
+    "uvOrientationZ": 512,
+    "uvOrientationX": 512,
+    "uvType": "BOX",
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "METALLIC_1_LIGHT"
+      }
+    ]
   }
 ]
