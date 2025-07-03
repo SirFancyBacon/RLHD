@@ -4590,7 +4590,9 @@
       "BURGH_ROCK_DUGUPSOIL_3",
       "_100_OSMAN_WINTER_DUGUPSOIL_1",
       "_100_OSMAN_WINTER_DUGUPSOIL_3",
+      "WILDERNESS_ROCKS_FLOOR_HARD_01",
       "WILDERNESS_ROCKS_FLOOR_HARD_02",
+      "WILDERNESS_ROCKS_FLOOR_HARD_04",
       "WILDERNESS_ROCKS_FLOOR_HARD_05",
       "WILDERNESS_ROCKS_FLOOR_SHARP_01",
       "WILD1_DUGUPSOIL_3",
@@ -38640,7 +38642,7 @@
     ]
   },
   {
-    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Walls",
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Walls",
     "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -38663,7 +38665,7 @@
     ]
   },
   {
-    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor",
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor",
     "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -38682,7 +38684,7 @@
     ]
   },
   {
-    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor around water",
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor around water",
     "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -38693,7 +38695,7 @@
     ]
   },
   {
-    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor with water edges",
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor with water edges",
     "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
