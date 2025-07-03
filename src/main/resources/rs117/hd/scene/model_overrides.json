@@ -38638,5 +38638,91 @@
         "uvScale": 0.5
       }
     ]
+  },
+  {
+    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Walls",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_WALL_01",
+      "ZEAH_CATA_WALL_02",
+      "ZEAH_CATA_WALL_03",
+      "ZEAH_CATA_WALL_04",
+      "ZEAH_CATA_CRACK",
+      "ZEAH_CATA_OVERPASS_01",
+      "ZEAH_CATA_OVERPASS_02"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Crystals",
+        "colors": "a < 255",
+        "baseMaterial": "BLANK_GLOSS",
+        "uvType": "BOX"
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_01",
+      "ZEAH_CATA_FLOOR_06",
+      "ZEAH_CATA_FLOOR_07"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Crystals",
+        "colors": "a < 255",
+        "baseMaterial": "BLANK_GLOSS",
+        "uvType": "BOX"
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor around water",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_11",
+      "ZEAH_CATA_FLOOR_12",
+      "ZEAH_CATA_FLOOR_13"
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor with water edges",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_02",
+      "ZEAH_CATA_FLOOR_03",
+      "ZEAH_CATA_FLOOR_04",
+      "ZEAH_CATA_FLOOR_05",
+      "ZEAH_CATA_FLOOR_08",
+      "ZEAH_CATA_FLOOR_09",
+      "ZEAH_CATA_FLOOR_10"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Water",
+        "colors": "a < 255",
+        "baseMaterial": "WATER_FOUNTAIN_FLAT",
+        "uvType": "BOX"
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Archeus - Crystals",
+    "baseMaterial": "GRUNGE_3_SHINY",
+    "uvType": "BOX",
+    "objectIds": [
+      "ARCHEUS_CRYSTAL_SMALLEST_DARK",
+      "ARCHEUS_CRYSTAL_SMALLEST_DARK_01",
+      "ARCHEUS_CRYSTAL_MEDIUM_DARK"
+    ]
   }
 ]
