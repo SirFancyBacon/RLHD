@@ -4645,7 +4645,9 @@
       "BURGH_ROCK_DUGUPSOIL_3",
       "_100_OSMAN_WINTER_DUGUPSOIL_1",
       "_100_OSMAN_WINTER_DUGUPSOIL_3",
+      "WILDERNESS_ROCKS_FLOOR_HARD_01",
       "WILDERNESS_ROCKS_FLOOR_HARD_02",
+      "WILDERNESS_ROCKS_FLOOR_HARD_04",
       "WILDERNESS_ROCKS_FLOOR_HARD_05",
       "WILDERNESS_ROCKS_FLOOR_SHARP_01",
       "WILD1_DUGUPSOIL_3",
@@ -41713,6 +41715,111 @@
     "objectIds": [
       "TABLE_WOODEN01_SMALL01",
       "TABLE_WOODEN01_RECTANGULAR01"
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Walls",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_WALL_01",
+      "ZEAH_CATA_WALL_02",
+      "ZEAH_CATA_WALL_03",
+      "ZEAH_CATA_WALL_04",
+      "ZEAH_CATA_CRACK",
+      "ZEAH_CATA_OVERPASS_01",
+      "ZEAH_CATA_OVERPASS_02",
+      "ZEAH_CATA_OVERPASS_SIDE_01",
+      "ZEAH_CATA_OVERPASS_SIDE_02"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Crystals",
+        "colors": "a < 255",
+        "baseMaterial": "BLANK_GLOSS",
+        "uvType": "BOX"
+      },
+      {
+        "description": "Root",
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "PLANT_GRUNGE_1",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 192
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_01",
+      "ZEAH_CATA_FLOOR_06",
+      "ZEAH_CATA_FLOOR_07"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Crystals",
+        "colors": "a < 255",
+        "baseMaterial": "BLANK_GLOSS",
+        "uvType": "BOX"
+      },
+      {
+        "description": "Root",
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "PLANT_GRUNGE_1",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 192
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor around water",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_11",
+      "ZEAH_CATA_FLOOR_12",
+      "ZEAH_CATA_FLOOR_13"
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor with water edges",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ZEAH_CATA_FLOOR_02",
+      "ZEAH_CATA_FLOOR_03",
+      "ZEAH_CATA_FLOOR_04",
+      "ZEAH_CATA_FLOOR_05",
+      "ZEAH_CATA_FLOOR_08",
+      "ZEAH_CATA_FLOOR_09",
+      "ZEAH_CATA_FLOOR_10"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Water",
+        "colors": "a < 255",
+        "baseMaterial": "WATER_FOUNTAIN_FLAT",
+        "uvType": "BOX"
+      }
+    ]
+  },
+  {
+    "description": "Zeah - Kourend - Archeus - Crystals",
+    "baseMaterial": "GRUNGE_3_SHINY",
+    "uvType": "BOX",
+    "objectIds": [
+      "ARCHEUS_CRYSTAL_SMALLEST_DARK",
+      "ARCHEUS_CRYSTAL_SMALLEST_DARK_01",
+      "ARCHEUS_CRYSTAL_SMALL_DARK",
+      "ARCHEUS_CRYSTAL_MEDIUM_DARK"
     ]
   }
 ]
