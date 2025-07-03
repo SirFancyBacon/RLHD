@@ -38641,7 +38641,7 @@
   },
   {
     "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Walls",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
@@ -38664,7 +38664,7 @@
   },
   {
     "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
@@ -38683,7 +38683,7 @@
   },
   {
     "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor around water",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
@@ -38694,7 +38694,7 @@
   },
   {
     "description": "Zeah - Kourend - Rock - Catacombs of Kourend - Floor with water edges",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "LEAF_VEINS_LIGHT",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
