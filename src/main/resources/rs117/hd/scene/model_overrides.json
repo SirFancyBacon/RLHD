@@ -38653,7 +38653,9 @@
       "ZEAH_CATA_WALL_04",
       "ZEAH_CATA_CRACK",
       "ZEAH_CATA_OVERPASS_01",
-      "ZEAH_CATA_OVERPASS_02"
+      "ZEAH_CATA_OVERPASS_02",
+      "ZEAH_CATA_OVERPASS_SIDE_01",
+      "ZEAH_CATA_OVERPASS_SIDE_02"
     ],
     "colorOverrides": [
       {
@@ -38661,6 +38663,14 @@
         "colors": "a < 255",
         "baseMaterial": "BLANK_GLOSS",
         "uvType": "BOX"
+      },
+      {
+        "description": "Root",
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "PLANT_GRUNGE_1",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 192
       }
     ]
   },
@@ -38680,6 +38690,14 @@
         "colors": "a < 255",
         "baseMaterial": "BLANK_GLOSS",
         "uvType": "BOX"
+      },
+      {
+        "description": "Root",
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "PLANT_GRUNGE_1",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 192
       }
     ]
   },
@@ -38724,6 +38742,7 @@
     "objectIds": [
       "ARCHEUS_CRYSTAL_SMALLEST_DARK",
       "ARCHEUS_CRYSTAL_SMALLEST_DARK_01",
+      "ARCHEUS_CRYSTAL_SMALL_DARK",
       "ARCHEUS_CRYSTAL_MEDIUM_DARK"
     ]
   }
