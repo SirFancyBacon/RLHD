@@ -895,6 +895,10 @@ public enum Material {
 		.setDisplacementScale(0.1f)
 		.setBrightness(1.9f)
 	),
+	ABYSSAL_2_DULL(ABYSSAL_2, p -> p
+		.setSpecular(1.1f, 120)
+
+	),
 	ABYSSAL_FLOW(ABYSSAL, p -> p
 		.setFlowMap(UNDERWATER_FLOW_MAP)
 		.setFlowMapStrength(0.075f)

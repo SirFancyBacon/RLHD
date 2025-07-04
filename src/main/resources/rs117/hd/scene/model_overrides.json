@@ -38643,9 +38643,8 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Walls",
-    "baseMaterial": "ABYSSAL_2",
+    "baseMaterial": "ROCK_3",
     "uvType": "BOX",
-    "uvScale": 0.6,
     "objectIds": [
       "ZEAH_CATA_WALL_01",
       "ZEAH_CATA_WALL_02",
@@ -38659,26 +38658,24 @@
     ],
     "colorOverrides": [
       {
-        "description": "Crystals",
-        "colors": "a < 255",
-        "baseMaterial": "BLANK_GLOSS",
+        "description": "Floor blobs",
+        "colors": "a < 255 || s == 6",
+        "baseMaterial": "GRUNGE_3_SHINY",
         "uvType": "BOX"
       },
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ROCK_3",
+        "baseMaterial": "ABYSSAL_2_DULL",
         "uvType": "BOX",
-        "uvScale": 0.8,
         "uvOrientation": 192
       }
     ]
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor",
-    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "baseMaterial": "ROCK_3",
     "uvType": "BOX",
-    "uvScale": 0.6,
     "objectIds": [
       "ZEAH_CATA_FLOOR_01",
       "ZEAH_CATA_FLOOR_06",
@@ -38694,18 +38691,16 @@
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ROCK_3",
+        "baseMaterial": "ABYSSAL_2_DULL",
         "uvType": "BOX",
-        "uvScale": 0.8,
         "uvOrientation": 192
       }
     ]
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor around water",
-    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "baseMaterial": "ROCK_3",
     "uvType": "BOX",
-    "uvScale": 0.6,
     "objectIds": [
       "ZEAH_CATA_FLOOR_11",
       "ZEAH_CATA_FLOOR_12",
@@ -38714,9 +38709,8 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor with water edges",
-    "baseMaterial": "ABYSSAL_2",
+    "baseMaterial": "ROCK_3",
     "uvType": "BOX",
-    "uvScale": 0.6,
     "objectIds": [
       "ZEAH_CATA_FLOOR_02",
       "ZEAH_CATA_FLOOR_03",
@@ -38736,9 +38730,8 @@
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ROCK_3",
+        "baseMaterial": "ABYSSAL_2_DULL",
         "uvType": "BOX",
-        "uvScale": 0.8,
         "uvOrientation": 192
       }
     ]
