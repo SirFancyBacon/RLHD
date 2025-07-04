@@ -41719,7 +41719,7 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Walls",
-    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "baseMaterial": "ABYSSAL_2",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
@@ -41741,9 +41741,9 @@
         "uvType": "BOX"
       },
       {
-        "description": "Root",
+        "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "PLANT_GRUNGE_1",
+        "baseMaterial": "ROCK_3",
         "uvType": "BOX",
         "uvScale": 0.8,
         "uvOrientation": 192
@@ -41768,9 +41768,9 @@
         "uvType": "BOX"
       },
       {
-        "description": "Root",
+        "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "PLANT_GRUNGE_1",
+        "baseMaterial": "ROCK_3",
         "uvType": "BOX",
         "uvScale": 0.8,
         "uvOrientation": 192
@@ -41790,7 +41790,7 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor with water edges",
-    "baseMaterial": "LEAF_VEINS_LIGHT",
+    "baseMaterial": "ABYSSAL_2",
     "uvType": "BOX",
     "uvScale": 0.6,
     "objectIds": [
@@ -41808,6 +41808,14 @@
         "colors": "a < 255",
         "baseMaterial": "WATER_FOUNTAIN_FLAT",
         "uvType": "BOX"
+      },
+      {
+        "description": "Rock",
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "ROCK_3",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "uvOrientation": 192
       }
     ]
   },
