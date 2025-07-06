@@ -909,6 +909,15 @@ public enum Material {
 		.setFlowMapStrength(0.2f)
 		.setFlowMapDuration(new float[] { 28, -28 })
 	),
+	ABYSSAL_3_D,
+	ABYSSAL_3_N,
+	ABYSSAL_3(p -> p
+		.setSpecular(1.5f, 100)
+		.setNormalMap(ABYSSAL_3_N)
+		.setDisplacementMap(ABYSSAL_3_D)
+		.setDisplacementScale(0.2f)
+		.setBrightness(1.9f)
+	),
 
 	GROUND_WEB_1_N,
 	GROUND_WEB_1(p -> p.setNormalMap(GROUND_WEB_1_N).setSpecular(0.35f,90)),

@@ -38643,7 +38643,7 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Walls",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "ABYSSAL_3",
     "uvType": "BOX",
     "objectIds": [
       "ZEAH_CATA_WALL_01",
@@ -38660,13 +38660,13 @@
       {
         "description": "Floor blobs",
         "colors": "a < 255 || s == 6",
-        "baseMaterial": "GRUNGE_3_SHINY",
+        "baseMaterial": "ABYSSAL_3",
         "uvType": "BOX"
       },
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ABYSSAL_2_DULL",
+        "baseMaterial": "ROCK_3",
         "uvType": "BOX",
         "uvOrientation": 192
       }
@@ -38674,7 +38674,7 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "ABYSSAL_3",
     "uvType": "BOX",
     "objectIds": [
       "ZEAH_CATA_FLOOR_01",
@@ -38691,7 +38691,7 @@
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ABYSSAL_2_DULL",
+        "baseMaterial": "ROCK_3",
         "uvType": "BOX",
         "uvOrientation": 192
       }
@@ -38709,7 +38709,7 @@
   },
   {
     "description": "Zeah - Kourend - Vines - Catacombs of Kourend - Floor with water edges",
-    "baseMaterial": "ROCK_3",
+    "baseMaterial": "ABYSSAL_3",
     "uvType": "BOX",
     "objectIds": [
       "ZEAH_CATA_FLOOR_02",
@@ -38730,7 +38730,7 @@
       {
         "description": "Rock",
         "colors": "h == 0 && s == 0",
-        "baseMaterial": "ABYSSAL_2_DULL",
+        "baseMaterial": "ROCK_3",
         "uvType": "BOX",
         "uvOrientation": 192
       }
