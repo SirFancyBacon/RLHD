@@ -348,12 +348,12 @@ public enum Material {
 	DIRT_1_N,
 	DIRT_1(p -> p
 		.setNormalMap(DIRT_1_N)
-		.setSpecular(0.25f, 18)),
+		.setSpecular(0.15f, 18)),
 	DIRT_1_VERT(DIRT_1, p -> p.setNormalMap(null)),
 	DIRT_2_N,
 	DIRT_2(p -> p
 		.setNormalMap(DIRT_2_N)
-		.setSpecular(0.25f, 18)),
+		.setSpecular(0.2f, 18)),
 	DIRT_2_VERT(DIRT_2, p -> p.setNormalMap(null)),
 	DIRT_2_LIGHT(DIRT_2, p -> p
 		.setBrightness(1.2f)),
@@ -361,7 +361,7 @@ public enum Material {
 	GRAVEL_N,
 	GRAVEL(p -> p
 		.setNormalMap(GRAVEL_N)
-		.setSpecular(0.4f, 130)
+		.setSpecular(0.3f, 40)
 	),
 	VERTICAL_GRAVEL(GRAVEL, p -> p
 		.setNormalMap(null)
@@ -469,7 +469,7 @@ public enum Material {
 		.setNormalMap(ROCK_3_N)
 		.setDisplacementMap(ROCK_3_D)
 		.setDisplacementScale(.15f)
-		.setSpecular(0.4f, 20)
+		.setSpecular(0.3f, 20)
 		.setBrightness(1.2f)
 	),
 	ROCK_3_MEDIUM_DARK(ROCK_3,p -> p
@@ -521,7 +521,7 @@ public enum Material {
 	CARPET_N,
 	CARPET(p -> p
 		.setNormalMap(CARPET_N)
-		.setSpecular(0.25f,30)
+		.setSpecular(0.2f,30)
 	),
 	CARPET_LIGHT(CARPET, p -> p
 		.setBrightness(1.45f)),
@@ -539,7 +539,7 @@ public enum Material {
 	BRICK_PATH_N,
 	BRICK_PATH(p -> p
 		.setNormalMap(BRICK_PATH_N)
-		.setSpecular(0.3f, 30)
+		.setSpecular(0.2f, 25)
 	),
 	JAGGED_STONE_TILE_D,
 	JAGGED_STONE_TILE_N,
@@ -547,7 +547,7 @@ public enum Material {
 		.setDisplacementMap(JAGGED_STONE_TILE_D)
 		.setDisplacementScale(.05f)
 		.setNormalMap(JAGGED_STONE_TILE_N)
-		.setSpecular(0.5f, 30)
+		.setSpecular(0.2f, 30)
 	),
 	POTTERY_OVEN_STONE(JAGGED_STONE_TILE, p -> p.setBrightness(0.3f)),
 
@@ -624,17 +624,17 @@ public enum Material {
 	BARK_N,
 	BARK(p -> p
 		.setNormalMap(BARK_N)
-		.setSpecular(0.3f, 30)
+		.setSpecular(0.2f, 25)
 	),
 	LIGHT_BARK(BARK, p -> p.setBrightness(1.75f)),
 	VERY_LIGHT_BARK(BARK, p -> p.setBrightness(2.75f)),
 	BARK_STONEPINE_N,
 	BARK_STONEPINE(p -> p
 		.setNormalMap(BARK_STONEPINE_N)
-		.setSpecular(0.3f, 30)),
+		.setSpecular(0.2f, 25)),
 	BARK_STONEPINE_2(p -> p
 		.setNormalMap(BARK_STONEPINE_N)
-		.setSpecular(0.3f, 30)
+		.setSpecular(0.2f, 25)
 		.setBrightness(1.75f)),
 	LIGHT_BARK_STONEPINE(BARK_STONEPINE, p -> p.setBrightness(1.75f)),
 	LEAF_VEINS,
@@ -649,7 +649,7 @@ public enum Material {
 	WOOD_GRAIN_2_N,
 	WOOD_GRAIN_2(p -> p
 		.setNormalMap(WOOD_GRAIN_2_N)
-		.setSpecular(0.3f, 30)
+		.setSpecular(0.2f, 20)
 	),
 	WOOD_GRAIN_2_SMOOTH(WOOD_GRAIN_2, p -> p
 		.setBrightness(1.1f)
@@ -670,7 +670,7 @@ public enum Material {
 	WOOD_GRAIN_3(p -> p
 		.setDisplacementMap(WOOD_GRAIN_3_D)
 		.setNormalMap(WOOD_GRAIN_3_N)
-		.setSpecular(0.3f, 25)
+		.setSpecular(0.25f, 25)
 	),
 	WOOD_GRAIN_3_LIGHT(WOOD_GRAIN_3, p -> p.setBrightness(1.6f)),
 	DOCK_FENCE,
@@ -690,7 +690,7 @@ public enum Material {
 		.setNormalMap(HD_BRICK_N)
 		.setDisplacementMap(HD_BRICK_D)
 		.setDisplacementScale(.05f)
-		.setSpecular(0.30f, 20)
+		.setSpecular(0.2f, 10)
 	),
 	HD_ROOF_SHINGLES_N,
 	HD_ROOF_SHINGLES_D,
@@ -711,7 +711,7 @@ public enum Material {
 		.setNormalMap(HD_BRICK_BROWN_N)
 		.setDisplacementMap(HD_BRICK_BROWN_D)
 		.setDisplacementScale(.05f)
-		.setSpecular(0.35f, 20)
+		.setSpecular(0.2f, 10)
 	),
 	HD_LAVA_3(p -> p
 		.replaceIf(plugin -> plugin.configModelTextures, LAVA)
@@ -743,13 +743,13 @@ public enum Material {
 		.setNormalMap(HD_STONE_PATTERN_N)
 		.setDisplacementMap(HD_STONE_PATTERN_D)
 		.setDisplacementScale(0.08f)
-		.setSpecular(0.25f, 30)
+		.setSpecular(0.2f, 30)
 	),
 	STONE_N,
 	STONE,
 	STONE_NORMALED(STONE, p -> p
 		.setNormalMap(STONE_N)
-		.setSpecular(0.3f, 30)
+		.setSpecular(0.25f, 30)
 	),
 	STONE_NORMALED_DARK(STONE_NORMALED, p -> p
 		.setBrightness(0.88f)
@@ -855,13 +855,13 @@ public enum Material {
 		.setNormalMap(HD_CONCRETE_N)
 		.setDisplacementMap(HD_CONCRETE_D)
 		.setDisplacementScale(0.05f)
-		.setSpecular(0.3f, 20)
+		.setSpecular(0.2f, 20)
 		.setBrightness(0.75f)
 	),
 	HD_HAY_N,
 	HD_HAY(p -> p
 		.replaceIf(plugin -> plugin.configModelTextures, HAY)
-		.setSpecular(0.3f, 20)
+		.setSpecular(0.2f, 20)
 		.setNormalMap(HD_HAY_N)
 	),
 	HD_IRON_BARS(p -> p
