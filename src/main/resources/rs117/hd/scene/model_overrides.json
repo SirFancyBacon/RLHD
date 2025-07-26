@@ -9331,7 +9331,7 @@
     "uvScale": 0.8
   },
   {
-    "description": "Ladder, rotated UVs",
+    "description": "Ladder, rotated UVs - Textured",
     "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       "MCANNONLADDER",
@@ -9351,7 +9351,11 @@
       "LADDER_CELLAR",
       "LADDER_FROM_CELLAR",
       "LADDER_FROM_CELLAR_DIRECTIONAL",
-      "MGUILD_LADDER"
+      "MGUILD_LADDER",
+      "GRANDTREE_LADDERBOTTOM",
+      "GRANDTREE_LADDERMIDDLE_BOTTOM",
+      "GRANDTREE_LADDERMIDDLE_TOP",
+      "GRANDTREE_LADDERTOP"
     ],
     "uvType": "BOX",
     "uvOrientation": 512,
@@ -9946,13 +9950,14 @@
     "uvOrientation": 512
   },
   {
-    "description": "Metallic Chest",
+    "description": "Metallic Chest - Textured",
     "baseMaterial": "METALLIC_1_LIGHT_SEMIGLOSS",
     "objectIds": [
       "CHESTCLOSED",
       "TRAPCHEST1",
       "TRAPCHEST5",
-      "INACOPENCHEST"
+      "INACOPENCHEST",
+      "GRANDTREE_CHESTCLOSED"
     ],
     "uvType": "BOX",
     "uvScale": 0.33,
@@ -15400,7 +15405,8 @@
       "DRAGON_SLAYER_QIP_BURNT_TREE",
       "DRAGON_SLAYER_QIP_BURNT_FALLEN_TREE",
       "MM2_GLOUGH_BRANCH_UP_HIDDEN",
-      "AVIUM_DEADTREE_1"
+      "AVIUM_DEADTREE_1",
+      "MM2_GLOUGH_BRANCH_DOWN"
     ],
     "uvType": "BOX"
   },
@@ -15453,7 +15459,29 @@
     "uvType": "BOX",
     "uvScale": 0.7,
     "objectIds": [
-      "BRIDGE_WALL"
+      "BRIDGE_WALL",
+      "ALUFT_BRIDGE_WALL",
+      "BRIDGE_WALLSIGNPOST_L",
+      "BRIDGE_WALLSIGNPOST_R"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Rope",
+        "colors": "h == 6 && s == 3",
+        "baseMaterial": "ROPE",
+        "uvType": "BOX",
+        "uvScale": 0.25
+      }
+    ]
+  },
+  {
+    "description": "Gnome - Wooden - Diagonal floor - textured",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.7,
+    "retainVanillaUvs": false,
+    "objectIds": [
+      "ALUFT_BRIDGE_CORNERFLOOR"
     ],
     "colorOverrides": [
       {
@@ -15496,14 +15524,16 @@
     "uvScale": 0.8
   },
   {
-    "description": "Gnome - Objects - Wooden - Hammock",
+    "description": "Gnome - Wooden - Hammock - Textured",
     "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
     "objectIds": [
       "HAMMOCK"
     ]
   },
   {
-    "description": "Gnome - Objects - Wooden Lamp - DYNAMIC",
+    "description": "Gnome - Objects - Wooden Lamp - DYNAMIC - ANIMATED",
     "baseMaterial": "BARK",
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -15522,6 +15552,7 @@
     "description": "Gnome Stronghold tree doors",
     "baseMaterial": "BARK",
     "uvType": "BOX",
+    "uvScale": 0.8,
     "materialOverrides": {
       "SIMPLE_GRAIN_WOOD": {
         "textureMaterial": "SIMPLE_GRAIN_WOOD",
@@ -15545,6 +15576,37 @@
       "TREEDOORR",
       "TREEDOORL_OPEN",
       "TREEDOORR_OPEN"
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Wooden - tree doors top with platform above - Textured",
+    "baseMaterial": "BARK",
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.8,
+    "objectIds": [
+      "TREEDOORROOF"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Wood",
+        "colors": "h == 5",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvOrientation": 512,
+        "uvScale": 0.8
+      }
+    ]
+  },
+  {
+    "description": "Gnome Stronghold Wooden - Platforms - Textured",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "uvScale": 0.8,
+    "objectIds": [
+      "TREEWALL1B_LVL2",
+      "TREEWALL1B_LVL1"
     ]
   },
   {
@@ -15577,7 +15639,7 @@
     ]
   },
   {
-    "description": "Gnome table with cutlery and napkins",
+    "description": "Gnome - Wooden - Stool",
     "baseMaterial": "WOOD_GRAIN_3",
     "uvType": "BOX",
     "uvOrientation": 600,
@@ -15586,19 +15648,79 @@
     ]
   },
   {
-    "description": "Gnome stool",
+    "description": "Gnome - Wooden - Fancy gnome chair",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvOrientation": 600,
+    "objectIds": [
+      "ALUFT_GNOME_CHAIR"
+    ]
+  },
+  {
+    "description": "Gnome - Wooden - Stool with ornament",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvOrientation": 600,
+    "objectIds": [
+      "EYEGLO_GNOMESTOOL_CRYSTAL_COIN"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Ornament",
+        "colors": " a < 255",
+        "baseMaterial": "BLANK_GLOSS"
+      }
+    ]
+  },
+  {
+    "description": "Gnome - Wooden - table with cutlery and napkins with candle - Needs proper UV",
     "baseMaterial": "WOOD_GRAIN_3",
     "uvType": "BOX",
     "uvOrientation": 84,
     "colorOverrides": [
       {
-        "description": "Silverware and napkin",
+        "description": "Cutlery napkins and candle",
         "colors": "s == 0",
-        "baseMaterial": "NONE"
+        "baseMaterial": "GRAY_90"
       }
     ],
     "objectIds": [
       "GNOMETABLE"
+    ]
+  },
+  {
+    "description": "Gnome - Wooden - Fancy table",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvOrientation": 512,
+    "objectIds": [
+      "ALUFT_GNOME_TABLE",
+      "ALUFT_GNOME_OFFICE_TABLE"
+    ]
+  },
+  {
+    "description": "Gnome - Wooden - Fancy table with napkins",
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvOrientation": 84,
+    "colorOverrides": [
+      {
+        "description": "Table",
+        "colors": "h == 5 || h == 6",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX"
+      },
+      {
+        "description": "napkin",
+        "colors": "s == 0",
+        "baseMaterial": "CARPET",
+        "uvType": "BOX",
+        "uvScale": 0.66
+      }
+    ],
+    "objectIds": [
+      "ALUFT_GNOME_RESTAURANT_TABLE_ONE",
+      "ALUFT_GNOME_RESTAURANT_TABLE_TWO"
     ]
   },
   {
@@ -22590,17 +22712,35 @@
     "uvScale": 0.65
   },
   {
-    "description": "Objects - Concrete - Table",
-    "baseMaterial": "WOOD_GRAIN_3",
+    "description": "Metallic - Wooden - Concrete - Table with books weights and scales- Textured",
+    "baseMaterial": "METALLIC_1_SEMIGLOSS",
     "textureMaterial": "HD_CONCRETE",
-    "objectIds": [
-      "BANKTABLE",
-      "BANKTABLE2"
-    ],
     "uvType": "BOX",
     "retainVanillaUvs": false,
     "uvOrientation": 512,
-    "uvScale": 0.65
+    "uvScale": 0.65,
+    "objectIds": [
+      "BANKTABLE",
+      "BANKTABLE2",
+      "BANKTABLE2_INACTIVE",
+      "BANKTABLE_INACTIVE"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Metal",
+        "colors": "h == 5 || h == 6",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvOrientation": 512,
+        "uvScale": 0.65
+      },
+      {
+        "description": "Paper",
+        "colors": "h == 10",
+        "baseMaterial": "GRUNGE_3_DARK",
+        "uvType": "BOX"
+      }
+    ]
   },
   {
     "description": "Objects - Concrete - Bank Booth",
@@ -50118,6 +50258,155 @@
         "uvType": "BOX",
         "uvOrientation": 89
       }
+    ]
+  },
+  {
+    "description": "Gnome - Plant - Pottery - Dirt - Potted flower",
+    "baseMaterial": "GRUNGE_3_DARK",
+    "uvType": "BOX",
+    "objectIds": [
+      "POTTEDREDFLOWER",
+      "POTTEDBLUEFLOWER"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Dirt and pot",
+        "colors": "h == 4 && s == 7",
+        "baseMaterial": "GRUNGE_2",
+        "uvType": "BOX",
+        "uvOrientation": 512,
+        "uvScale": 0.65
+      },
+      {
+        "description": "Paper",
+        "colors": "h == 21",
+        "baseMaterial": "LEAF_VEINS",
+        "uvType": "BOX",
+        "uvOrientation": 222,
+        "uvScale": 0.4
+      }
+    ]
+  },
+  {
+    "description": "Mushroom - Red mushroom with black spots",
+    "baseMaterial": "GRUNGE_3",
+    "objectIds": [
+      "MUSHROOM2_LARGE",
+      "MUSHROOMS2",
+      "MUSHROOM2"
+    ],
+    "uvType": "BOX"
+  },
+  {
+    "description": "Gnome Stronghold - Cloth - Wooden - Standards",
+    "baseMaterial": "CARPET",
+    "uvType": "MODEL_XY",
+    "uvScale": 0.5,
+    "upwardsNormals": true,
+    "objectIds": [
+      "GNOMESTANDARD2"
+    ],
+    "colorOverrides": [
+      {
+        "colors": [ "h == 5", "h == 6" ],
+        "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+        "uvType": "BOX",
+        "uvOrientation": 512,
+        "uvScale": 0.5
+      }
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Metallic - Wooden - Spear Wall",
+    "baseMaterial": "METALLIC_1",
+    "uvType": "BOX",
+    "uvOrientation": 299,
+    "uvScale": 0.3,
+    "objectIds": [
+      "WATCHTOWER_WALL"
+    ],
+    "colorOverrides": [
+      {
+        "description": "Wooden post",
+        "colors": "h == 6",
+        "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+        "uvType": "BOX",
+        "uvScale": 0.5,
+        "uvOrientation": 512
+      },
+      {
+        "description": "Wooden spear shaft",
+        "colors": "h == 5",
+        "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+        "uvType": "BOX",
+        "uvScale": 0.5,
+        "uvOrientation": 383
+      }
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Rock Grass - ANIMATED - DYNAMIC",
+    "baseMaterial": "ROCK_4",
+    "uvType": "BOX",
+    "uvScale": 0.85,
+    "colorOverrides": [
+      {
+        "colors": "h == 13",
+        "baseMaterial": "GRAY_50",
+        "uvType": "BOX",
+        "uvScale": 0.4,
+        "upwardsNormals": true
+      }
+    ],
+    "objectIds": [
+      "ZEP_TARGET_GRASS"
+    ]
+  },
+  {
+    "description": "Quest - Gnome Stronghold - Rock - ANIMATED - DYNAMIC",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 313,
+    "objectIds": [
+      "ZEP_PRE_QUEST_ROCK"
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Wooden - Stacked Gnome Crates",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "objectIds": [
+      "ALUFT_GNOME_CRATES"
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Wooden - Gnome Crate",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ALUFT_GNOME_CRATE_SINGLE"
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Wooden - Barrels",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "objectIds": [
+      "ALUFT_GNOME_BARRELS"
+    ]
+  },
+  {
+    "description": "Gnome Stronghold - Wooden - Gnome cabinet",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "objectIds": [
+      "ALUFT_GNOME_OFFICE_CABINET"
     ]
   }
 ]
