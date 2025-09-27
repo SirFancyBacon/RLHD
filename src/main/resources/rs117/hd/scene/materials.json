@@ -819,13 +819,31 @@
     "specularGloss": 20.0
   },
   {
-    "name": "GRASS_1"
+    "name": "GRASS_1_N"
   },
   {
-    "name": "GRASS_2"
+    "name": "GRASS_1",
+    "normalMap": "GRASS_1_N",
+    "specularStrength": 0.28,
+    "specularGloss": 20
   },
   {
-    "name": "GRASS_3"
+    "name": "GRASS_2_N"
+  },
+  {
+    "name": "GRASS_2",
+    "normalMap": "GRASS_2_N",
+    "specularStrength": 0.28,
+    "specularGloss": 20
+  },
+  {
+    "name": "GRASS_3_N"
+  },
+  {
+    "name": "GRASS_3",
+    "normalMap": "GRASS_3_N",
+    "specularStrength": 0.28,
+    "specularGloss": 20
   },
   {
     "name": "GRASS_SCROLLING",
