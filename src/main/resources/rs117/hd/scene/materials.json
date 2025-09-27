@@ -824,8 +824,8 @@
   {
     "name": "GRASS_1",
     "normalMap": "GRASS_1_N",
-    "specularStrength": 0.28,
-    "specularGloss": 20
+    "specularStrength": 0.21,
+    "specularGloss": 15
   },
   {
     "name": "GRASS_2_N"
@@ -833,8 +833,8 @@
   {
     "name": "GRASS_2",
     "normalMap": "GRASS_2_N",
-    "specularStrength": 0.28,
-    "specularGloss": 20
+    "specularStrength": 0.21,
+    "specularGloss": 15
   },
   {
     "name": "GRASS_3_N"
@@ -842,8 +842,8 @@
   {
     "name": "GRASS_3",
     "normalMap": "GRASS_3_N",
-    "specularStrength": 0.28,
-    "specularGloss": 20
+    "specularStrength": 0.21,
+    "specularGloss": 15
   },
   {
     "name": "GRASS_SCROLLING",
