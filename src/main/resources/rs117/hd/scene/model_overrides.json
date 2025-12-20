@@ -13562,7 +13562,9 @@
       "QUETZACALLI_DUGUPSOIL02",
       "QUETZACALLI_DUGUPSOIL03",
       "PEST_OUTPOST_SOIL_1",
-      "PEST_OUTPOST_SOIL_3"
+      "PEST_OUTPOST_SOIL_3",
+      "AV_SCRAMBLE_1",
+      "AV_SCRAMBLE_1_NOOP"
     ],
     "uvType": "BOX",
     "uvScale": 0.65
