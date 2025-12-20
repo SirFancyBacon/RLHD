@@ -70931,5 +70931,190 @@
       "BCS_TOMB_WALLTOP",
       "CAVEKIT_SNOW03_DEFAULT01_DARK02_WALLTOP"
     ]
+  },
+  {
+    "description": "Vale Totems - Totem ground decoration",
+    "baseMaterial": "DIRT_2",
+    "uvType": "MODEL_XZ",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "objectIds": [
+      "ENT_TOTEMS_BASE_NONE",
+      "ENT_TOTEMS_SITE_1_DECORATION"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem offerings - Empty",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "bark",
+        "colors": "h == 2 || h == 3",
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_OFFERINGS_NONE"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem offerings",
+    "baseMaterial": "PLANT_GRUNGE_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "bark",
+        "colors": "h == 2 || h == 3",
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      },
+      {
+        "description": "Wood",
+        "colors": "h == 4 && s == 2",
+        "baseMaterial": "WOOD_GRAIN_2",
+        "uvType": "BOX",
+        "uvScale": 0.6,
+        "uvOrientation": 512
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_OFFERINGS_A",
+      "ENT_TOTEMS_OFFERINGS_B"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem _ Wood",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "objectIds": [
+      "ENT_TOTEMS_LOW_OAK",
+      "ENT_TOTEMS_MID_OAK",
+      "ENT_TOTEMS_TOP_OAK",
+      "ENT_TOTEMS_LOW_WILLOW",
+      "ENT_TOTEMS_MID_WILLOW",
+      "ENT_TOTEMS_TOP_WILLOW",
+      "ENT_TOTEMS_LOW_MAPLE",
+      "ENT_TOTEMS_MID_MAPLE",
+      "ENT_TOTEMS_TOP_MAPLE",
+      "ENT_TOTEMS_LOW_YEW",
+      "ENT_TOTEMS_MID_YEW",
+      "ENT_TOTEMS_TOP_YEW",
+      "ENT_TOTEMS_ANIMAL_A",
+      "ENT_TOTEMS_ANIMAL_B",
+      "ENT_TOTEMS_ANIMAL_C",
+      "ENT_TOTEMS_ANIMAL_D",
+      "ENT_TOTEMS_ANIMAL_E",
+      "ENT_TOTEMS_DECOR_01",
+      "ENT_TOTEMS_DECOR_02",
+      "ENT_TOTEMS_DECOR_03",
+      "ENT_TOTEMS_DECOR_04"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem - Base with Bark - Oak",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "Fake shadow",
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      },
+      {
+        "description": "bark",
+        "colors": "h == 5 && (s == 2 || s == 3)",
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_CARVED_BASE_OAK",
+      "ENT_TOTEMS_BASE_OAK"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem - Base with Bark - Willow",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "Fake shadow",
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      },
+      {
+        "description": "bark",
+        "colors": "h == 8 && s == 3 && l < 29",
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_CARVED_BASE_WILLOW",
+      "ENT_TOTEMS_BASE_WILLOW"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem - Base with Bark - Maple",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "Fake shadow",
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      },
+      {
+        "description": "bark",
+        "colors": [
+          "h == 4 && s == 6",
+          "h == 5 && s == 5"
+        ],
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_CARVED_BASE_MAPLE",
+      "ENT_TOTEMS_BASE_MAPLE"
+    ]
+  },
+  {
+    "description": "Vale Totems - Totem - Base with Bark - Yew",
+    "baseMaterial": "WOOD_GRAIN_2",
+    "uvType": "BOX",
+    "uvScale": 0.6,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "description": "Fake shadow",
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      },
+      {
+        "description": "bark",
+        "colors": "(h == 6 || h == 7) && s == 7",
+        "baseMaterial": "BARK",
+        "uvType": "BOX"
+      }
+    ],
+    "objectIds": [
+      "ENT_TOTEMS_BASE_YEW",
+      "ENT_TOTEMS_CARVED_BASE_YEW"
+    ]
   }
 ]
