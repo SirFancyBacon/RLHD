@@ -89,6 +89,13 @@
     ]
   },
   {
+    "name": "ICY_SNOW",
+    "materials": [
+      "SMOOTH_SNOW",
+      "ICE_2"
+    ]
+  },
+  {
     "name": "GRAVEL",
     "materials": [
       "GRAVEL"
