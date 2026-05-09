@@ -11710,7 +11710,8 @@
     ],
     "uvType": "BOX",
     "uvOrientationY": 256,
-    "uvOrientationZ": 800
+    "uvOrientationZ": 800,
+    "uvScale": 0.5
   },
   {
     "description": "Falador - Marble - Saradomin Statue",
@@ -37845,7 +37846,18 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.7,
-    "uvOrientation": 512
+    "uvOrientationX": 512,
+    "colorOverrides": [
+      {
+        "colors": "h == 0",
+        "baseMaterial": "GRUNGE_3"
+      },
+      {
+        "colors": "h == 35",
+        "baseMaterial": "NONE",
+        "depthBias": 100
+      }
+    ]
   },
   {
     "description": "Plank Boat - Walls - Wooden - Hull",
@@ -38051,14 +38063,23 @@
   },
   {
     "description": "Plank Boat - Wooden - Net",
-    "baseMaterial": "WOOD_GRAIN_3",
     "objectIds": [
       "SHIP_NET1",
       "SHIP_NET2"
     ],
     "uvType": "BOX",
-    "uvScale": 0.6,
-    "uvOrientation": 512
+    "uvScale": 0.57,
+    "retainVanillaUvs": false,
+    "upwardsNormals": true,
+    "colorOverrides": [
+      {
+        "colors": "h == 5",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvScale": 0.6,
+        "uvOrientation": 512
+      }
+    ]
   },
   {
     "description": "Plank Boat - Wooden - Mast with Sails",
@@ -38195,6 +38216,7 @@
     ],
     "uvType": "BOX",
     "uvScale": 0.5,
+    "uvOrientation": 512,
     "colorOverrides": [
       {
         "colors": [
@@ -44667,7 +44689,8 @@
       "MISTMYST_BOAT_ISLAND",
       "SEASLUG_ROWBOAT",
       "MM2_MONKEY_BOAT",
-      "SLUG2_ROWBOAT"
+      "SLUG2_ROWBOAT",
+      "SLUG2_ROWBOAT_DMG"
     ],
     "baseMaterial": "WOOD_GRAIN_3",
     "uvType": "BOX",
