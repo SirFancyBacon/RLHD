@@ -31758,10 +31758,13 @@
     "baseMaterial": "DIRT_1_SEMI_DARK",
     "uvType": "BOX",
     "uvScale": 0.7,
+    "terrainVertexSnap": true,
     "objectIds": [
       "BRIDGELUM_DUGUPSOIL_1",
       "BRIDGELUM_DUGUPSOIL_2",
-      "BRIDGELUM_DUGUPSOIL_3"
+      "BRIDGELUM_DUGUPSOIL_3",
+      "BRIDGELUM_DUGUPSOIL_DARK_1",
+      "BRIDGELUM_DUGUPSOIL_DARK_2"
     ]
   },
   {
@@ -37661,17 +37664,13 @@
     ]
   },
   {
-    "description": "Black Dragon Egg",
-    "baseMaterial": "BLANK_SUPERGLOSS",
+    "description": "Dragon Egg",
+    "baseMaterial": "GRUNGE_3",
+    "shiftLightness": 3,
+    "uvType": "BOX",
     "objectIds": [
-      "CHICKENQUEST_BLACK_DRAGON_EGG"
-    ],
-    "uvType": "BOX"
-  },
-  {
-    "description": "Red Dragon Egg",
-    "baseMaterial": "GRAY_80",
-    "objectIds": [
+      "CHICKENQUEST_BLACK_DRAGON_EGG",
+      "LAVA_DRAGON_EGG01",
       "HOSDUN_RED_DRAGON_EGG"
     ]
   },
@@ -82757,7 +82756,8 @@
       "AMENITY_BANKCHEST_UNBUILT",
       "AMENITY_COOKING_POT_UNBUILT",
       "AMENITY_LOOM_UNBUILT",
-      "AMENITY_SPINNING_WHEEL_UNBUILT"
+      "AMENITY_SPINNING_WHEEL_UNBUILT",
+      "AMENITY_ANVIL_UNBUILT"
     ],
     "colorOverrides": [
       {
@@ -92827,6 +92827,103 @@
       "EARTHWAVE_TRAVEL",
       "EARTHBLAST_TRAVEL",
       "EARTHBOLT_TRAVEL"
+    ]
+  },
+  {
+    "description": "Charred Island - Dragon Scales",
+    "baseMaterial": "METALLIC_1_GLOSS",
+    "uvType": "BOX",
+    "shiftLightness": 8,
+    "uvScale": 0.33,
+    "objectIds": [
+      "SAILING_CHARTING_GENERIC_DRAGON_SCALES"
+    ]
+  },
+  {
+    "description": "Chared Island - Cave Entrance",
+    "baseMaterial": "GRUNGE_1",
+    "uvType": "BOX",
+    "shiftLightness": 2,
+    "colorOverrides": [
+      {
+        "colors": "h == 5",
+        "baseMaterial": "ROPE",
+        "uvType": "BOX",
+        "uvScale": 0.5,
+        "uvOrientation": 313
+      }
+    ],
+    "objectIds": [
+      "SAILING_ISLANDS_DRAGON_ISLAND_DUNGEON_ENTRANCE_NO_ROPE",
+      "SAILING_ISLANDS_DRAGON_ISLAND_DUNGEON_ENTRANCE_ROPED"
+    ]
+  },
+  {
+    "description": "Charred Island - Cave Walls",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "shiftLightness": 3,
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Rubium",
+        "colors": "s == 3",
+        "baseMaterial": "ROCK_4_ORE",
+        "uvType": "BOX",
+        "uvScale": 0.5,
+        "shiftLightness": 2,
+        "uvOrientation": -242
+      },
+      {
+        "colors": "s == 0 && l == 2",
+        "baseMaterial": "BLACK"
+      }
+    ],
+    "objectIds": [
+      "CAVEKIT_ROCK01_DEFAULT05"
+    ]
+  },
+  {
+    "description": "Charred Island - Rubium Deposit",
+    "baseMaterial": "ROCK_3",
+    "uvType": "BOX",
+    "shiftLightness": 3,
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "description": "Rubium",
+        "colors": "s == 3",
+        "baseMaterial": "ROCK_4_ORE",
+        "uvType": "BOX",
+        "uvScale": 0.5,
+        "shiftLightness": 2,
+        "uvOrientation": -242
+      },
+      {
+        "colors": "s == 0 && l == 2",
+        "baseMaterial": "BLACK"
+      }
+    ],
+    "objectIds": [
+      "RUBIUMDEPOSIT1",
+      "RUBIUMROCK1_EMPTY",
+      "RUBIUMDEPOSIT1_EMPTY"
+    ]
+  },
+  {
+    "description": "Charred Island - Cave Stalagmites",
+    "baseMaterial": "ROCK_5",
+    "uvType": "BOX",
+    "shiftLightness": 4,
+    "uvOrientation": -172,
+    "uvScale": 0.9,
+    "objectIds": [
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES",
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES_TWIN",
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES_LARGE",
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES_TALL",
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES_LARGE_BIG",
+      "CAVEKIT_ROCK01_DEFAULT05_STALAGMITES_TWIN_BIG"
     ]
   }
 ]

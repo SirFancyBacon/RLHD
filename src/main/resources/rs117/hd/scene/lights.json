@@ -49446,5 +49446,22 @@
     "objectIds": [
       "SAILING_CHARTING_GENERIC_LARGE_LIGHT"
     ]
+  },
+  {
+    "description": "Charred Island - Exit",
+    "offset": [ -64, 400, 0 ],
+    "radius": 600,
+    "strength": 20,
+    "color": [
+      255,
+      249,
+      230
+    ],
+    "type": "STATIC",
+    "duration": 1000,
+    "range": 0.2,
+    "objectIds": [
+      "SAILING_ISLANDS_DRAGON_ISLAND_DUNGEON_EXIT"
+    ]
   }
 ]
