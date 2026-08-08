@@ -1810,24 +1810,21 @@ public class SceneUploader implements AutoCloseable {
 					plugin.configLegacyGreyColors,
 					modelNormals[0],
 					modelNormals[1],
-					modelNormals[2],
-					isTextured
+					modelNormals[2]
 				);
 				color2 = undoVanillaShading(
 					color2,
 					plugin.configLegacyGreyColors,
 					modelNormals[3],
 					modelNormals[4],
-					modelNormals[5],
-					isTextured
+					modelNormals[5]
 				);
 				color3 = undoVanillaShading(
 					color3,
 					plugin.configLegacyGreyColors,
 					modelNormals[6],
 					modelNormals[7],
-					modelNormals[8],
-					isTextured
+					modelNormals[8]
 				);
 			}
 
@@ -2303,22 +2300,19 @@ public class SceneUploader implements AutoCloseable {
 						color1,
 						plugin.configLegacyGreyColors,
 						faceNormals[0], faceNormals[1], faceNormals[2],
-						localLx, localLy, localLz,
-						textureId != -1
+						localLx, localLy, localLz
 					);
 					color2 = undoVanillaShading(
 						color2,
 						plugin.configLegacyGreyColors,
 						faceNormals[3], faceNormals[4], faceNormals[5],
-						localLx, localLy, localLz,
-						textureId != -1
+						localLx, localLy, localLz
 					);
 					color3 = undoVanillaShading(
 						color3,
 						plugin.configLegacyGreyColors,
 						faceNormals[6], faceNormals[7], faceNormals[8],
-						localLx, localLy, localLz,
-						textureId != -1
+						localLx, localLy, localLz
 					);
 				}
 
@@ -2713,29 +2707,27 @@ public class SceneUploader implements AutoCloseable {
 		out[2] = out[6] = out[10] = 0f;
 	}
 
-	// 1. Static Geometry Router (Uses your perfect fixed world sun)
+	// 1. Static Geometry Router
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
-		float nx, float ny, float nz, boolean isTextured
+		float nx, float ny, float nz
 	) {
 		return undoVanillaShading(
 			color, legacyGreyColors,
 			nx, ny, nz,
-			0.707f, 0.141f, 0.707f, // Fixed world sun
-			isTextured
+			0.577f, 0.577f, 0.577f
 		);
 	}
 
-	// 2. Integer Router (For compatibility with existing integer arrays)
+	// 2. Integer Router
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
-		int nx, int ny, int nz, boolean isTextured
+		int nx, int ny, int nz
 	) {
 		return undoVanillaShading(
 			color, legacyGreyColors,
 			(float) nx, (float) ny, (float) nz,
-			0.707f, 0.141f, 0.707f,
-			isTextured
+			0.577f, 0.577f, 0.577f
 		);
 	}
 
@@ -2743,8 +2735,7 @@ public class SceneUploader implements AutoCloseable {
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
 		float nx, float ny, float nz,
-		float lX, float lY, float lZ,
-		boolean isTextured
+		float lX, float lY, float lZ
 	) {
 		int s = (color >> 7) & 0x7;
 		float l = color & 0x7F; // Keep as float to avoid expensive re-casting
@@ -2757,31 +2748,22 @@ public class SceneUploader implements AutoCloseable {
 			float dotProduct = (nx * lX + ny * lY + nz * lZ) * invLen;
 
 			if (dotProduct > 0f) {
-				// THE ALGEBRAIC REVERSAL:
-				// 0.65f is the typical max contrast reduction in OSRS.
-				// We calculate the inverse remaining light ratio (division converted to fast multiplication).
-				float inverseShadowRatio = 1.0f / (1.0f - (dotProduct * 0.68f));
-
-				// We add a 10f virtual ambient floor to recover information clamped to 0 by the engine,
-				// multiply by the true geometric ratio, and strip the floor back out.
-				// This dynamically replaces the 17f heuristic for all models instantly!
-				l = (l + 10f) * inverseShadowRatio - 10f;
+				// SAFE LINEAR ADDITION (The Inversion-Proof Fix):
+				float colorAdjust = 16f + (l * 1.2f);
+				l += (dotProduct * colorAdjust);
+			} else {
+				// HIGHLIGHT REVERSAL:
+				l += (dotProduct * 12f);
 			}
 		}
 
-		// BRANCHLESS OPTIMIZATIONS:
-		// Compiles to fast conditional move instructions, avoiding CPU pipeline stalls.
-		l = isTextured ? l : l * 0.90f;
-
 		int maxBrightness = legacyGreyColors ? 55 : getMaxBrightness(s);
-		maxBrightness = (s == 0 && !legacyGreyColors && !isTextured) ? Math.min(maxBrightness, 87) : maxBrightness;
 
 		// Final integer cast and clamp
 		int finalLightness = Math.max(0, Math.min((int) l, maxBrightness));
 
 		return (color & 0xFC00) | (s << 7) | finalLightness;
 	}
-
 	private static int getMaxBrightness(int s) {
 		// MAX_BRIGHTNESS_LOOKUP_TABLE
 		// [127, 61, 59, 57, 56, 56, 55, 55]
