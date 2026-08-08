@@ -2743,40 +2743,43 @@ public class SceneUploader implements AutoCloseable {
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
 		float nx, float ny, float nz,
-		float lX, float lY, float lZ, // Dynamic light vector injection
+		float lX, float lY, float lZ,
 		boolean isTextured
 	) {
 		int s = (color >> 7) & 0x7;
-		int l = color & 0x7F;
+		float l = color & 0x7F; // Keep as float to avoid expensive re-casting
 
-		
-		float colorAdjust = 17f + (l * 1.5f);
 		float len = nx * nx + ny * ny + nz * nz;
 
 		if (len > 0f) {
 			// CPU OPTIMIZATION: 1 inverse sqrt, 0 vertex divisions.
 			float invLen = 1.0f / (float) Math.sqrt(len);
-
-			// Combine normalization directly into the dot product
 			float dotProduct = (nx * lX + ny * lY + nz * lZ) * invLen;
 
 			if (dotProduct > 0f) {
-				l += (int) (dotProduct * colorAdjust);
+				// THE ALGEBRAIC REVERSAL:
+				// 0.65f is the typical max contrast reduction in OSRS.
+				// We calculate the inverse remaining light ratio (division converted to fast multiplication).
+				float inverseShadowRatio = 1.0f / (1.0f - (dotProduct * 0.65f));
+
+				// We add a 10f virtual ambient floor to recover information clamped to 0 by the engine,
+				// multiply by the true geometric ratio, and strip the floor back out.
+				// This dynamically replaces the 17f heuristic for all models instantly!
+				l = (l + 10f) * inverseShadowRatio - 10f;
 			}
 		}
 
-		if (!isTextured) {
-			l = (int) (l * 0.90f);
-		}
+		// BRANCHLESS OPTIMIZATIONS:
+		// Compiles to fast conditional move instructions, avoiding CPU pipeline stalls.
+		l = isTextured ? l : l * 0.90f;
 
 		int maxBrightness = legacyGreyColors ? 55 : getMaxBrightness(s);
+		maxBrightness = (s == 0 && !legacyGreyColors && !isTextured) ? Math.min(maxBrightness, 87) : maxBrightness;
 
-		if (s == 0 && !legacyGreyColors && !isTextured) {
-			maxBrightness = Math.min(maxBrightness, 87);
-		}
+		// Final integer cast and clamp
+		int finalLightness = Math.max(0, Math.min((int) l, maxBrightness));
 
-		l = Math.max(0, Math.min(l, maxBrightness));
-		return (color & 0xFC00) | (s << 7) | l;
+		return (color & 0xFC00) | (s << 7) | finalLightness;
 	}
 
 	private static int getMaxBrightness(int s) {
