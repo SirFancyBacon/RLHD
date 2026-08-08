@@ -2717,8 +2717,11 @@ public class SceneUploader implements AutoCloseable {
 			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
 			if (dotProduct > 0f) {
-				// THE PEAK RESTORATION CURVE
-				float colorAdjust = 14f + (l * 2.5f) - (l * l * 0.015f);
+				// THE STEEP CONTRAST CURVE:
+				// Low floor (9f) protects absolute blacks from washing out.
+				// Steep slope (2.0f) aggressively pulls dark grays out of shadows.
+				// Squared brake (0.012f) smoothly caps mid-tones to prevent blow-outs.
+				float colorAdjust = 9f + (l * 2.0f) - (l * l * 0.012f);
 				l += (dotProduct * colorAdjust);
 			}
 		}
