@@ -75,15 +75,6 @@ public class SceneUploader implements AutoCloseable {
 		0, 1, 0, 0
 	};
 
-	// subtracts the X lowest lightness levels from the formula.
-	// helps keep darker colors appropriately dark
-	private static final int IGNORE_LOW_LIGHTNESS = 3;
-	// multiplier applied to vertex' lightness value.
-	// results in greater lightening of lighter colors
-	private static final float LIGHTNESS_MULTIPLIER = 3;
-	// the minimum amount by which each color will be lightened
-	private static final int BASE_LIGHTEN = 10;
-
 	static {
 		for (int i = 0; i < 8; i++) {
 			int brightness = (int) (127 - 72 * Math.pow(i / 7f, .05));
@@ -2205,10 +2196,6 @@ public class SceneUploader implements AutoCloseable {
 
 		int orientSin = 0;
 		int orientCos = 0;
-		// The default unrotated world sun vector for dynamic objects
-		float localLx = 0.577f;
-		float localLy = 0.577f;
-		float localLz = 0.577f;
 
 		if (orientation != 0) {
 			orientation = mod(orientation, 2048);
@@ -2299,20 +2286,17 @@ public class SceneUploader implements AutoCloseable {
 					color1 = undoVanillaShading(
 						color1,
 						plugin.configLegacyGreyColors,
-						faceNormals[0], faceNormals[1], faceNormals[2],
-						localLx, localLy, localLz
+						faceNormals[0], faceNormals[1], faceNormals[2]
 					);
 					color2 = undoVanillaShading(
 						color2,
 						plugin.configLegacyGreyColors,
-						faceNormals[3], faceNormals[4], faceNormals[5],
-						localLx, localLy, localLz
+						faceNormals[3], faceNormals[4], faceNormals[5]
 					);
 					color3 = undoVanillaShading(
 						color3,
 						plugin.configLegacyGreyColors,
-						faceNormals[6], faceNormals[7], faceNormals[8],
-						localLx, localLy, localLz
+						faceNormals[6], faceNormals[7], faceNormals[8]
 					);
 				}
 
@@ -2707,63 +2691,44 @@ public class SceneUploader implements AutoCloseable {
 		out[2] = out[6] = out[10] = 0f;
 	}
 
-	// 1. Static Geometry Router
-	public static int undoVanillaShading(
-		int color, boolean legacyGreyColors,
-		float nx, float ny, float nz
-	) {
-		return undoVanillaShading(
-			color, legacyGreyColors,
-			nx, ny, nz,
-			0.577f, 0.577f, 0.577f
-		);
-	}
-
-	// 2. Integer Router
+	// 1. Integer Router (Handles scaled integers from dynamic models safely)
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
 		int nx, int ny, int nz
 	) {
-		return undoVanillaShading(
-			color, legacyGreyColors,
-			(float) nx, (float) ny, (float) nz,
-			0.577f, 0.577f, 0.577f
-		);
+		return undoVanillaShading(color, legacyGreyColors, (float) nx, (float) ny, (float) nz);
 	}
 
-	// 3. The Core CPU-Optimized Engine
+	// 2. The Core CPU-Optimized Engine
 	public static int undoVanillaShading(
 		int color, boolean legacyGreyColors,
-		float nx, float ny, float nz,
-		float lX, float lY, float lZ
+		float nx, float ny, float nz
 	) {
 		int s = (color >> 7) & 0x7;
-		float l = color & 0x7F; // Keep as float to avoid expensive re-casting
+		float l = color & 0x7F;
 
 		float len = nx * nx + ny * ny + nz * nz;
 
 		if (len > 0f) {
-			// CPU OPTIMIZATION: 1 inverse sqrt, 0 vertex divisions.
+			// CPU OPTIMIZATION: 1 inverse sqrt, 1 multiplication for the dot product.
 			float invLen = 1.0f / (float) Math.sqrt(len);
-			float dotProduct = (nx * lX + ny * lY + nz * lZ) * invLen;
+
+			// Factored out the uniform 0.57735026f vector for maximum speed
+			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
 			if (dotProduct > 0f) {
-				// SAFE LINEAR ADDITION (The Inversion-Proof Fix):
-				float colorAdjust = 16f + (l * 1.2f);
+				// THE PEAK RESTORATION CURVE
+				float colorAdjust = 14f + (l * 2.5f) - (l * l * 0.015f);
 				l += (dotProduct * colorAdjust);
-			} else {
-				// HIGHLIGHT REVERSAL:
-				l += (dotProduct * 12f);
 			}
 		}
 
 		int maxBrightness = legacyGreyColors ? 55 : getMaxBrightness(s);
-
-		// Final integer cast and clamp
 		int finalLightness = Math.max(0, Math.min((int) l, maxBrightness));
 
 		return (color & 0xFC00) | (s << 7) | finalLightness;
 	}
+
 	private static int getMaxBrightness(int s) {
 		// MAX_BRIGHTNESS_LOOKUP_TABLE
 		// [127, 61, 59, 57, 56, 56, 55, 55]
