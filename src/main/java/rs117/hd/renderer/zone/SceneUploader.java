@@ -2760,7 +2760,7 @@ public class SceneUploader implements AutoCloseable {
 				// THE ALGEBRAIC REVERSAL:
 				// 0.65f is the typical max contrast reduction in OSRS.
 				// We calculate the inverse remaining light ratio (division converted to fast multiplication).
-				float inverseShadowRatio = 1.0f / (1.0f - (dotProduct * 0.65f));
+				float inverseShadowRatio = 1.0f / (1.0f - (dotProduct * 0.68f));
 
 				// We add a 10f virtual ambient floor to recover information clamped to 0 by the engine,
 				// multiply by the true geometric ratio, and strip the floor back out.
