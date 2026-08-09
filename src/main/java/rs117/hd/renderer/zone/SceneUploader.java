@@ -2717,11 +2717,12 @@ public class SceneUploader implements AutoCloseable {
 			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
 			if (dotProduct > 0f) {
-				// THE STEEP CONTRAST CURVE:
-				// Low floor (9f) protects absolute blacks from washing out.
-				// Steep slope (2.0f) aggressively pulls dark grays out of shadows.
-				// Squared brake (0.012f) smoothly caps mid-tones to prevent blow-outs.
-				float colorAdjust = 9f + (l * 2.0f) - (l * l * 0.012f);
+				// THE MONOTONIC "GOLDEN" CURVE:
+				// - 11f floor: Safely lifts the deepest blacks without crushing them together.
+				// - 2.2f slope: Massively flattens mid-tones (restoring Falador walls).
+				// - 0.012f brake: Gentle enough that the curve NEVER drops backward,
+				//   completely eliminating the harsh artifacting bands!
+				float colorAdjust = 11f + (l * 2.2f) - (l * l * 0.012f);
 				l += (dotProduct * colorAdjust);
 			}
 		}
