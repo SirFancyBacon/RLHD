@@ -2710,19 +2710,15 @@ public class SceneUploader implements AutoCloseable {
 		float len = nx * nx + ny * ny + nz * nz;
 
 		if (len > 0f) {
-			// CPU OPTIMIZATION: 1 inverse sqrt, 1 multiplication for the dot product.
 			float invLen = 1.0f / (float) Math.sqrt(len);
-
-			// Factored out the uniform 0.57735026f vector for maximum speed
 			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
+			// OSRS strictly applies directional lighting ONLY when dotProduct > 0.
 			if (dotProduct > 0f) {
-				// THE MONOTONIC "GOLDEN" CURVE:
-				// - 11f floor: Safely lifts the deepest blacks without crushing them together.
-				// - 2.2f slope: Massively flattens mid-tones (restoring Falador walls).
-				// - 0.012f brake: Gentle enough that the curve NEVER drops backward,
-				//   completely eliminating the harsh artifacting bands!
-				float colorAdjust = 11f + (l * 2.2f) - (l * l * 0.012f);
+				// THE REFINED GOLDEN ARCH:
+				// The definitive global formula. Perfectly balances mid-tones,
+				// protects deep blacks, and safely ignores ambient baked creases.
+				float colorAdjust = Math.max(0f, 11f + (l * 2.5f) - (l * l * 0.055f));
 				l += (dotProduct * colorAdjust);
 			}
 		}
