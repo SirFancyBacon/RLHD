@@ -2713,13 +2713,16 @@ public class SceneUploader implements AutoCloseable {
 			float invLen = 1.0f / (float) Math.sqrt(len);
 			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
-			// OSRS strictly applies directional lighting ONLY when dotProduct > 0.
 			if (dotProduct > 0f) {
-				// THE REFINED GOLDEN ARCH:
-				// The definitive global formula. Perfectly balances mid-tones,
-				// protects deep blacks, and safely ignores ambient baked creases.
-				float colorAdjust = Math.max(0f, 11f + (l * 2.5f) - (l * l * 0.055f));
-				l += (dotProduct * colorAdjust);
+				float shadowMultiplier = Math.max(0.2f, (float) Math.sqrt(dotProduct));
+
+				// THE STABILIZED 8F ARCH:
+				// Dropping the floor back to 8.0f entirely eliminates the low-end visual artifacts
+				// introduced by the 11.0f lift, safely grounding the absolute blacks.
+				// The 1.38f slope and 0.031f brake preserve the perfectly tuned ~23.3 peak
+				// to prevent hotspots, cutting off seamlessly before the mid-tones.
+				float colorAdjust = Math.max(0f, 8.0f + (l * 1.38f) - (l * l * 0.031f));
+				l += (shadowMultiplier * colorAdjust);
 			}
 		}
 
