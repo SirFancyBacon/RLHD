@@ -2710,18 +2710,24 @@ public class SceneUploader implements AutoCloseable {
 		float len = nx * nx + ny * ny + nz * nz;
 
 		if (len > 0f) {
+			// CPU OPTIMIZATION: 1 inverse sqrt, 1 multiplication for the dot product.
 			float invLen = 1.0f / (float) Math.sqrt(len);
 			float dotProduct = (nx + ny + nz) * 0.57735026f * invLen;
 
 			if (dotProduct > 0f) {
-				float shadowMultiplier = Math.max(0.2f, (float) Math.sqrt(dotProduct));
+				// THE BRANCHLESS TERMINATOR RAMP:
+				// Taking the minimum seamlessly traces the exact same smooth transition
+				// without utilizing a ternary operator, compiling to a fast hardware
+				// min instruction and completely eliminating branch prediction stalls.
+				float shadowMultiplier = Math.min(dotProduct * 5f, (float) Math.sqrt(dotProduct));
 
-				// THE STABILIZED 8F ARCH:
-				// Dropping the floor back to 8.0f entirely eliminates the low-end visual artifacts
-				// introduced by the 11.0f lift, safely grounding the absolute blacks.
-				// The 1.38f slope and 0.031f brake preserve the perfectly tuned ~23.3 peak
-				// to prevent hotspots, cutting off seamlessly before the mid-tones.
-				float colorAdjust = Math.max(0f, 8.0f + (l * 1.38f) - (l * l * 0.031f));
+				// THE UNIFIED 2F RAMP:
+				// l <= 2f mathematically locks to 0. Continously scales to 11.0f by l=5.
+				float dynamicFloor = Math.min(11.0f, Math.max(0f, (l - 2f) * 3.66f));
+
+				// THE SHADOW-BOOSTED ARCH:
+				float colorAdjust = Math.max(0f, dynamicFloor + (l * 1.24f) - (l * l * 0.031f));
+
 				l += (shadowMultiplier * colorAdjust);
 			}
 		}
