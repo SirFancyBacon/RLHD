@@ -4353,19 +4353,6 @@
     "uvScale": 0.75
   },
   {
-    "description": "STONE_STEPS",
-    "baseMaterial": "STONE_NORMALED",
-    "objectIds": [
-      "VIKING_SKEWSTEPS",
-      "RIMMINGTON_SKEWSTEPS",
-      "RIMMINGTON_SKEWSTEPS_CORNER",
-      "RIMMINGTON_FLOORSTEPS",
-      "RIMMINGTON_FLOORSTEPS_WATER_SOURCE"
-    ],
-    "uvType": "BOX",
-    "uvScale": 0.75
-  },
-  {
     "description": "Lumbridge - Building Walls with roofs",
     "areas": [ "LUMBRIDGE" ],
     "objectIds": [
@@ -5179,8 +5166,6 @@
       "FAI_VARROCK_CASTLE_WALLS_BATTLEMENT_TERM_MIRROR",
       "FAI_VARROCK_CASTLE_BATTLEMENT_JOIN",
       "FAI_VARROCK_CASTLE_BATTLEMENT_JOIN_MIRROR",
-      "FAI_VARROCK_MUSEUM_SKEWSTEPS_NORTH",
-      "FAI_VARROCK_MUSEUM_SKEWSTEPS_SOUTH",
       "FAI_VARROCK_STEPS_NORMAL_NORTH",
       "FAI_VARROCK_STEPS_CURVED_SECTION_1_NORTH",
       "FAI_VARROCK_STEPS_CURVED_SECTION_2_NORTH",
@@ -9888,7 +9873,6 @@
       "SARIM_SEAGULL_DROPPINGS",
       "SERIM_PIER",
       "QUEST_START_ICON_PANDEMONIUM",
-      "SKEWSTEPS_WOOD01_DEFAULT",
       "SALVAGING_STATION_ICON_SERIM_PIER",
       "PORT_TASK_BOARD_ICON_SERIM_PIER",
       "LEDGER_TABLE_ICON_SERIM_PIER",
@@ -17297,7 +17281,19 @@
       "LOTR_SKEWSTEPS1_UPASS",
       "FOSSILQUEST_SKEWSTEPS",
       "FOSSILQUEST_SKEWSTEPS1",
-      "FOSSILQUEST_SKEWSTEPS2"
+      "FOSSILQUEST_SKEWSTEPS2",
+      "VIKING_SKEWSTEPS",
+      "RIMMINGTON_SKEWSTEPS",
+      "RIMMINGTON_SKEWSTEPS_CORNER",
+      "RIMMINGTON_FLOORSTEPS",
+      "RIMMINGTON_FLOORSTEPS_WATER_SOURCE",
+      "DESERT_TREASURE_SKEWSTEPS",
+      "ELID_SKEW_STEPS",
+      "SKEWSTEPS1",
+      "SLAYER_SKEWSTEPS",
+      "FENK_SKEWSTEPS",
+      "FAI_VARROCK_MUSEUM_SKEWSTEPS_NORTH",
+      "FAI_VARROCK_MUSEUM_SKEWSTEPS_SOUTH"
     ],
     "uvType": "BOX",
     "uvOrientation": 602,
@@ -18097,7 +18093,8 @@
     "description": "Ground - Wooden - Plank Steps",
     "baseMaterial": "WOOD_GRAIN_2",
     "objectIds": [
-      "VIKING_WOOD_SKEWSTEPS"
+      "VIKING_WOOD_SKEWSTEPS",
+      "SKEWSTEPS_WOOD01_DEFAULT"
     ],
     "uvType": "BOX",
     "uvScale": 0.6,
@@ -24201,15 +24198,6 @@
       "FAI_VARROCK_BANK_STAIRS",
       "FAI_VARROCK_STAIRS_FROM_CELLAR"
     ]
-  },
-  {
-    "description": "Nardah Worn Stone Stairs",
-    "baseMaterial": "STONE_LOWGLOSS",
-    "objectIds": [
-      "DESERT_TREASURE_SKEWSTEPS",
-      "ELID_SKEW_STEPS"
-    ],
-    "uvType": "GEOMETRY"
   },
   {
     "description": "Elid Tent",
@@ -32211,9 +32199,6 @@
     "baseMaterial": "SMOOTH_STONE",
     "uvType": "BOX",
     "objectIds": [
-      "SKEWSTEPS1",
-      "SLAYER_SKEWSTEPS",
-      "FENK_SKEWSTEPS",
       "BH_PORTAL_FLOOR"
     ]
   },
