@@ -4756,6 +4756,9 @@
   {
     "description": "Burthorpe - Warriors Guild - Walls",
     "flatNormals": true,
+    "baseMaterial": "METALLIC_1",
+    "uvType": "BOX",
+    "uvScale": 0.25,
     "objectIds": [
       "WARGUILD_WINDOW",
       "WARGUILD_WALL"
@@ -14713,7 +14716,8 @@
       "PRISONWALL_REND",
       "PIP_PRISONDOOR",
       "INACTIVE_PIPPRISONDOOR",
-      "PRISONWALL_SPARE"
+      "PRISONWALL_SPARE",
+      "MCGRUBORLOOSERAILING"
     ]
   },
   {
@@ -55102,6 +55106,11 @@
   {
     "description": "Weapons case mounted on wall",
     "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationX": 512,
+    "retainVanillaUvs": false,
+    "shiftLightness": 2,
     "objectIds": [
       "CABINET_SWORDS",
       "CABINET_BOWS",
@@ -55120,12 +55129,9 @@
       "QIP_DS_SILVERLIGHT_CASE_FULL",
       "QIP_DS_SILVERLIGHT_CASE_OPEN",
       "QIP_DS_SILVERLIGHT_CASE_EMPTY",
-      "CABINET_BOWS_WHITE"
+      "CABINET_BOWS_WHITE",
+      "ORANGECABINET_SWORDS"
     ],
-    "uvType": "BOX",
-    "uvScale": 0.8,
-    "uvOrientationX": 512,
-    "retainVanillaUvs": false,
     "colorOverrides": [
       {
         "description": "Metal",
@@ -106779,6 +106785,119 @@
       "GRIM_WITCH_HOUSE_WALL",
       "GRIM_WITCH_HOUSE_WALL_WINDOW",
       "GRIM_WITCH_HOUSE_WALL_INSIDE"
+    ]
+  },
+  {
+    "description": "Warriors Guild Front Door",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "shiftLightness": 5,
+    "uvOrientationY": 512,
+    "colorOverrides": [
+      {
+        "colors": "h == 42",
+        "baseMaterial": "METALLIC_1_SEMIGLOSS",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "shiftLightness": 8
+      }
+    ],
+    "objectIds": [
+      "WARGUILD_DOOR_FRONT",
+      "WARGUILD_DOOR_INACTIVE_FRONT"
+    ]
+  },
+  {
+    "description": "Warriors Guild - Heavy Door - Metallic",
+    "baseMaterial": "METALLIC_1_SEMIGLOSS",
+    "uvType": "BOX",
+    "uvScale": 0.33,
+    "shiftLightness": 8,
+    "objectIds": [
+      "WAR_STRENGTH_DOOR",
+      "WAR_STRENGTH_DOOR_M",
+      "WAR_STRENGTH_DOOR_O",
+      "WAR_STRENGTH_DOOR_OM"
+    ]
+  },
+  {
+    "description": "Warriors Guild - Door with metal hoop",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "shiftLightness": 4,
+    "colorOverrides": [
+      {
+        "colors": "h == 10",
+        "baseMaterial": "METALLIC_1_SEMIGLOSS",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "shiftLightness": 6
+      }
+    ],
+    "objectIds": [
+      "WARGUILD_DOOR_ARMOUR_R",
+      "WARGUILD_DOOR_ARMOUR_L",
+      "WARGUILD_DOOR_INACTIVE_ARMOUR_R",
+      "WARGUILD_DOOR_INACTIVE_ARMOUR_L",
+      "WARGUILD_DOOR_CATAPULT",
+      "WARGUILD_DOOR_INACTIVE_CATAPULT",
+      "WARGUILD_DOOR_DUMMY",
+      "WARGUILD_DOOR_INACTIVE_DUMMY"
+    ]
+  },
+  {
+    "description": "Warriors Guild - Statues",
+    "baseMaterial": "MARBLE_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "shiftLightness": 2,
+    "objectIds": [
+      "WARGUILD_GNOMESTATUE1",
+      "WARGUILD_STATUE_GNOME_KING",
+      "WARGUILD_STATUE_KING",
+      "WARGUILD_STATUE_QUEEN",
+      "WARGUILD_STATUE_MALEWARRIOR",
+      "WARGUILD_STATUE_FEMALEWARRIOR"
+    ]
+  },
+  {
+    "description": "Warriors Guild - Wooden - Carpet - Floor standing cloth",
+    "baseMaterial": "CARPET",
+    "uvType": "BOX",
+    "uvScale": 0.4,
+    "shiftLightness": 4,
+    "colorOverrides": [
+      {
+        "colors": "h == 9",
+        "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+        "uvType": "BOX",
+        "uvOrientation": 512,
+        "uvScale": 0.70
+      }
+    ],
+    "objectIds": [
+      "DYED_CLOTH"
+    ]
+  },
+  {
+    "description": "Warriors Guild -  Dye pots",
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvScale": 0.4,
+    "shiftLightness": 4,
+    "colorOverrides": [
+      {
+        "colors": "s == 0",
+        "baseMaterial": "METALLIC_1",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "shiftLightness": 4
+      }
+    ],
+    "objectIds": [
+      "DYE_POTS"
     ]
   }
 ]
