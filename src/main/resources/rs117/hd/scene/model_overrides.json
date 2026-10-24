@@ -13565,7 +13565,8 @@
     "flatNormals": true,
     "objectIds": [
       "SPOOKYTABLE",
-      "KR_CAM_SPOOKYTABLE"
+      "KR_CAM_SPOOKYTABLE",
+      "GRIM_WITCH_HOUSE_SPOOKYTABLE"
     ]
   },
   {
@@ -15323,6 +15324,21 @@
   {
     "description": "Wooden Door 1 - Fake Plank",
     "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "flatNormals": true,
+    "uvOrientationY": 512,
+    "uvScale": 0.65,
+    "colorOverrides": [
+      {
+        "description": "Metal handle",
+        "colors": "h == 5 && s == 1",
+        "baseMaterial": "METALLIC_1",
+        "uvType": "BOX",
+        "shiftLightness": 5,
+        "uvScale": 0.43,
+        "uvOrientation": 172
+      }
+    ],
     "objectIds": [
       "MCANNONDOOR",
       "MCANNONDOOR1",
@@ -15479,12 +15495,9 @@
       "DOTI_INTERROGATION_DOOR",
       "LUC2_MOV_DOOR_CLOSED",
       "LUC2_MOV_DOOR_OPEN",
-      "BRASSKEYDOOR"
-    ],
-    "uvType": "BOX",
-    "flatNormals": true,
-    "uvOrientationY": 512,
-    "uvScale": 0.65
+      "BRASSKEYDOOR",
+      "WITCHSHEDDOOR"
+    ]
   },
   {
     "description": "Wooden Door 1 - Fake Plank - Light",
@@ -15879,6 +15892,29 @@
     "objectIds": [
       "EAGLEPEAK_CAVEIN_DESERT",
       "EAGLEPEAK_CAVEIN_BIG_DESERT"
+    ]
+  },
+  {
+    "description": "Feldip Hills Eagles Landing",
+    "baseMaterial": "GRASS_1",
+    "uvType": "BOX",
+    "uvScale": 1.15,
+    "shiftLightness": 6,
+    "uvOrientation": 313,
+    "inheritTileColorType": "OVERLAY",
+    "colorOverrides": [
+      {
+        "description": "Cave",
+        "colors": " h < 10",
+        "baseMaterial": "DIRT_1",
+        "uvType": "BOX",
+        "uvScale": 0.8,
+        "shiftLightness": 4
+      }
+    ],
+    "objectIds": [
+      "EAGLEPEAK_CAVEIN_JUNGLE",
+      "EAGLEPEAK_CAVEOUT_BIG_JUNGLE"
     ]
   },
   {
@@ -19918,7 +19954,8 @@
       "BIGTABLE",
       "TABLE",
       "BEDSIDETABLE",
-      "CON_CONTRACT_VARROCK_SOUTH_SMALL_TABLE_OAK"
+      "CON_CONTRACT_VARROCK_SOUTH_SMALL_TABLE_OAK",
+      "GRIM_WITCH_HOUSE_TABLE"
     ],
     "uvType": "BOX",
     "uvOrientation": 512,
@@ -22051,7 +22088,8 @@
       "DK_CHAIR",
       "QIP_WATCHTOWER_CHAIR",
       "CANAFIS_CHAIR",
-      "VMQ4_CHAIR_WOODEN01"
+      "VMQ4_CHAIR_WOODEN01",
+      "GRIM_WITCH_HOUSE_CHAIR"
     ],
     "uvType": "BOX",
     "uvOrientation": 512,
@@ -22379,12 +22417,14 @@
   },
   {
     "description": "Objects - Metallic - Manhole",
-    "baseMaterial": "METALLIC_1_LIGHT",
+    "baseMaterial": "METALLIC_1",
+    "shiftLightness": 8,
     "objectIds": [
       "MANHOLECLOSED",
       "MANHOLEOPEN",
       "PLAGUEMANHOLECLOSED",
-      "PLAGUEMANHOLECOVER"
+      "PLAGUEMANHOLECOVER",
+      "GRIM_MANHOLE"
     ],
     "uvType": "BOX",
     "uvScale": 0.2
@@ -51023,6 +51063,10 @@
   {
     "description": "Drawers with backsplash",
     "baseMaterial": "WOOD_GRAIN_3",
+    "shiftLightness": 2,
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationY": 512,
     "objectIds": [
       "FAI_VARROCK_DRAWERS",
       "FAI_VARROCK_POSH_DRAWERS",
@@ -51044,11 +51088,9 @@
       "KR_SIN_DRAWERS_UP",
       "KR_SIN_DRAWERS_UP_OPEN",
       "KR_SIN_DRAWERS_DOWN",
-      "KR_SIN_DRAWERS_DOWN_OPEN"
-    ],
-    "uvType": "BOX",
-    "uvScale": 0.8,
-    "uvOrientationY": 512
+      "KR_SIN_DRAWERS_DOWN_OPEN",
+      "GRIM_WITCH_HOUSE_DRAWERS"
+    ]
   },
   {
     "description": "Large Teak Table",
@@ -62782,7 +62824,8 @@
     ],
     "objectIds": [
       "MM_BAMBOO_MONKEYFLOOR",
-      "_100_ILM_BAMBOO_FLOOR_EDGE"
+      "_100_ILM_BAMBOO_FLOOR_EDGE",
+      "MM_BAMBOO_MONKEYFLOOR_FF"
     ]
   },
   {
@@ -77788,6 +77831,60 @@
     ]
   },
   {
+    "description": "Movario's Base - Floor tiles",
+    "baseMaterial": "STONE_NORMALED",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 256,
+    "objectIds": [
+      "LUC2_MOV_FLOORTILE",
+      "LUC2_MOV_FLOORTILE2",
+      "LUC2_MOV_FLOORTILE_CORNER",
+      "LUC2_MOVARIO_STAIRS_DOWN",
+      "LUC2_MOVARIO_MECHANICAL_STAIRS",
+      "LUC2_MOVARIO_MECHANICAL_STAIRS_COMPLETE"
+    ]
+  },
+  {
+    "description": "Movario's Base - Floor tiles with cables - DYNAMIC - ANIMATED",
+    "baseMaterial": "STONE_NORMALED",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "colors": "h == 5",
+        "baseMaterial": "GRUNGE_3_SHINY"
+      }
+    ],
+    "objectIds": [
+      "LUC2_MOV_FLOORWIRE_CORNER_ON",
+      "LUC2_MOV_FLOORWIRE_STRAIGHT_ON",
+      "LUC2_MOV_FLOORWIRE_STRAIGHT2_ON",
+      "LUC2_MOV_FLOORWIRE_STRAIGHT2_OFF",
+      "LUC2_MOV_FLOORWIRE_CORNER_OFF",
+      "LUC2_MOV_FLOORWIRE_STRAIGHT_OFF"
+    ]
+  },
+  {
+    "description": "Movario's Base - Floor tiles with cables - DYNAMIC - ANIMATED",
+    "baseMaterial": "STONE_NORMALED",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 256,
+    "colorOverrides": [
+      {
+        "colors": "h != 4",
+        "baseMaterial": "METALLIC_1",
+        "shiftLightness": 6
+      }
+    ],
+    "objectIds": [
+      "LUC2_MOV_TRAP_FLOORSPIKES",
+      "LUC2_MOV_TRAP_FLOORSPIKES_TREASURE"
+    ]
+  },
+  {
     "description": "Movario's Base - Kitchen Walls",
     "baseMaterial": "GRUNGE_3",
     "uvType": "BOX",
@@ -77877,7 +77974,8 @@
   },
   {
     "description": "Movario's Base - Metal Door",
-    "baseMaterial": "METALLIC_1_LIGHT",
+    "baseMaterial": "METALLIC_1",
+    "shiftLightness": 7,
     "objectIds": [
       "LUC2_MOVARIO_MAIN_BASE_DOOR_CLOSED",
       "LUC2_MOVARIO_MAIN_BASE_DOOR_OPEN",
@@ -86224,8 +86322,10 @@
     "uvType": "BOX",
     "uvScale": 0.5,
     "uvOrientation": 313,
+    "shiftLightness": 2,
     "objectIds": [
-      "SLP_STATUE_ZAMORAK"
+      "SLP_STATUE_ZAMORAK",
+      "STATUE_ZAMAROK"
     ]
   },
   {
@@ -106552,6 +106652,133 @@
     ],
     "objectIds": [
       "_2_HANDEDSIGN"
+    ]
+  },
+  {
+    "description": "Khazzard Battlefield - Rocks and broken bowl",
+    "baseMaterial": "GRUNGE_2",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 512,
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "STONE_NORMALED",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "uvOrientation": 313
+      }
+    ],
+    "objectIds": [
+      "RUBBLE_1"
+    ]
+  },
+  {
+    "description": "Khazzard Battlefield - Broken Wooden Table - Need proper UV",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientationY": 512,
+    "shiftLightness": 2,
+    "objectIds": [
+      "WGS_BF_TABLE_BROKEN2"
+    ]
+  },
+  {
+    "description": "Khazzard Battlefield - Metallic - Ladder",
+    "baseMaterial": "METALLIC_1",
+    "uvType": "BOX",
+    "uvScale": 0.42,
+    "shiftLightness": 10,
+    "objectIds": [
+      "LUC2_MOV_LADDER"
+    ]
+  },
+  {
+    "description": "While Guthix Sleeps - Metal Fence Gate - Live",
+    "baseMaterial": "METALLIC_1_SEMIGLOSS",
+    "uvType": "BOX",
+    "uvScale": 0.25,
+    "uvOrientation": 512,
+    "shiftLightness": 6,
+    "colorOverrides": [
+      {
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      }
+    ],
+    "objectIds": [
+      "LUC2_MOV_ELECTRIC_RAIL_GATE_LIVE"
+    ]
+  },
+  {
+    "description": "While Guthix Sleeps - waste basket with papers",
+    "baseMaterial": "METALLIC_1_SEMIGLOSS",
+    "uvType": "BOX",
+    "uvScale": 0.25,
+    "uvOrientation": 512,
+    "shiftLightness": 6,
+    "colorOverrides": [
+      {
+        "colors": "h == 10",
+        "baseMaterial": "GRUNGE_3"
+      }
+    ],
+    "objectIds": [
+      "LUC2_MOV_WASTEPAPERBASKET"
+    ]
+  },
+  {
+    "description": "While Cuthix Sleeps - Painting",
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvScale": 0.25,
+    "uvOrientation": 512,
+    "shiftLightness": 3,
+    "colorOverrides": [
+      {
+        "colors": "h == 8 && s == 1",
+        "baseMaterial": "CARPET",
+        "uvType": "BOX",
+        "shiftLightness": 10
+      },
+      {
+        "colors": "h == 5",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvScale": 0.66,
+        "shiftLightness": 4
+      }
+    ],
+    "objectIds": [
+      "LUC2_MOVARIO_BASE_PAINTING",
+      "LUC2_MOVARIO_BASE_PAINTING_MOVED"
+    ]
+  },
+  {
+    "description": "Taverly - Witches House - Needs proper UV",
+    "baseMaterial": "GRUNGE_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 512,
+    "shiftLightness": 3,
+    "colorOverrides": [
+      {
+        "colors": "a < 255",
+        "baseMaterial": "NONE"
+      },
+      {
+        "colors": "h == 6",
+        "baseMaterial": "WOOD_GRAIN_3",
+        "uvType": "BOX",
+        "uvScale": 0.66,
+        "shiftLightness": 4
+      }
+    ],
+    "objectIds": [
+      "GRIM_WITCH_HOUSE_WALL",
+      "GRIM_WITCH_HOUSE_WALL_WINDOW",
+      "GRIM_WITCH_HOUSE_WALL_INSIDE"
     ]
   }
 ]
