@@ -12839,7 +12839,9 @@
       "GRANDTREE_LADDERTOP",
       "REHNISON_LADDER_UP",
       "MOURNER_HIDEOUT_LADDER1_BATTLE",
-      "BURGH_TEMPLE_LIBRARY_LADDER_UP"
+      "BURGH_TEMPLE_LIBRARY_LADDER_UP",
+      "WGS_TAVERLEY_LADDER",
+      "WGS_TAVERLEY_LADDERTOP"
     ],
     "uvType": "BOX",
     "uvOrientation": 512,
@@ -14425,7 +14427,9 @@
       "TWOCATS_CHEST",
       "TWOCATS_CHEST_OPEN",
       "LUNAR_MOONCLAN_CHEST",
-      "LOST_TRIBE_CHEST"
+      "LOST_TRIBE_CHEST",
+      "CRYSTAL_CHESTCLOSED",
+      "CRYSTAL_CHESTOPEN"
     ],
     "uvType": "BOX",
     "uvScale": 0.25,
@@ -105936,6 +105940,98 @@
       "CRAB_SHELL_5",
       "CRAB_SHELL_6",
       "CRAB_SHELL_7"
+    ]
+  },
+  {
+    "description": "Taverly wall ability shortcut",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "baseMaterial": "STONE_NORMALED",
+    "objectIds": [
+      "TAVELRYSHORTCUT"
+    ]
+  },
+  {
+    "description": "Taverly - Gardening patch borders",
+    "baseMaterial": "WOOD_GRAIN_2_SMOOTH",
+    "uvType": "BOX",
+    "uvScale": 0.45,
+    "uvOrientationX": 512,
+    "uvOrientationZ": 512,
+    "objectIds": [
+      "FARMING_GARDENINGPATCH_BORDER"
+    ]
+  },
+  {
+    "description": "Taverly - Beanstalk stump",
+    "baseMaterial": "LEAF_VEINS",
+    "uvType": "BOX",
+    "uvScale": 0.45,
+    "uvOrientation": 512,
+    "shiftLightness": 4,
+    "colorOverrides": [
+      {
+        "colors": "h == 13 && s == 2",
+        "baseMaterial": "GRUNGE_3",
+        "uvType": "BOX",
+        "uvScale": 0.4
+      }
+    ],
+    "objectIds": [
+      "GRIM_BEANSTALK_BASE"
+    ]
+  },
+  {
+    "description": "Taverly - Clothes line",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.5,
+    "shiftLightness": 4,
+    "objectIds": [
+      "EADGAR_DRUID_WASHING_LINE"
+    ]
+  },
+  {
+    "description": "Taverly - Clothes on line",
+    "baseMaterial": "ROPE",
+    "uvType": "BOX",
+    "uvScale": 0.33,
+    "uvOrientation": 512,
+    "shiftLightness": 6,
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "CARPET",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "uvOrientation": 313,
+        "shiftLightness": 18
+      }
+    ],
+    "objectIds": [
+      "EADGAR_DRUID_WASHING_LINE_RIGHT",
+      "EADGAR_DRUID_WASHING_LINE_LEFT"
+    ]
+  },
+  {
+    "description": "Taverly - Metal sign",
+    "baseMaterial": "WOOD_GRAIN_3",
+    "uvType": "BOX",
+    "uvScale": 0.8,
+    "uvOrientation": 512,
+    "shiftLightness": 6,
+    "colorOverrides": [
+      {
+        "colors": "h == 0 && s == 0",
+        "baseMaterial": "METALLIC_1",
+        "uvType": "BOX",
+        "uvScale": 0.33,
+        "uvOrientation": 313,
+        "shiftLightness": 12
+      }
+    ],
+    "objectIds": [
+      "_2_HANDEDSIGN"
     ]
   }
 ]
