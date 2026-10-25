@@ -7718,12 +7718,9 @@
   {
     "description": "Shayzien - Metallic - Metal pots with multicolored liquid",
     "baseMaterial": "METALLIC_1",
-    "uvScale": 0.6,
-    "uvOrientation": 117,
     "uvType": "BOX",
-    "objectIds": [
-      "DYE_POTS"
-    ],
+    "uvScale": 0.33,
+    "shiftLightness": 4,
     "colorOverrides": [
       {
         "colors": "s > 0",
@@ -7731,6 +7728,10 @@
         "uvType": "MODEL_XZ",
         "uvOrientation": 222
       }
+    ],
+    "uvOrientation": 117,
+    "objectIds": [
+      "DYE_POTS"
     ]
   },
   {
@@ -43626,12 +43627,9 @@
     ]
   },
   {
-    "description": "Rubble - Broken Pots, Bottles",
+    "description": "Rubble - Bottles",
     "baseMaterial": "GRUNGE_1_DARK",
     "objectIds": [
-      "RUBBLE_1",
-      "RUBBLE_2",
-      "HORROR_RUBBLE_1",
       "FAI_VARROCK_BOTTLES1"
     ],
     "colorOverrides": [
@@ -78280,9 +78278,10 @@
     "colorOverrides": [
       {
         "colors": "h == 0 || h == 21",
-        "baseMaterial": "METALLIC_1_LIGHT",
+        "baseMaterial": "METALLIC_1",
         "uvType": "BOX",
-        "uvScale": 0.2
+        "uvScale": 0.2,
+        "shiftLightness": 6
       }
     ]
   },
@@ -106676,7 +106675,9 @@
       }
     ],
     "objectIds": [
-      "RUBBLE_1"
+      "RUBBLE_1",
+      "RUBBLE_2",
+      "HORROR_RUBBLE_1"
     ]
   },
   {
@@ -106879,25 +106880,6 @@
     ],
     "objectIds": [
       "DYED_CLOTH"
-    ]
-  },
-  {
-    "description": "Warriors Guild -  Dye pots",
-    "baseMaterial": "GRUNGE_3",
-    "uvType": "BOX",
-    "uvScale": 0.4,
-    "shiftLightness": 4,
-    "colorOverrides": [
-      {
-        "colors": "s == 0",
-        "baseMaterial": "METALLIC_1",
-        "uvType": "BOX",
-        "uvScale": 0.33,
-        "shiftLightness": 4
-      }
-    ],
-    "objectIds": [
-      "DYE_POTS"
     ]
   }
 ]
