@@ -12815,7 +12815,8 @@
       "PUZZLE_LADDER",
       "PUZZLE_LADDER_TOP",
       "_25TH_LADDER_BOTTOM",
-      "PHOENIXLADDER"
+      "PHOENIXLADDER",
+      "LUC2_BLACK_KNIGHT_CATACOMB_LADDER"
     ],
     "uvType": "BOX",
     "uvScale": 0.7

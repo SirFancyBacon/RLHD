@@ -7871,6 +7871,14 @@
     "waterType": "CAVE_WATER"
   },
   {
+    "name": "Black Knights Fort - Catacombs ground",
+    "area": "Black Knights Fort - Catacombs",
+    "underlayIds": [
+      221
+    ],
+    "groundMaterial": "VARIED_DIRT"
+  },
+  {
     "name": "Tlati Rainforest - Rocky ridges",
     "area": "Varlamore - Tlati Rainforest",
     "groundMaterial": "ROCK_PILES",
